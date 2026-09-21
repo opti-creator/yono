@@ -2,7 +2,11 @@
 
 Planning repo for a **Yono games directory site** — green design system, ~90 game pages, SEO-first.
 
-Nothing is built yet. This repo currently holds the build spec and the data the build runs on.
+Nothing is built yet. This repo holds the build spec, the game roster, and the arranged artwork.
+
+**Artwork status: 57 of 90 games have logos.** The 62 files uploaded to `main` were renamed to
+match their roster slug and moved into `assets/img/games/`. See `assets/README.md` for the missing
+list and the one file still needing a decision.
 
 ## What's here
 
@@ -10,7 +14,8 @@ Nothing is built yet. This repo currently holds the build spec and the data the 
 |---|---|
 | `BUILD-PROMPT.md` | **The deliverable.** A complete, copy-paste prompt for a coding agent to build the whole site. Fill in §1 first. |
 | `data/games.json` | Canonical roster — 90 games across 7 categories, with slugs the build keys off. |
-| `assets/README.md` | Where to drop logo/image files and exactly how to name them (a 90-slot checklist). |
+| `assets/README.md` | Artwork status: what's in place, the 33 missing logos, and naming rules. |
+| `assets/img/games/` | 57 game logos, slug-named, plus a green `_placeholder.svg`. |
 
 ## How to use it
 

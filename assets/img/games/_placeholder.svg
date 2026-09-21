@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-label="Logo coming soon">
+  <rect width="256" height="256" rx="48" fill="#102018" stroke="#1E3A28" stroke-width="2"/>
+  <circle cx="128" cy="104" r="42" fill="none" stroke="#00C853" stroke-width="6" opacity="0.7"/>
+  <path d="M110 86v36l32-18z" fill="#00C853" opacity="0.7"/>
+  <rect x="64" y="170" width="128" height="10" rx="5" fill="#1E3A28"/>
+  <rect x="88" y="192" width="80" height="10" rx="5" fill="#1E3A28"/>
+</svg>

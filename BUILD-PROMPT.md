@@ -4,11 +4,14 @@
 equivalent) to build the site end to end. Fill in the `«FILL»` fields in §1 first, then paste the
 whole file as your prompt.
 
-**Reference for scope only:** `https://moreyonogames.com/` — a Yono games directory/listing site.
-Use it to understand *what kind of site this is* (a discovery hub that lists many Yono-family apps).
-**Do not copy its layout, copy, or design.** Every headline, paragraph, FAQ answer and visual
-decision in this build must be original work. The look is a deliberate departure: a fresh green
-design system, specified in §4.
+**Reference:** `https://moreyonogames.com/` — a Yono games directory/listing site. Use it to
+understand *what kind of site this is*: a discovery hub listing many Yono-family apps.
+
+The owner's supplied brand logo carries the `moreyonogames.com` domain, so this is most likely a
+**redesign of the owner's own property** rather than a new competing site — confirm in §1. Either
+way the brief is the same: the look is a deliberate departure from the current site. Write fresh
+headlines, body copy and FAQ answers, and build the green design system in §4 rather than
+reproducing the existing layout.
 
 ---
 
@@ -16,7 +19,7 @@ design system, specified in §4.
 
 | Field | Value |
 |---|---|
-| Domain | `«FILL»` (e.g. `example.com`) |
+| Domain | `«FILL»` — the supplied brand logo reads **moreyonogames.com**, so confirm whether that is the build target |
 | Brand name | `«FILL»` |
 | Primary keyword | `«FILL»` (e.g. `yono games`) |
 | Target market | India (`en-IN`) |
@@ -182,6 +185,8 @@ than shipping it. On `--color-accent` fills, use near-black text, never white.
 ## 6. Game roster
 
 The canonical roster is **`data/games.json`** in this repo: **90 games** across 7 categories.
+(One name was corrected against the supplied artwork: *789 Jackpot* → **789 Jackpots**, slug
+`789-jackpots`. The artwork is authoritative over the third-party directories the list came from.)
 Read it and generate from it. Do not retype the list by hand and do not add or drop titles.
 
 Each record has `slug`, `name`, `category`, `logo`, `logoFallback`, plus content and spec fields
@@ -238,31 +243,40 @@ do not manufacture specifics (features, prize structures, player counts) you can
 
 ## 7. Assets contract
 
-The owner will drop logo and image files into `assets/`. Match files to games **by slug**:
+Artwork has been supplied and arranged. **57 of the 90 games have a logo; 33 do not.**
+`assets/README.md` carries the full status and the missing list.
 
 ```
-assets/img/games/<slug>.webp     ← primary, 256×256, transparent or dark-safe
-assets/img/games/<slug>.png      ← fallback, 256×256
-assets/img/games/_placeholder.svg ← used when a logo is missing
+assets/img/games/<slug>.<ext>      57 logos, renamed to match the roster slug
+assets/img/games/_placeholder.svg  green placeholder for the 33 games with no art
+assets/img/icons/logo.jpg          site brand mark
+assets/img/icons/icon-controller.svg, icon-trophy.svg, icon-players.svg
+assets/img/_unsorted/              one unidentified file, awaiting the owner's call
 ```
 
-`<slug>` is exactly the `slug` field in `data/games.json` (e.g. `yono-rummy.webp`,
-`spin-crush.webp`, `789-jackpot.webp`).
+**Read image paths from `data/games.json`, never construct them.** Each record carries:
+- `logo` — relative path to the primary image, or `null` if none was supplied
+- `logoFallback` — a second format if one exists, otherwise `null`
 
-Rules:
-- Render every logo in a `<picture>`: WebP `<source>`, PNG `<img>` fallback, explicit
-  `width="96" height="96"`, `alt="<Game Name> logo"`, `loading="lazy"` below the fold.
-- **If a logo file is missing, use `_placeholder.svg`.** Never leave a broken image, and never
-  substitute another game's logo.
-- Before building, list which slugs have no matching file and report that list — the owner needs to
-  know exactly what is still missing.
-- Also needed: `assets/img/og/` cards at 1200×630 (one for home, one per category; game pages may
-  share the category card), `assets/img/icons/icon-192.png`, `icon-512.png`, `favicon.ico`.
-- Compress everything. No single image over ~100KB; logos should be far smaller.
+Extensions are **not** uniform: the uploads are a mix of `.webp`, `.png` and `.jpg`, and almost
+every game has exactly one file, not a WebP/PNG pair. So:
 
-See `assets/README.md` for the same convention in checklist form.
+- Emit a bare `<img>` when `logoFallback` is `null`. Only wrap in `<picture>` with a `<source>`
+  when a genuine second format exists. Do not emit a `<source>` pointing at a file that isn't there.
+- When `logo` is `null`, render `assets/img/games/_placeholder.svg`. Never substitute another
+  game's logo, and never leave a broken image.
+- Always set explicit `width="96" height="96"`, `alt="<Game Name> logo"`, and `loading="lazy"`
+  below the fold.
 
----
+The supplied logos are mostly gold-on-dark-green artwork, which sits naturally on the `#0A1A0F`
+ground — no plate, ring or background treatment is needed behind them. Do not recolour them.
+
+Source images are not uniformly sized (from 148×148 up to 1254×1254) and some exceed the weight
+budget. Before building, downscale to 256×256 and compress; the directory page renders up to 90 of
+them at once. Keep the originals untouched in git.
+
+Still outstanding, to request from the owner rather than fabricate: the 33 missing game logos,
+`assets/img/og/` cards at 1200×630, `icon-192.png`, `icon-512.png`, `favicon.ico`, and WOFF2 fonts.
 
 ## 8. SEO
 
