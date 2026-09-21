@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /data/
+Disallow: /tools/
+
+Sitemap: https://games.newyono-apps.in/sitemap.xml

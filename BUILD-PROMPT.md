@@ -95,8 +95,8 @@ Write this verbatim into `assets/css/tokens.css`:
   --color-accent:         #00C853;
   --color-accent-dim:     #009940;
   --color-text-primary:   #E8F5E9;
-  --color-text-secondary: #81C784;
-  --color-text-muted:     #4A7A50;
+  --color-text-secondary: #A5D6A7;
+  --color-text-muted:     #7FA886;
   --color-border:         #1E3A28;
   --color-error:          #FF5252;
   --color-success:        #00E676;
@@ -144,8 +144,13 @@ var(--color-accent); outline-offset: 3px; }`, and a `prefers-reduced-motion: red
 neutralises animation and transition durations.
 
 **Contrast check:** verify every text/background pair against WCAG AA (4.5:1 body, 3:1 large text).
-`--color-text-muted` on `--color-surface` is the risky pair — if it fails, lighten the token rather
-than shipping it. On `--color-accent` fills, use near-black text, never white.
+On `--color-accent` fills, use near-black text (`#001B0A`), never white.
+
+> **Resolved during the build.** The originally specified `--color-text-muted: #4A7A50` measured
+> **3.37:1** on `--color-surface` — a real AA failure — so it was lightened to `#7FA886` (6.32:1).
+> `--color-text-secondary` was also lightened from `#81C784` to `#A5D6A7` for consistency, though
+> the original already passed at 8.40:1. The token block above carries the corrected values, and
+> all eleven audited pairs now pass.
 
 ---
 

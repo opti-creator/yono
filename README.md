@@ -4,7 +4,18 @@ Planning repo for a **Yono games directory site** — green design system, 90 ga
 
 **Domain:** `games.newyono-apps.in`
 
-Nothing is built yet. This repo holds the build spec, the game roster, and the arranged artwork.
+The site is built. 106 static pages, no framework, no build step to serve — just open `index.html`
+or serve the repo root.
+
+```
+node tools/build-pages.js    # regenerates directory, hubs, 90 game pages, sitemap.xml
+python3 -m http.server 8000  # serve locally
+```
+
+**Copy status:** structure is complete; promotional copy, bonus messaging and the compliance block
+are deliberately unwritten pending the legal question in `BUILD-PROMPT.md` §9. Pages awaiting copy
+are marked `noindex` and excluded from `sitemap.xml`, so a thin-content set cannot be indexed by
+accident. Set `COPY_APPROVED = true` in the generator once real copy exists.
 
 **Artwork status: 57 of 90 games have logos.** The 62 files uploaded to `main` were renamed to
 match their roster slug and moved into `assets/img/games/`. See `assets/README.md` for the missing
@@ -18,6 +29,8 @@ list and the one file still needing a decision.
 | `data/games.json` | Canonical roster — 90 games across 7 categories, with slugs the build keys off. |
 | `assets/README.md` | Artwork status: what's in place, the 33 missing logos, and naming rules. |
 | `assets/img/games/` | 57 game logos, slug-named, plus a green `_placeholder.svg`. |
+| `tools/build-pages.js` | Page generator. Single source for URL structure and the copy gate. |
+| `assets/css/`, `assets/js/` | Design system and components (15KB CSS, 5.6KB JS, no libraries). |
 
 ## How to use it
 
