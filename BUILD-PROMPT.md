@@ -7,11 +7,15 @@ whole file as your prompt.
 **Reference:** `https://moreyonogames.com/` — a Yono games directory/listing site. Use it to
 understand *what kind of site this is*: a discovery hub listing many Yono-family apps.
 
-The owner's supplied brand logo carries the `moreyonogames.com` domain, so this is most likely a
-**redesign of the owner's own property** rather than a new competing site — confirm in §1. Either
-way the brief is the same: the look is a deliberate departure from the current site. Write fresh
-headlines, body copy and FAQ answers, and build the green design system in §4 rather than
-reproducing the existing layout.
+The build target is a **different domain**: `games.newyono-apps.in` (§1). Treat moreyonogames.com
+purely as a genre reference. Write fresh headlines, body copy and FAQ answers, and build the green
+design system in §4 rather than reproducing the existing layout.
+
+> **Blocker on the brand mark.** `assets/img/icons/logo.jpg` has the text `moreyonogames.com`
+> rendered into the image itself. Shipping it on `games.newyono-apps.in` would put a different
+> domain in the site header on every page. Do **not** use it as the site logo, and do not try to
+> edit the domain out of the artwork. Use a text wordmark built from `--font-display` until the
+> owner supplies a clean logo. Flag this in your build report.
 
 ---
 
@@ -19,7 +23,7 @@ reproducing the existing layout.
 
 | Field | Value |
 |---|---|
-| Domain | `«FILL»` — the supplied brand logo reads **moreyonogames.com**, so confirm whether that is the build target |
+| Domain | **`games.newyono-apps.in`** — canonical base `https://games.newyono-apps.in` (confirmed by owner) |
 | Brand name | `«FILL»` |
 | Primary keyword | `«FILL»` (e.g. `yono games`) |
 | Target market | India (`en-IN`) |
@@ -145,6 +149,15 @@ than shipping it. On `--color-accent` fills, use near-black text, never white.
 ---
 
 ## 5. File structure
+
+> **Raise before building — URL redundancy.** The host is already `games.`, so the paths below
+> produce `https://games.newyono-apps.in/games/yono-rummy.html`, which says "games" twice. Flatter
+> URLs (`/yono-rummy.html`, `/rummy.html`) read better and are marginally stronger for SEO. The
+> structure below is kept as-is because it is unambiguous and easy to generate; if the owner prefers
+> the flat version, moving the `games/` contents to the root is a mechanical change — the generator
+> in §6 writes the paths and `sitemap.xml` from one variable. Ask, then commit to one and make every
+> canonical, internal link and sitemap entry agree.
+
 
 ```
 /
@@ -323,7 +336,7 @@ User-agent: *
 Allow: /
 Disallow: /data/
 
-Sitemap: https://«DOMAIN»/sitemap.xml
+Sitemap: https://games.newyono-apps.in/sitemap.xml
 ```
 
 ---
@@ -400,6 +413,6 @@ should be reviewed by a qualified professional before launch.
 
 ## 13. Ask before assuming
 
-Stop and ask if: the domain/brand is still `«FILL»`; the real-money answer is unclear; logo files
+Stop and ask if: the brand name, primary keyword, support email or real-money answer in §1 is still `«FILL»`; the real-money answer is unclear; logo files
 are missing for more than ~10 games; or the owner wants bonus/spec figures displayed but has not
 supplied a verified source for them.

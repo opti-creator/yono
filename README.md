@@ -1,6 +1,8 @@
 # yono
 
-Planning repo for a **Yono games directory site** — green design system, ~90 game pages, SEO-first.
+Planning repo for a **Yono games directory site** — green design system, 90 game pages, SEO-first.
+
+**Domain:** `games.newyono-apps.in`
 
 Nothing is built yet. This repo holds the build spec, the game roster, and the arranged artwork.
 
@@ -19,8 +21,9 @@ list and the one file still needing a decision.
 
 ## How to use it
 
-1. Fill in the `«FILL»` fields in **`BUILD-PROMPT.md` §1** — domain, brand, primary keyword,
+1. Fill the remaining `«FILL»` fields in **`BUILD-PROMPT.md` §1** — brand name, primary keyword,
    support email, and the real-money-gambling yes/no (that one changes the compliance rules).
+   The domain is set.
 2. Drop logo files into `assets/img/games/` following `assets/README.md`. Missing logos are fine —
    the build falls back to a placeholder and reports the gaps.
 3. Paste `BUILD-PROMPT.md` as the prompt.
@@ -33,8 +36,13 @@ ratings and app specs contradict each other heavily** (the same game is listed a
 The build prompt instructs the agent not to invent them, and not to emit `aggregateRating` or
 `offers` schema without verified values. Supply real figures before switching those rows on.
 
-`https://moreyonogames.com/` is referenced in the prompt for **scope only** — what kind of site this
-is. The design and all copy are specified as original work, not a reproduction of that site.
+`https://moreyonogames.com/` is referenced in the prompt as a **genre reference only** — what kind of site this
+is; the build target is a different domain. The design and all copy are specified as original work,
+not a reproduction of that site.
+
+**Known blocker:** the supplied brand mark (`assets/img/icons/logo.jpg`) has `moreyonogames.com`
+rendered into the image, so it cannot be used as the site logo on `games.newyono-apps.in`. A clean
+logo is needed; until then the prompt instructs a text wordmark.
 
 ## Legal
 

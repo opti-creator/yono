@@ -12,7 +12,7 @@ The 62 files uploaded to `main` have been renamed to their game slug and moved i
 |---|---|
 | `assets/img/games/<slug>.<ext>` | 57 game logos (mixed `.webp`, `.png`, `.jpg`) |
 | `assets/img/games/_placeholder.svg` | Green placeholder for the 33 games with no logo |
-| `assets/img/icons/logo.jpg` | Site brand mark ("ALL Diwa GAMES") |
+| `assets/img/icons/logo.jpg` | Brand mark — **unusable as-is**: `moreyonogames.com` is rendered into the image, but the site is `games.newyono-apps.in`. Needs a clean replacement. |
 | `assets/img/icons/icon-controller.svg`, `icon-trophy.svg`, `icon-players.svg` | UI icons |
 | `assets/img/_unsorted/diwa-x.webp` | **Unidentified** — see below |
 
@@ -22,6 +22,7 @@ The 62 files uploaded to `main` have been renamed to their game slug and moved i
 - `assets/img/og/` social cards, 1200x630 (home + one per category).
 - `assets/img/icons/icon-192.png`, `icon-512.png`, `favicon.ico`.
 - `assets/fonts/` self-hosted WOFF2.
+- **A site logo without a domain baked into it** (or with `games.newyono-apps.in`).
 
 ## Naming rules for anything you add
 
