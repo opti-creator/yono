@@ -1,0 +1,391 @@
+# Build Prompt — Yono Games Directory (Green Edition)
+
+**What this file is:** a complete, copy-paste-ready prompt for a coding agent (Claude Code or
+equivalent) to build the site end to end. Fill in the `«FILL»` fields in §1 first, then paste the
+whole file as your prompt.
+
+**Reference for scope only:** `https://moreyonogames.com/` — a Yono games directory/listing site.
+Use it to understand *what kind of site this is* (a discovery hub that lists many Yono-family apps).
+**Do not copy its layout, copy, or design.** Every headline, paragraph, FAQ answer and visual
+decision in this build must be original work. The look is a deliberate departure: a fresh green
+design system, specified in §4.
+
+---
+
+## 1. Inputs to fill in before running
+
+| Field | Value |
+|---|---|
+| Domain | `«FILL»` (e.g. `example.com`) |
+| Brand name | `«FILL»` |
+| Primary keyword | `«FILL»` (e.g. `yono games`) |
+| Target market | India (`en-IN`) |
+| Support email | `«FILL»` |
+| Telegram / social URLs | `«FILL»` or "none" |
+| Real-money gambling content? | `«FILL»` — **Yes** or **No**. This changes §8 materially. |
+| Launch date for `dateModified` | `«FILL»` |
+
+> If **Real-money gambling = No**, the site is positioned as a free-to-play / skill-game directory
+> and the prohibited-words rule in §8 applies in full.
+
+---
+
+## 2. Role and objective
+
+You are building a **static, multi-page games directory site** — no frameworks, no build step.
+Vanilla HTML5 + CSS3 + ES6. It must be fast on a low-end Android phone on 4G in India, fully
+accessible (WCAG 2.1 AA), and structured so that each individual game page can rank on its own.
+
+The site has three jobs:
+1. Let a visitor find any one of ~90 Yono-family games fast (search + category filter).
+2. Give each game its own indexable page with real, useful, original content.
+3. Carry the compliance furniture an India-facing gaming site needs (§8).
+
+---
+
+## 3. Non-negotiables
+
+- **No frameworks.** No React, no Tailwind, no jQuery, no bundler. Plain files served as-is.
+- **No invented facts.** Bonus amounts, APK sizes, version numbers, ratings and download counts
+  are `null` in `data/games.json` because they are not verified. Do **not** fill them with
+  plausible-looking numbers. Render a field only when it has a value; hide the row otherwise.
+  Public Yono directories disagree wildly on bonus figures — treating them as facts would be wrong.
+- **No scraped copy.** Write every sentence fresh.
+- **Mobile-first CSS.** Base styles, then `@media (min-width: 768px)`, then `(min-width: 1200px)`.
+- **BEM-lite** class naming (`.block__element--modifier`). No `!important` outside resets.
+- **UTF-8, LF line endings, 2-space indent** in HTML/CSS/JS.
+- Every image gets explicit `width` + `height` and `loading="lazy"` below the fold.
+
+---
+
+## 4. Design system — green
+
+A deep-forest base with an emerald/neon-lime accent. Not the reference site's look; this is its own
+thing: dark glass-panel cards on a near-black green ground, a faint accent glow on interactive
+elements, generous rounding, and colour used sparingly so ~90 game logos stay the loudest thing
+on the page.
+
+Visual direction:
+- **Ground:** near-black green (`--color-bg`), with an optional very low-opacity radial accent glow
+  behind the hero only. No busy background patterns anywhere else.
+- **Cards:** `--color-surface` panels, 1px `--color-border`, `--radius-lg`, lift + accent glow on
+  hover/focus. The game logo is the hero of each card — let it breathe.
+- **Accent discipline:** accent green is for CTAs, active filter pills, focus rings and one or two
+  stat highlights. Never for body text or large fills.
+- **Category pills:** full-round (`--radius-full`) filter chips, horizontally scrollable on mobile.
+- **Type:** condensed display face for headings, neutral sans for body. Self-host WOFF2 in
+  `assets/fonts/`; `font-display: swap`.
+
+Write this verbatim into `assets/css/tokens.css`:
+
+```css
+:root {
+  /* Colour — green theme */
+  --color-bg:             #0A1A0F;
+  --color-surface:        #102018;
+  --color-surface-2:      #163020;
+  --color-accent:         #00C853;
+  --color-accent-dim:     #009940;
+  --color-text-primary:   #E8F5E9;
+  --color-text-secondary: #81C784;
+  --color-text-muted:     #4A7A50;
+  --color-border:         #1E3A28;
+  --color-error:          #FF5252;
+  --color-success:        #00E676;
+
+  /* Typography */
+  --font-display: 'Exo 2', 'Nunito', sans-serif;
+  --font-body:    'Inter', 'Roboto', sans-serif;
+
+  --text-xs: 0.75rem;  --text-sm: 0.875rem; --text-base: 1rem;
+  --text-lg: 1.125rem; --text-xl: 1.25rem;  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem; --text-4xl: 2.25rem; --text-5xl: 3rem;
+
+  --line-height-tight: 1.2; --line-height-normal: 1.5; --line-height-loose: 1.75;
+
+  /* Spacing — 4px base */
+  --space-1: 0.25rem; --space-2: 0.5rem;  --space-3: 0.75rem; --space-4: 1rem;
+  --space-5: 1.25rem; --space-6: 1.5rem;  --space-8: 2rem;    --space-10: 2.5rem;
+  --space-12: 3rem;   --space-16: 4rem;   --space-20: 5rem;
+
+  /* Radius */
+  --radius-sm: 4px; --radius-md: 8px; --radius-lg: 16px;
+  --radius-xl: 24px; --radius-full: 9999px;
+
+  /* Elevation */
+  --shadow-card: 0 2px 12px rgba(0, 0, 0, 0.4);
+  --shadow-glow: 0 0 20px rgba(0, 200, 83, 0.25);
+  --shadow-glow-strong: 0 0 40px rgba(0, 200, 83, 0.4);
+
+  /* Z-index */
+  --z-base: 0; --z-raised: 10; --z-nav: 100; --z-modal: 200; --z-toast: 300;
+
+  /* Motion */
+  --transition-fast: 150ms ease; --transition-normal: 250ms ease; --transition-slow: 400ms ease;
+
+  /* Layout */
+  --container-max: 1200px;
+  --container-pad: var(--space-4);
+}
+
+@media (min-width: 768px) { :root { --container-pad: var(--space-8); } }
+```
+
+Required global rules: `.skip-link` (visible on `:focus`), `:focus-visible { outline: 2px solid
+var(--color-accent); outline-offset: 3px; }`, and a `prefers-reduced-motion: reduce` block that
+neutralises animation and transition durations.
+
+**Contrast check:** verify every text/background pair against WCAG AA (4.5:1 body, 3:1 large text).
+`--color-text-muted` on `--color-surface` is the risky pair — if it fails, lighten the token rather
+than shipping it. On `--color-accent` fills, use near-black text, never white.
+
+---
+
+## 5. File structure
+
+```
+/
+├── index.html                    ← Home
+├── 404.html
+├── sitemap.xml
+├── robots.txt
+├── manifest.json
+├── favicon.ico
+├── data/
+│   └── games.json                ← canonical roster (already in repo — 90 games)
+├── games/
+│   ├── index.html                ← All Games directory (search + filter)
+│   ├── rummy.html                ← category hubs (one per §6 category)
+│   ├── slots-and-777.html
+│   ├── teen-patti-and-vip-club.html
+│   ├── arcade-and-casual.html
+│   ├── multi-game-platforms.html
+│   ├── bingo.html
+│   ├── ludo-and-board.html
+│   └── <game-slug>.html          ← one per game, 90 total
+├── pages/
+│   ├── about.html
+│   ├── contact.html
+│   ├── privacy-policy.html
+│   ├── terms.html
+│   ├── responsible-gaming.html
+│   └── disclaimer.html
+└── assets/
+    ├── css/{reset,tokens,main}.css + pages/{home,directory,game}.css
+    ├── js/main.js + components/{age-gate,cookie-consent,game-filter,faq-accordion}.js
+    ├── fonts/                     ← self-hosted WOFF2
+    └── img/{games,hero,icons,og}/ ← see §7
+```
+
+---
+
+## 6. Game roster
+
+The canonical roster is **`data/games.json`** in this repo: **90 games** across 7 categories.
+Read it and generate from it. Do not retype the list by hand and do not add or drop titles.
+
+Each record has `slug`, `name`, `category`, `logo`, `logoFallback`, plus content and spec fields
+that are empty/`null` until the owner supplies them.
+
+Categories (`key` → hub page):
+
+| key | Label | Hub page | Count |
+|---|---|---|---|
+| `rummy` | Rummy | `/games/rummy.html` | 26 |
+| `slots` | Slots & 777 | `/games/slots-and-777.html` | 35 |
+| `vip` | Teen Patti & VIP Club | `/games/teen-patti-and-vip-club.html` | 7 |
+| `arcade` | Arcade & Casual | `/games/arcade-and-casual.html` | 13 |
+| `bet` | Multi-Game Platforms | `/games/multi-game-platforms.html` | 6 |
+| `bingo` | Bingo | `/games/bingo.html` | 2 |
+| `ludo` | Ludo & Board | `/games/ludo-and-board.html` | 1 |
+
+Because the site is static, generate the 90 game pages with a small one-off Node script
+(`tools/build-pages.js`) that reads `data/games.json` and a template, writes the HTML files, and
+also regenerates `sitemap.xml`. Commit both the script and its output — the served site stays
+fully static.
+
+### Directory page behaviour (`/games/index.html`)
+
+- Render **all 90 cards in the HTML** at build time. Filtering is progressive enhancement over
+  server-rendered markup — never JS-only, so crawlers and no-JS users see the full list.
+- Client-side search box filtering on game name, plus category pills. Debounce input ~150ms.
+- Use event delegation on the grid container; toggle a `hidden` attribute rather than rebuilding DOM.
+- Announce result counts in an `aria-live="polite"` region ("Showing 26 of 90 games").
+- Keep `<h1>` unique and the card titles as `<h3>` inside the grid.
+
+### Per-game page template
+
+Every game page needs, in order:
+1. Breadcrumb (Home → Category → Game) with matching `BreadcrumbList` schema.
+2. `<h1>` = game name. Logo image from `logo` with `logoFallback` in a `<picture>`.
+3. A short original intro (60–90 words) describing the game type honestly.
+4. A spec table — **render only rows whose value is non-null.** If every spec is null, omit the
+   whole table rather than showing an empty shell.
+5. "How to download and install" — a generic, accurate 4–5 step Android APK sideload explanation
+   (enable unknown sources, download, open, install, launch). Same steps across pages is fine;
+   this is genuinely generic procedure.
+6. 4–6 original FAQ entries, with `FAQPage` schema. Vary the questions per category so the 90
+   pages are not near-duplicates — this is the main thin-content risk in this build.
+7. Related games: 4 cards from the same category, plus a link back to the category hub.
+8. Compliance block per §8.
+
+**Thin-content guard:** 90 pages from one template will be treated as doorway pages if only the
+name changes. Each page needs at least ~150 words of category-specific original prose. If the owner
+has not supplied a `blurb` for a game, write an honest description from its category and name — and
+do not manufacture specifics (features, prize structures, player counts) you cannot verify.
+
+---
+
+## 7. Assets contract
+
+The owner will drop logo and image files into `assets/`. Match files to games **by slug**:
+
+```
+assets/img/games/<slug>.webp     ← primary, 256×256, transparent or dark-safe
+assets/img/games/<slug>.png      ← fallback, 256×256
+assets/img/games/_placeholder.svg ← used when a logo is missing
+```
+
+`<slug>` is exactly the `slug` field in `data/games.json` (e.g. `yono-rummy.webp`,
+`spin-crush.webp`, `789-jackpot.webp`).
+
+Rules:
+- Render every logo in a `<picture>`: WebP `<source>`, PNG `<img>` fallback, explicit
+  `width="96" height="96"`, `alt="<Game Name> logo"`, `loading="lazy"` below the fold.
+- **If a logo file is missing, use `_placeholder.svg`.** Never leave a broken image, and never
+  substitute another game's logo.
+- Before building, list which slugs have no matching file and report that list — the owner needs to
+  know exactly what is still missing.
+- Also needed: `assets/img/og/` cards at 1200×630 (one for home, one per category; game pages may
+  share the category card), `assets/img/icons/icon-192.png`, `icon-512.png`, `favicon.ico`.
+- Compress everything. No single image over ~100KB; logos should be far smaller.
+
+See `assets/README.md` for the same convention in checklist form.
+
+---
+
+## 8. SEO
+
+Do this **before** writing any page copy.
+
+### 8a. Keyword cluster
+Produce a table — Primary (1) · Secondary (4–6) · LSI (6–10) · Long-tail (8–12) — with a
+**Page Target** column mapping each keyword to the one page meant to rank for it. One target page
+per keyword; flag any collision so two pages never compete for the same term.
+
+### 8b. Per-page metadata
+Every page gets:
+- `<title>` ≤ 60 chars, primary keyword first, brand last.
+- `<meta name="description">` 145–155 chars, primary + one secondary keyword, no clickbait.
+- `<link rel="canonical">` absolute.
+- Open Graph: `og:title`, `og:description`, `og:image` (absolute), `og:url`, `og:type`.
+- Twitter: `summary_large_image` card.
+- `<html lang="en-IN">`.
+
+Game-page title pattern: `<Game Name> — Download & Details | <Brand>`. Keep each unique; 90
+identical-shaped titles are fine, 90 identical titles are not.
+
+### 8c. JSON-LD
+Inline in `<head>` as `application/ld+json`, using `@graph` to stack:
+- **Home:** `WebSite` + `FAQPage`
+- **Directory + category hubs:** `CollectionPage` + `ItemList` (each game an `ItemListElement`) + `BreadcrumbList`
+- **Game pages:** `SoftwareApplication` (`applicationCategory: "GameApplication"`, `operatingSystem: "ANDROID"`) + `BreadcrumbList` + `FAQPage`
+- **About / Contact:** `Organization`
+
+**Do not emit `aggregateRating` or `offers` unless real, verifiable values exist** in
+`data/games.json`. Fabricated ratings are a structured-data violation and can earn a manual action.
+Omit the property entirely when the value is null.
+
+### 8d. Internal linking
+Produce a Source → Anchor Text → Target table. Every page must have ≥2 inbound internal links.
+Home → all 7 hubs; each hub → its games; each game → its hub + 4 siblings. Use descriptive anchors
+(the game name), never "click here".
+
+### 8e. sitemap.xml / robots.txt
+Generate `sitemap.xml` from `data/games.json` (all ~105 URLs) with `<lastmod>`. `robots.txt`:
+
+```
+User-agent: *
+Allow: /
+Disallow: /data/
+
+Sitemap: https://«DOMAIN»/sitemap.xml
+```
+
+---
+
+## 9. Compliance (India)
+
+Required on every page:
+- **Age gate**, 18+, modal on first visit, consent in `localStorage` key `ageVerified`. Must be
+  keyboard-operable, focus-trapped, `role="dialog"` + `aria-modal="true"`.
+- **Restricted states notice** in the footer: Andhra Pradesh, Telangana, Assam, Odisha, Nagaland,
+  Sikkim.
+- **Responsible gaming** section on Home + a dedicated `/pages/responsible-gaming.html`.
+- **Cookie consent banner**, consent in `localStorage` key `cookieConsent`.
+- **Independence disclaimer:** this site is an independent directory; it does not own, operate or
+  distribute the listed apps, and all app names and logos are the property of their respective
+  owners. Put this in the footer and on `/pages/disclaimer.html`.
+- Footer legal nav: Privacy Policy · Terms · Responsible Gaming · Disclaimer · About · Contact.
+
+**If Real-money gambling = No** (§1), marketing copy must avoid: "bet", "wager", "casino",
+"jackpot", "real money", "win cash"; no odds or probability claims; no guaranteed-return language;
+no celebrity imagery.
+
+> **Known conflict — handle explicitly:** several games are *named* with those words (`MDM Bet`,
+> `MWM Bet`, `MQM Bet`, `MKM Bet`, `MBM Bet`, `789 Jackpot`, `Bet 213 Slots`). Proper nouns stay
+> verbatim — never rename a product. The restriction applies to *your* prose: headings, intros,
+> CTAs, FAQ answers and meta descriptions. When you run the prohibited-words check, exclude matches
+> that fall inside a game name from `data/games.json` and report the rest.
+
+Add a note in the README that these templates are common industry practice, not legal advice, and
+should be reviewed by a qualified professional before launch.
+
+---
+
+## 10. Performance and accessibility targets
+
+- Lighthouse mobile ≥ 90 on all four categories for Home, Directory and a sample game page.
+- LCP < 2.5s on simulated 4G; CLS < 0.1 (hence mandatory image dimensions).
+- Total CSS < 50KB unminified; total JS < 20KB. No blocking third-party requests.
+- Keyboard-navigable throughout; visible focus on every interactive element.
+- One `<h1>` per page, heading levels never skipped.
+- Semantic landmarks: `<header>`, `<nav>`, `<main id="main">`, `<footer>`.
+- Test the directory page with 90 cards rendered — that is the heaviest page; lazy-load logos.
+
+---
+
+## 11. Build order
+
+1. Read `data/games.json`. Report the count per category and any missing logo files (§7).
+2. Scaffold folders; write `reset.css`, `tokens.css` (§4), `main.css`.
+3. Deliver §8a keyword cluster + §8d internal-linking map **as markdown, for approval, before
+   writing page copy.**
+4. Build Home.
+5. Build `/games/index.html` with all 90 cards + search/filter.
+6. Build the 7 category hubs.
+7. Write `tools/build-pages.js`; generate the 90 game pages + `sitemap.xml`.
+8. Build the 6 legal/info pages and `404.html`.
+9. Compliance pass (§9), including the prohibited-words check with the proper-noun exclusion.
+10. Validate: HTML validator, Rich Results Test on one page of each type, Lighthouse, contrast audit.
+11. Report: pages built, missing assets, unfilled data fields, and anything you could not verify.
+
+## 12. Definition of done
+
+- [ ] 90 game pages + 7 hubs + directory + home + 6 legal/info + 404 all build and link correctly
+- [ ] No broken internal links, no broken images (placeholder used where a logo is missing)
+- [ ] No invented bonuses, ratings, versions, sizes or download counts anywhere
+- [ ] Every page has unique title, description, canonical, OG tags and valid JSON-LD
+- [ ] `sitemap.xml` matches the actual page set; `robots.txt` correct
+- [ ] Age gate, cookie banner, restricted-states notice, disclaimer present sitewide
+- [ ] WCAG AA contrast verified; keyboard nav works; reduced-motion respected
+- [ ] Lighthouse mobile ≥ 90 on the three sampled page types
+- [ ] Missing-asset and unfilled-data report delivered to the owner
+
+---
+
+## 13. Ask before assuming
+
+Stop and ask if: the domain/brand is still `«FILL»`; the real-money answer is unclear; logo files
+are missing for more than ~10 games; or the owner wants bonus/spec figures displayed but has not
+supplied a verified source for them.
