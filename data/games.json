@@ -4,43 +4,43 @@
     {
       "key": "rummy",
       "label": "Rummy",
-      "description": "13-card and 21-card rummy titles.",
+      "description": "Card games built on the Indian rummy family, including 13-card and 21-card formats where players form valid sequences and sets.",
       "slug": "rummy"
     },
     {
       "key": "slots",
       "label": "Slots & 777",
-      "description": "Reel, spin and 777-style titles.",
+      "description": "Reel-spinning and 777-style titles where the outcome turns on symbol combinations rather than player decisions.",
       "slug": "slots-and-777"
     },
     {
       "key": "vip",
       "label": "Teen Patti & VIP Club",
-      "description": "Teen Patti and club-room titles.",
+      "description": "Teen Patti and private club-room titles, the three-card betting format widely played across India.",
       "slug": "teen-patti-and-vip-club"
     },
     {
       "key": "arcade",
       "label": "Arcade & Casual",
-      "description": "Mixed-game arcade hubs and casual titles.",
+      "description": "Mixed-game hubs and casual titles that bundle several smaller games into a single app rather than specialising in one format.",
       "slug": "arcade-and-casual"
     },
     {
       "key": "bet",
       "label": "Multi-Game Platforms",
-      "description": "Multi-game platform apps.",
+      "description": "Multi-game platform apps that carry a broad catalogue spanning several of the other categories.",
       "slug": "multi-game-platforms"
     },
     {
       "key": "bingo",
       "label": "Bingo",
-      "description": "Bingo titles.",
+      "description": "Number-draw titles where players mark off numbers on a card as they are called, aiming to complete a winning pattern.",
       "slug": "bingo"
     },
     {
       "key": "ludo",
       "label": "Ludo & Board",
-      "description": "Ludo and board-game hybrids.",
+      "description": "Board-game titles built on Ludo and related turn-based formats played on a cross-shaped track.",
       "slug": "ludo-and-board"
     }
   ],

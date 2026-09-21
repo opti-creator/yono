@@ -39,6 +39,49 @@ const esc = (s) => String(s == null ? '' : s)
   .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
   .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
 
+/* Land a meta description in the 145-155 char window without cutting mid-word.
+   Tails are tried shortest-first; see seo/data/title-meta.csv for the same logic. */
+function fit(text, tails, lo, hi) {
+  lo = lo || 145; hi = hi || 155;
+  const base = String(text).replace(/\s+/g, ' ').trim();
+  const opts = [''].concat(tails || []);
+  for (const extra of opts) {
+    const cand = extra ? (base + ' ' + extra).trim() : base;
+    if (cand.length >= lo && cand.length <= hi) return cand;
+  }
+  let cand = base;
+  if (tails && tails.length && base.length < lo) cand = (base + ' ' + tails[tails.length - 1]).trim();
+  if (cand.length <= hi) return cand;
+  const out = [];
+  for (const w of cand.split(' ')) {
+    if ([...out, w].join(' ').length > hi - 1) break;
+    out.push(w);
+  }
+  return out.join(' ').replace(/[ ,.;:]+$/, '') + '.';
+}
+
+/* Title builders. Each falls back to a shorter form so nothing exceeds 60 chars. */
+function shortCat(c) { return c.label.split(' & ')[0]; }
+/* Ampersands become &amp; once escaped (+4 chars), which breaks length budgets.
+   Meta text therefore uses "and" so measured length matches rendered length. */
+function plainCat(c) { return c.label.replace(/ & /g, ' and '); }
+
+function catTitle(c, n) {
+  const a = `Yono ${plainCat(c)} — ${n} Apps Listed | ${SITE.brand}`;
+  if (a.length <= 60) return a;
+  const b = `Yono ${plainCat(c)} — ${n} Apps | ${SITE.brand}`;
+  if (b.length <= 60) return b;
+  return `Yono ${shortCat(c)} — ${n} Apps | ${SITE.brand}`;
+}
+
+function gameTitle(g, c) {
+  const a = `${g.name} — ${shortCat(c)} App Details and Guide | ${SITE.brand}`;
+  if (a.length <= 60) return a;
+  const b = `${g.name} — App Details and Guide | ${SITE.brand}`;
+  if (b.length <= 60) return b;
+  return `${g.name} — App Details | ${SITE.brand}`;
+}
+
 const seg = SITE.gamesDir ? SITE.gamesDir + '/' : '';
 const gameUrl = (slug) => `/${seg}${slug}.html`;
 const catUrl = (slug) => `/${seg}${slug}.html`;
@@ -262,8 +305,10 @@ ${list.map(gameCard).join('\n')}
 
   const html = head({
     url, nav: 'directory', pageCss: 'directory', schema,
-    title: `All Yono Games — Complete List of ${GAMES.length} Apps | ${SITE.brand}`,
-    description: `Browse the full directory of ${GAMES.length} Yono games across rummy, slots, Teen Patti, arcade and bingo. Search by name or filter by category.`,
+    title: `All Yono Games — Full List of ${GAMES.length} Apps | ${SITE.brand}`,
+    description: fit(
+      `Search or filter the complete list of ${GAMES.length} Yono apps by name and category. Every title is shown with its category and artwork.`,
+      ['Updated as the roster changes.', 'The list is updated as the roster changes.']),
   }) + `
 ${breadcrumb([{ name: 'Home', url: '/' }, { name: 'All Games' }])}
 
@@ -326,8 +371,11 @@ function buildCategory(c) {
 
   const html = head({
     url, nav: c.key, pageCss: 'directory', schema,
-    title: `${c.label} Yono Games — ${list.length} Apps | ${SITE.brand}`,
-    description: `All ${list.length} ${c.label.toLowerCase()} titles in the Yono games directory. ${c.description} Browse the full list.`,
+    title: catTitle(c, list.length),
+    description: fit(
+      `All ${list.length} ${plainCat(c).toLowerCase()} titles in the Yono app directory. ${c.description}`,
+      ['Open any title for its details and related apps.',
+       'Compare them here and open any title for full details and related apps.']),
   }) + `
 ${breadcrumb(trail)}
 
@@ -419,8 +467,12 @@ ${related.map(gameCard).join('\n')}
   const html = head({
     url, nav: c.key, pageCss: 'game', schema,
     noindex: !COPY_APPROVED,
-    title: `${g.name} — Details | ${SITE.brand}`,
-    description: `${g.name} is a ${c.label.toLowerCase().replace(/&/g, 'and')} title listed in the ${SITE.brand} Yono games directory. View details and related apps.`,
+    title: gameTitle(g, c),
+    description: fit(
+      `${g.name} is a ${plainCat(c).toLowerCase()} app listed in the Yono directory.`,
+      [`See its category, platform and related ${shortCat(c).toLowerCase()} titles.`,
+       `See its category and platform details, plus related ${shortCat(c).toLowerCase()} titles here.`,
+       `Check its category and platform details, and browse related ${shortCat(c).toLowerCase()} titles in the same section.`]),
   }) + `
 ${breadcrumb(trail)}
 
@@ -428,7 +480,7 @@ ${breadcrumb(trail)}
       <div class="game-hero">
         <div class="game-hero__media">${media}</div>
         <div class="game-hero__meta">
-          <h1>${esc(g.name)}</h1>
+          <h1>${esc(g.name)} — ${esc(shortCat(c))} App Details</h1>
           <span class="game-hero__cat">${esc(c.label)}</span>
         </div>
       </div>
@@ -477,8 +529,10 @@ function buildHome() {
 
   const html = head({
     url: '/', nav: 'home', pageCss: 'home', schema,
-    title: `Yono Games — Directory of ${GAMES.length} Apps | ${SITE.brand}`,
-    description: `An independent directory of ${GAMES.length} Yono games across rummy, slots, Teen Patti, arcade and bingo. Browse by category or search the full list.`,
+    title: `Yono Games List — ${GAMES.length} Apps by Category | ${SITE.brand}`,
+    description: fit(
+      `An independent directory of ${GAMES.length} Yono game apps sorted into ${CATS.length} categories, from rummy and slots to Teen Patti, arcade and bingo.`,
+      ['Browse the full list.', 'Browse or search the full list by name.']),
   }) + `
     <section class="hero">
       <div class="container">
