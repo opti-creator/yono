@@ -41,6 +41,37 @@ list and the one file still needing a decision.
    the build falls back to a placeholder and reports the gaps.
 3. Paste `BUILD-PROMPT.md` as the prompt.
 
+## Going live
+
+Deployment is wired but **not yet switched on** — two steps need account access I don't have.
+
+`.github/workflows/deploy.yml` rebuilds the pages from `data/games.json`, fails the build if the
+committed HTML has drifted from the generator, assembles a clean publish directory (source data,
+tooling and internal docs excluded) and deploys to GitHub Pages. It runs on every push to `main`,
+or manually via **Actions → Deploy site → Run workflow**.
+
+**1. Enable Pages** — repo *Settings → Pages → Build and deployment → Source:* **GitHub Actions**.
+
+**2. Point the DNS** — at whoever hosts `newyono-apps.in`, add:
+
+```
+Type    Name     Value
+CNAME   games    opti-creator.github.io.
+```
+
+Then merge this branch to `main`. The workflow publishes, and GitHub issues the TLS certificate
+once DNS resolves (usually minutes, occasionally up to an hour). Afterwards tick
+*Settings → Pages → Enforce HTTPS*.
+
+The `CNAME` file is written by the workflow, so it cannot be lost on redeploy.
+
+### Before you flip it
+
+- **90 of the 106 pages are `noindex` and display "Description pending".** That is the copy gate
+  working as designed, but it is what a visitor sees. Only 12 URLs are in the sitemap.
+- The compliance question in `BUILD-PROMPT.md` §9 is still open. Publishing is the step that makes
+  it concrete.
+
 ## Notes on the data
 
 The roster was cross-checked against several public Yono directory sites. Their **bonus amounts,

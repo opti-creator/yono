@@ -1,0 +1,77 @@
+name: Deploy site
+
+# Rebuilds the pages from data/games.json and publishes to GitHub Pages, so the
+# live site can never drift from the source data. Only the files the site
+# actually serves are uploaded - tooling, source data and internal docs stay out.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Regenerate pages from data
+        run: node tools/build-pages.js
+
+      - name: Fail if the build changed tracked output
+        # The committed HTML must match what the generator produces. If this
+        # fails, someone edited generated HTML by hand instead of the template.
+        run: |
+          if ! git diff --quiet -- '*.html' sitemap.xml assets/data/search-index.json; then
+            echo "::error::Generated output is out of date. Run 'node tools/build-pages.js' and commit the result."
+            git --no-pager diff --stat -- '*.html' sitemap.xml assets/data/search-index.json
+            exit 1
+          fi
+
+      - name: Assemble publish directory
+        run: |
+          mkdir -p _site
+          cp -r assets games pages _site/
+          cp index.html 404.html manifest.json robots.txt sitemap.xml favicon.ico _site/
+          echo "games.newyono-apps.in" > _site/CNAME
+          # Source data and tooling are not part of the served site.
+          rm -rf _site/assets/img/_unsorted
+          echo "--- publishing ---"
+          find _site -type f | wc -l
+
+      - name: Verify nothing internal leaked into the publish directory
+        run: |
+          set -e
+          for bad in BUILD-PROMPT.md README.md data tools seo .github; do
+            if [ -e "_site/$bad" ]; then echo "::error::$bad must not be published"; exit 1; fi
+          done
+          test -f _site/index.html
+          test -f _site/CNAME
+          echo "publish directory verified"
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
