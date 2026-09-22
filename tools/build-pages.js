@@ -17,6 +17,8 @@ const path = require('path');
 const ROOT = path.join(__dirname, '..');
 const DATA = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/games.json'), 'utf8'));
 
+const CATC = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/category-content.json'), 'utf8'));
+
 let OPT = {};
 try { OPT = JSON.parse(fs.readFileSync(path.join(ROOT, 'assets/img/games/opt/manifest.json'), 'utf8')); }
 catch (e) { console.warn('! no optimised image manifest - run tools/optimize-images.py'); }
@@ -330,6 +332,234 @@ ${trail.map((t, i) => i === trail.length - 1
     </div>`;
 }
 
+/* ---------- Game page components ----------
+   Content rules for everything below:
+   - Per-app facts (version, size, developer, requirements) render only when the
+     roster actually holds them. Nothing is inferred or invented.
+   - Format-level explanation comes from data/category-content.json. It describes
+     the game format, which is general knowledge, not a claim about one app.
+   - Android install guidance is platform procedure and is legitimately identical
+     across apps, so it is defined once here.
+*/
+
+const INSTALL_STEPS = [
+  ['Check the source first',
+   'Only install an Android package from a source you can verify. An APK from an unknown link can be modified before it reaches you, and Android cannot tell you who repackaged it.'],
+  ['Allow installation for your browser',
+   'Android blocks packages from outside the Play Store by default. When prompted, the permission is granted per app under Settings, Apps, Special app access, Install unknown apps. Grant it to the browser doing the download, not system-wide.'],
+  ['Download the package',
+   'Save the .apk file. Your browser may warn that this file type can harm your device; that warning appears for every APK and is not itself evidence of a problem.'],
+  ['Open the downloaded file',
+   'Tap the file in your notification shade or in Downloads. Android shows an install screen naming the package.'],
+  ['Read the permission list',
+   'Before confirming, check what the app asks for. Requests unrelated to what the app does, such as SMS or contacts access for a card game, are worth questioning.'],
+  ['Install and open',
+   'Confirm the install, then launch the app. Leave Play Protect switched on so Android keeps scanning the package after installation.'],
+];
+
+function downloadSection(g, c) {
+  const icon = logoImg(g, 96, 96, '96px', false);
+  // A download action is rendered only when a real URL exists in the roster.
+  // No URL is ever fabricated; the markup falls back to an information state.
+  if (g.downloadUrl) {
+    return `      <section class="download-card" aria-labelledby="dl-h">
+        <div class="download-card__icon">${icon}</div>
+        <div class="download-card__body">
+          <h2 id="dl-h">Download ${esc(g.name)}</h2>
+          <p class="download-card__meta">Android${g.version ? ` &middot; Version ${esc(g.version)}` : ''}${g.apkSize ? ` &middot; ${esc(g.apkSize)}` : ''}</p>
+          <a class="btn btn--primary btn--lg" href="${esc(g.downloadUrl)}" rel="nofollow noopener">Download ${esc(g.name)}</a>
+          <p class="download-card__note"><a href="#install">How to install on Android</a></p>
+        </div>
+      </section>`;
+  }
+  return `      <section class="download-card download-card--pending" aria-labelledby="dl-h">
+        <div class="download-card__icon">${icon}</div>
+        <div class="download-card__body">
+          <h2 id="dl-h">Download information for ${esc(g.name)}</h2>
+          <p class="download-card__meta">Android${g.version ? ` &middot; Version ${esc(g.version)}` : ''}</p>
+          <p><strong>No verified download link is listed for this app yet.</strong> This directory
+          publishes a download button only once a source has been checked, so no link is shown here
+          rather than pointing you at an unverified one.</p>
+          <p class="download-card__note">In the meantime, the
+          <a href="#install">Android installation guidance</a> below covers what to check before
+          installing any Android package.</p>
+        </div>
+      </section>`;
+}
+
+function featureGrid(g, c) {
+  // Per-app features override the format-level list when the roster holds them.
+  const own = Array.isArray(g.features) && g.features.length;
+  const list = own ? g.features.map((f) => [f.name || f, f.detail || '']) : (CATC[c.key] || {}).features || [];
+  if (!list.length) return '';
+  const heading = own
+    ? `${esc(g.name)} features`
+    : `What ${esc(c.label.toLowerCase())} apps involve`;
+  const lede = own ? '' :
+    `<p>These describe the ${esc(CATC[c.key].formatName)} format itself. Features specific to
+     ${esc(g.name)} are not published in this directory.</p>`;
+  return `      <section class="section" aria-labelledby="feat-h">
+        <h2 id="feat-h">${heading}</h2>
+        ${lede}
+        <ul class="feature-grid">
+${list.map(([n, d]) => `          <li class="feature"><h3>${esc(n)}</h3><p>${esc(d)}</p></li>`).join('\n')}
+        </ul>
+      </section>`;
+}
+
+function detailsTable(g, c) {
+  const rows = [
+    ['Name', g.name],
+    ['Category', c.label],
+    ['Platform', 'Android'],
+    ['Download format', g.downloadFormat],
+    ['Developer', g.developer],
+    ['Publisher', g.publisher],
+    ['Version', g.version],
+    ['File size', g.apkSize],
+    ['Released', g.releaseDate],
+    ['Last updated', g.updated],
+    ['Language', g.language],
+    ['Compatibility', g.compatibility],
+  ].filter(([, v]) => v != null && v !== '');
+  const unknown = ['Developer', 'Version', 'File size', 'Last updated', 'Compatibility']
+    .filter((k) => !rows.some(([n]) => n === k));
+  return `      <section class="section" aria-labelledby="det-h">
+        <h2 id="det-h">${esc(g.name)} app details</h2>
+        <table class="spec-table">
+          <caption class="visually-hidden">${esc(g.name)} application details</caption>
+          <tbody>
+${rows.map(([k, v]) => `            <tr><th scope="row">${esc(k)}</th><td>${esc(v)}</td></tr>`).join('\n')}
+          </tbody>
+        </table>
+${unknown.length ? `        <p class="muted-note">Not listed: ${unknown.map((u) => esc(u.toLowerCase())).join(', ')}.
+        This directory leaves a field blank rather than publishing a figure it cannot verify.</p>` : ''}
+      </section>`;
+}
+
+function installGuide(g) {
+  return `      <section class="section" id="install" aria-labelledby="inst-h">
+        <h2 id="inst-h">How to install an Android app like ${esc(g.name)}</h2>
+        <p>The steps below apply to installing any Android package from outside the Play Store.
+           They are general Android procedure, not instructions specific to this app.</p>
+        <ol class="steps">
+${INSTALL_STEPS.map(([t, d], i) => `          <li class="step"><span class="step__n" aria-hidden="true">${i + 1}</span>
+            <div><h3>${esc(t)}</h3><p>${esc(d)}</p></div></li>`).join('\n')}
+        </ol>
+        <div class="notice">
+          <p><strong>A note on safety.</strong> Sideloading moves the responsibility for checking a
+          package onto you. Keep Google Play Protect enabled, be cautious with any app requesting
+          permissions unrelated to its function, and avoid packages from links you cannot trace back
+          to a known source.</p>
+        </div>
+      </section>`;
+}
+
+function compatibilitySection(g, c) {
+  if (g.compatibility) {
+    return `      <section class="section" aria-labelledby="compat-h">
+        <h2 id="compat-h">${esc(g.name)} compatibility</h2>
+        <p>${esc(g.compatibility)}</p>
+      </section>`;
+  }
+  return `      <section class="section" aria-labelledby="compat-h">
+        <h2 id="compat-h">${esc(g.name)} compatibility</h2>
+        <p>${esc(g.name)} is distributed as an Android application. The minimum Android version,
+           supported screen sizes and device requirements are set by the app itself and are not
+           published in this directory, so no requirement is stated here rather than guessing one.
+           An app listing normally shows its own requirement before you install.</p>
+      </section>`;
+}
+
+function overviewSection(g, c) {
+  const cc = CATC[c.key] || {};
+  const own = g.blurb ? `<p>${esc(g.blurb)}</p>` : '';
+  return `      <section class="section" aria-labelledby="ov-h">
+        <h2 id="ov-h">${esc(g.name)} overview</h2>
+        ${own}
+        <p>${esc(g.name)} is listed in this directory under
+           <a href="${catUrl(c.slug)}">${esc(c.label)}</a>, which covers ${esc(cc.formatName || c.label.toLowerCase())}
+           released as Android applications for players in India. It is one of
+           ${countIn(c.key)} ${countIn(c.key) === 1 ? 'title' : 'titles'} grouped in that category
+           across the ${GAMES.length} apps catalogued here.</p>
+        <p>${esc(cc.overview || '')}</p>
+        <p class="muted-note">This section explains the ${esc(cc.formatName || 'game')} format.
+           ${esc(g.name)} has not published feature or specification details through this directory,
+           so nothing specific to it is claimed above.</p>
+      </section>`;
+}
+
+function gameplaySection(g, c) {
+  const cc = CATC[c.key] || {};
+  if (!cc.gameplay) return '';
+  return `      <section class="section" aria-labelledby="gp-h">
+        <h2 id="gp-h">How ${esc(cc.formatName)} works</h2>
+        <p>${esc(cc.gameplay)}</p>
+        <h3>Where skill enters</h3>
+        <p>${esc(cc.skills)}</p>
+        <h3>Common variations</h3>
+        <p>${esc(cc.variants)}</p>
+      </section>`;
+}
+
+function faqFor(g, c) {
+  const cc = CATC[c.key] || {};
+  const own = Array.isArray(g.faqs) && g.faqs.length
+    ? g.faqs.map((f) => [f.q, f.a]) : [];
+  const base = (cc.faq || []).map(([q, a]) => [q.replace('this game', g.name).replace('this app', g.name), a]);
+  const generic = [
+    [`Is ${g.name} available for Android?`,
+     `${g.name} is catalogued here as an Android application. This directory does not host or distribute the package, and the app's own listing is the authority on current availability.`],
+    [`How do I download ${g.name}?`,
+     g.downloadUrl
+       ? `A download link is listed on this page. Check the source and the permissions it requests before installing, as you would with any Android package from outside the Play Store.`
+       : `No verified download link is listed here yet. This directory publishes one only once a source has been checked, so none is shown rather than pointing you at an unverified link.`],
+    [`What category does ${g.name} belong to?`,
+     `It is grouped under ${c.label}, which covers ${cc.formatName || c.label.toLowerCase()}. You can browse the other ${countIn(c.key) - 1} titles in that category from this page.`],
+    [`What are the device requirements for ${g.name}?`,
+     `The minimum Android version and device requirements are set by the app and are not published in this directory. No requirement is stated here rather than guessing one.`],
+    [`Who develops ${g.name}?`,
+     `Developer and publisher details are not published in this directory. The field is left blank rather than filled with an unverified name.`],
+  ];
+  return own.length ? own : base.concat(generic);
+}
+
+function faqSection(pairs, name) {
+  if (!pairs.length) return '';
+  return `      <section class="section" aria-labelledby="faq-h">
+        <h2 id="faq-h">Frequently asked questions about ${esc(name)}</h2>
+        <div class="faq">
+${pairs.map(([q, a], i) => `          <div class="faq__item">
+            <h3><button class="faq__q" type="button" aria-expanded="${i === 0}" aria-controls="faq-a-${i}">${esc(q)}</button></h3>
+            <div class="faq__a" id="faq-a-${i}"${i === 0 ? '' : ' hidden'}><p>${esc(a)}</p></div>
+          </div>`).join('\n')}
+        </div>
+      </section>`;
+}
+
+function relatedSection(g, c) {
+  const sibs = GAMES.filter((x) => x.category === g.category && x.slug !== g.slug).slice(0, 6);
+  if (!sibs.length) return '';
+  const cc = CATC[c.key] || {};
+  return `      <section class="section" aria-labelledby="rel-h">
+        <div class="section__head section__head--row">
+          <h2 id="rel-h">More ${esc(c.label)} apps</h2>
+          <a href="${catUrl(c.slug)}">Explore all ${esc(c.label.toLowerCase())} apps</a>
+        </div>
+        <ul class="related-grid">
+${sibs.map((x) => `          <li class="related-card">
+            <div class="related-card__icon">${logoImg(x, 64, 64, '64px', false)}</div>
+            <div class="related-card__body">
+              <h3><a href="${gameUrl(x.slug)}">${esc(x.name)}</a></h3>
+              <p class="related-card__meta">${esc(c.label)} &middot; Android</p>
+              <p class="related-card__desc">${esc(cc.formatName ? cc.formatName.charAt(0).toUpperCase() + cc.formatName.slice(1) : c.label)} app listed in this directory.</p>
+              <span class="related-card__cta" aria-hidden="true">View details &rarr;</span>
+            </div>
+          </li>`).join('\n')}
+        </ul>
+      </section>`;
+}
+
 /* ---------- Cards ---------- */
 
 const CARD_SIZES = '(min-width:1440px) 190px, (min-width:900px) 200px, (min-width:560px) 30vw, 44vw';
@@ -538,9 +768,12 @@ ${breadcrumb(trail)}
         <p>${esc(c.description)} ${list.length} ${list.length === 1 ? 'title' : 'titles'} listed.</p>
       </div>
 
-      <ul class="game-grid">
+      <section class="section" aria-labelledby="all-h">
+        <h2 id="all-h">All ${list.length} ${esc(plainCat(c).toLowerCase())} ${list.length === 1 ? 'app' : 'apps'}</h2>
+        <ul class="game-grid">
 ${list.map((g, i) => gameCard(g, i < 4)).join('\n')}
-      </ul>
+        </ul>
+      </section>
 
       <section class="section">
         <h2>Other categories</h2>
@@ -557,60 +790,57 @@ ${list.map((g, i) => gameCard(g, i < 4)).join('\n')}
 
 function buildGame(g) {
   const c = catBy[g.category];
+  const cc = CATC[c.key] || {};
   const url = gameUrl(g.slug);
   const trail = [
     { name: 'Home', url: '/' }, { name: 'All Games', url: dirUrl },
     { name: c.label, url: catUrl(c.slug) }, { name: g.name, url },
   ];
 
-  const app = { '@type': 'SoftwareApplication', name: g.name,
-    applicationCategory: 'GameApplication', operatingSystem: 'ANDROID', url: SITE.origin + url };
-  // No aggregateRating and no offers: the roster carries no verified values.
+  const faqs = faqFor(g, c);
+
+  // Schema mirrors what is actually visible. No aggregateRating, offers, price
+  // or downloadCount: the roster holds no verified values for any of them.
+  const app = {
+    '@type': 'SoftwareApplication',
+    name: g.name,
+    applicationCategory: 'GameApplication',
+    operatingSystem: 'ANDROID',
+    url: SITE.origin + url,
+  };
   if (g.blurb) app.description = g.blurb;
-  const schema = { '@context': 'https://schema.org', '@graph': [app, breadcrumbSchema(trail)] };
+  if (g.version) app.softwareVersion = g.version;
+  if (g.apkSize) app.fileSize = g.apkSize;
+  if (g.developer) app.author = { '@type': 'Organization', name: g.developer };
+  if (g.publisher) app.publisher = { '@type': 'Organization', name: g.publisher };
+  if (g.downloadUrl) app.downloadUrl = g.downloadUrl;
 
-  const specs = [
-    ['Category', c.label], ['Platform', 'Android'],
-    ['Version', g.version], ['File size', g.apkSize], ['Updated', g.updated],
-  ].filter(([, v]) => v != null && v !== '');
+  const graph = [app, breadcrumbSchema(trail)];
+  // FAQPage only where the Q&A is genuinely rendered on the page.
+  if (faqs.length) {
+    graph.push({
+      '@type': 'FAQPage',
+      mainEntity: faqs.map(([q, a]) => ({
+        '@type': 'Question', name: q,
+        acceptedAnswer: { '@type': 'Answer', text: a },
+      })),
+    });
+  }
+  const schema = { '@context': 'https://schema.org', '@graph': graph };
 
-  const specTable = specs.length ? `      <table class="spec-table">
-        <caption class="visually-hidden">${esc(g.name)} details</caption>
-        <tbody>
-${specs.map(([k, v]) => `          <tr><th scope="row">${esc(k)}</th><td>${esc(v)}</td></tr>`).join('\n')}
-        </tbody>
-      </table>` : '';
-
-  const related = GAMES.filter((x) => x.category === g.category && x.slug !== g.slug).slice(0, 6);
-  const relatedBlock = related.length ? `      <section class="section">
-        <div class="section__head section__head--row">
-          <h2>More ${esc(c.label)}</h2>
-          <a href="${catUrl(c.slug)}">View all &rarr;</a>
-        </div>
-        <ul class="game-grid">
-${related.map((x) => gameCard(x)).join('\n')}
-        </ul>
-      </section>` : '';
-
-  // Body copy is gated (section 9). When a blurb exists it renders inside a
-  // read-more that only ever collapses via max-height, never display:none.
-  // No blurb yet -> render nothing rather than a placeholder notice. The page
-  // still carries H1, category, platform, specs and related titles, so it reads
-  // as a minimal listing instead of an unfinished one. Pages stay noindex until
-  // real copy exists (COPY_APPROVED), so thin listings are never indexed.
-  const body = g.blurb ? `      <div class="readmore" data-readmore>
-        <div class="readmore__content prose"><p>${esc(g.blurb)}</p></div>
-        <button class="btn btn--ghost btn--sm readmore__btn" type="button" aria-expanded="false" hidden>Read more</button>
-      </div>` : '';
+  const intro = `${g.name} is an Android ${cc.formatName || c.label.toLowerCase()} app catalogued in ` +
+    `the ${SITE.brand} directory under ${c.label}. This page collects what is verified about it, ` +
+    `explains how the format works, and covers what to check before installing any Android package. ` +
+    `Specification and download details are shown only where a source has been confirmed.`;
 
   const html = head({
     url, nav: c.key, schema, noindex: !COPY_APPROVED,
     title: gameTitle(g, c),
     description: fit(
-      `${g.name} is a ${plainCat(c).toLowerCase()} app listed in the Yono directory.`,
-      [`See its category, platform and related ${shortCat(c).toLowerCase()} titles.`,
-       `See its category and platform details, plus related ${shortCat(c).toLowerCase()} titles here.`,
-       `Check its category and platform details, and browse related ${shortCat(c).toLowerCase()} titles in the same section.`]),
+      `${g.name} on Android: category, app details, ${cc.formatName || 'game'} gameplay, installation guidance and FAQs.`,
+      ['Download information included.',
+       'Download information and related apps included.',
+       'Plus download information and related apps from the same category.']),
   }) + `
 ${breadcrumb(trail)}
 
@@ -618,22 +848,48 @@ ${breadcrumb(trail)}
       <div class="game-hero">
         <div class="game-hero__media">${logoImg(g, 132, 132, '132px', true)}</div>
         <div class="game-hero__meta">
-          <h1>${esc(g.name)} — ${esc(shortCat(c))} App Details</h1>
+          <h1>${esc(g.name)} &ndash; Download &amp; Complete Game Details</h1>
           <div class="game-hero__tags">
             <span class="tag">${esc(c.label)}</span>
             <span class="tag">Android</span>
+            <span class="tag">${esc(g.downloadFormat || 'APK')}</span>${g.version ? `
+            <span class="tag">v${esc(g.version)}</span>` : ''}
           </div>
+          <p class="game-hero__intro">${esc(intro)}</p>
           <div class="game-hero__actions">
-            <a class="btn btn--ghost" href="${catUrl(c.slug)}">All ${esc(c.label)}</a>
-            <a class="btn btn--ghost" href="${dirUrl}">All games</a>
+            <a class="btn btn--primary" href="#dl-h">${g.downloadUrl ? 'Download' : 'Download information'}</a>
+            <a class="btn btn--ghost" href="#install">How to install</a>
           </div>
         </div>
       </div>
 
-${body}
-${specTable}
+${downloadSection(g, c)}
 
-${relatedBlock}
+${overviewSection(g, c)}
+
+${featureGrid(g, c)}
+
+${detailsTable(g, c)}
+
+${gameplaySection(g, c)}
+
+${installGuide(g)}
+
+${compatibilitySection(g, c)}
+
+${faqSection(faqs, g.name)}
+
+      <section class="section" aria-labelledby="nav-h">
+        <h2 id="nav-h">Keep browsing</h2>
+        <p>${esc(g.name)} sits in <a href="${catUrl(c.slug)}">${esc(c.label)}</a>, one of
+           ${CATS.length} categories in this directory. You can
+           <a href="${catUrl(c.slug)}">see more ${esc(c.label.toLowerCase())} apps</a>, or
+           <a href="${dirUrl}">view all ${GAMES.length} Android games</a> listed here. The
+           <a href="/pages/responsible-gaming.html">responsible gaming page</a> covers setting
+           limits before you play.</p>
+      </section>
+
+${relatedSection(g, c)}
     </div>
 ` + footer(c.key);
 

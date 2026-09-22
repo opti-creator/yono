@@ -607,3 +607,113 @@ main p a {
 .prose a:hover,
 .notice a:hover,
 main p a:hover { text-decoration-thickness: 2px; }
+
+/* ==========================================================================
+   Game detail page components
+   ========================================================================== */
+.btn--lg { min-height: 54px; padding: var(--space-4) var(--space-8); font-size: var(--text-base); width: 100%; }
+@media (min-width: 560px) { .btn--lg { width: auto; min-width: 260px; } }
+
+.game-hero__intro { margin-top: var(--space-4); max-width: 62ch; font-size: var(--text-base); }
+.muted-note { margin-top: var(--space-3); font-size: var(--text-sm); color: var(--text-muted); }
+
+/* ---- Download card ---- */
+.download-card {
+  display: flex; flex-wrap: wrap; gap: var(--space-5); align-items: flex-start;
+  padding: var(--space-6);
+  margin-block: var(--space-8);
+  background: var(--surface); border: 1px solid var(--border-strong);
+  border-radius: var(--radius-xl); box-shadow: var(--shadow-2);
+}
+.download-card--pending { border-style: dashed; box-shadow: none; }
+.download-card__icon {
+  width: 72px; height: 72px; flex: 0 0 72px;
+  border-radius: var(--radius-lg); overflow: hidden;
+  background: var(--surface-2); border: 1px solid var(--border);
+}
+.download-card__icon img { width: 100%; height: 100%; object-fit: cover; }
+.download-card__body { flex: 1 1 260px; min-width: 0; }
+.download-card__body h2 { font-size: var(--text-xl); }
+.download-card__meta {
+  margin: var(--space-2) 0 var(--space-4);
+  font-size: var(--text-sm); color: var(--text-muted);
+  text-transform: uppercase; letter-spacing: .06em; font-weight: 600;
+}
+.download-card__body p { margin-bottom: var(--space-3); }
+.download-card__note { font-size: var(--text-sm); margin-bottom: 0; }
+
+/* ---- Feature grid ---- */
+.feature-grid {
+  display: grid; gap: var(--space-3); margin-top: var(--space-5);
+  grid-template-columns: 1fr;
+}
+@media (min-width: 560px)  { .feature-grid { grid-template-columns: repeat(2, 1fr); gap: var(--space-4); } }
+@media (min-width: 1024px) { .feature-grid { grid-template-columns: repeat(4, 1fr); } }
+.feature {
+  padding: var(--space-5);
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  transition: border-color var(--dur-2) var(--ease), transform var(--dur-2) var(--ease);
+}
+.feature:hover { border-color: var(--border-strong); transform: translateY(-2px); }
+.feature h3 { font-size: var(--text-base); margin-bottom: var(--space-2); }
+.feature h3::before {
+  content: ""; display: block; width: 26px; height: 3px; margin-bottom: var(--space-3);
+  background: var(--accent); border-radius: var(--radius-full);
+}
+.feature p { font-size: var(--text-sm); }
+
+/* ---- Numbered steps ---- */
+.steps { display: grid; gap: var(--space-3); margin-top: var(--space-5); counter-reset: step; }
+.step {
+  display: flex; gap: var(--space-4); align-items: flex-start;
+  padding: var(--space-5);
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+}
+.step__n {
+  display: grid; place-items: center;
+  width: 32px; height: 32px; flex: 0 0 32px;
+  border-radius: var(--radius-full);
+  background: var(--accent); color: var(--on-accent);
+  font-family: var(--font-display); font-weight: 800; font-size: var(--text-sm);
+}
+.step h3 { font-size: var(--text-base); margin-bottom: var(--space-1); }
+.step p { font-size: var(--text-sm); }
+
+/* ---- Related cards ---- */
+.related-grid { display: grid; gap: var(--space-3); grid-template-columns: 1fr; margin-top: var(--space-4); }
+@media (min-width: 560px)  { .related-grid { grid-template-columns: repeat(2, 1fr); gap: var(--space-4); } }
+@media (min-width: 1024px) { .related-grid { grid-template-columns: repeat(3, 1fr); } }
+.related-card {
+  position: relative; display: flex; gap: var(--space-4); align-items: flex-start;
+  padding: var(--space-4);
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  transition: transform var(--dur-2) var(--ease), border-color var(--dur-2) var(--ease), box-shadow var(--dur-2) var(--ease);
+}
+.related-card:hover, .related-card:focus-within {
+  transform: translateY(-3px); border-color: var(--accent); box-shadow: var(--shadow-2);
+}
+.related-card__icon {
+  width: 56px; height: 56px; flex: 0 0 56px;
+  border-radius: var(--radius-md); overflow: hidden;
+  background: var(--surface-2); border: 1px solid var(--border);
+}
+.related-card__icon img { width: 100%; height: 100%; object-fit: cover; }
+.related-card__body { min-width: 0; }
+.related-card h3 { font-size: var(--text-base); }
+.related-card h3 a { color: var(--text); }
+.related-card h3 a::after { content: ""; position: absolute; inset: 0; border-radius: inherit; }
+.related-card__meta {
+  margin-top: 2px; font-size: var(--text-xs); color: var(--text-muted);
+  text-transform: uppercase; letter-spacing: .06em; font-weight: 600;
+}
+.related-card__desc { margin-top: var(--space-2); font-size: var(--text-sm); }
+.related-card__cta {
+  display: inline-block; margin-top: var(--space-2);
+  font-size: var(--text-sm); font-weight: 700; color: var(--accent);
+}
+
+/* FAQ headings wrap the button, so reset the inherited heading styles. */
+.faq__item h3 { margin: 0; font-size: inherit; font-weight: inherit; }

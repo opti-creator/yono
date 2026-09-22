@@ -1,0 +1,129 @@
+{
+  "$comment": "Category-level editorial content. These describe the GAME FORMAT, which is verifiable general knowledge, not claims about any individual app. Per-app specifics (version, size, developer, modes, requirements) stay null in games.json until sourced. Keep it factual and non-promotional: no odds, no prize claims, no bonus figures.",
+  "rummy": {
+    "formatName": "Indian rummy",
+    "overview": "Indian rummy is a draw-and-discard card game built on melding. Players are dealt a hand and take turns drawing one card and discarding one, working toward arranging every card into valid groups. A hand is only declarable once the cards form the required combinations, so the game rewards reading the discard pile and tracking what opponents pick up.",
+    "gameplay": "A deal usually runs on two decks with printed and wild jokers. The objective is to arrange all thirteen cards into sequences and sets. A sequence is three or more cards of the same suit in order; a set is three or four cards of the same rank in different suits. At least one pure sequence, formed without any joker, is required before a declaration counts. Play proceeds clockwise: draw from the closed or open pile, then discard. When a player believes the hand is complete they declare, and the arrangement is validated. Scoring is based on the value of unmatched cards left in the losing hands, so minimising deadwood matters as much as chasing a finish.",
+    "skills": "Card counting, probability estimation, sequencing discipline and discard reading all influence results, which is why rummy is commonly classified as a game of skill in Indian legal discussion.",
+    "variants": "Points rummy settles on a single deal, pool rummy eliminates players once they cross a score ceiling, and deals rummy runs a fixed number of hands. Apps in this category commonly offer one or more of these, though the exact set varies by app.",
+    "features": [
+      ["Card melding", "Sequence and set formation on a thirteen-card hand."],
+      ["Turn-based play", "Draw and discard turns rather than real-time input."],
+      ["Joker handling", "Printed and wild jokers substitute for missing cards."],
+      ["Table formats", "Points, pool and deals variants are common in this category."]
+    ],
+    "faq": [
+      ["What kind of game is this?", "It is a rummy app. Rummy is a draw-and-discard card game in which the aim is to arrange a dealt hand into valid sequences and sets."],
+      ["What is a pure sequence?", "Three or more consecutive cards of the same suit formed without using a joker. Indian rummy requires at least one before a hand can be declared."],
+      ["Is rummy a game of skill?", "Rummy involves card tracking, sequencing decisions and probability judgement. Indian courts have generally treated rummy as a game of skill, though how that applies to a specific app depends on how it operates."]
+    ]
+  },
+  "slots": {
+    "formatName": "reel and 777-style games",
+    "overview": "Reel games present a grid of spinning symbols. A round consists of setting a stake, spinning, and reading the result against a paytable. Unlike card games, the outcome of a spin is determined at the moment it is generated rather than by player decisions during the round, so there is no in-round strategy to apply.",
+    "gameplay": "A typical layout runs three or five reels across a set number of paylines. After a spin the reels stop and the visible symbol combinations are compared against the paytable, which lists which combinations register and what each is worth. Many titles add mechanics such as scatter symbols that pay regardless of position, wild symbols that substitute for others, or a bonus round triggered by a particular combination. The 777 naming convention common in this category refers to the classic triple-seven symbol rather than to any specific mechanic.",
+    "skills": "Reel outcomes are generated independently of player input once the spin begins. The only decisions available are stake size and when to stop, so session management matters more than technique.",
+    "variants": "Classic three-reel layouts, five-reel video formats and jackpot-linked variants all appear in this category, along with crash and multiplier styles in some titles.",
+    "features": [
+      ["Reel grid", "Three or five reels read against a paytable."],
+      ["Paylines", "Fixed or selectable lines determine which combinations register."],
+      ["Symbol mechanics", "Wild and scatter symbols are common in this format."],
+      ["Single-tap rounds", "Each round resolves in one action, suiting short sessions."]
+    ],
+    "faq": [
+      ["What kind of game is this?", "It is a reel-style game, often labelled slots or 777. Each round spins a grid of symbols and compares the result against a paytable."],
+      ["Is there strategy during a spin?", "No. Once a spin starts the outcome is determined independently of player input. The decisions available are stake size and when to stop playing."],
+      ["What does 777 mean in the name?", "It refers to the classic triple-seven symbol used across reel games. It is a naming convention rather than a description of a specific mechanic."]
+    ]
+  },
+  "vip": {
+    "formatName": "Teen Patti and club-room card games",
+    "overview": "Teen Patti is a three-card game in the same family as three-card brag. Each player receives three cards face down and betting proceeds in rounds, with players choosing to continue or fold as the stakes build. Hands are compared only at showdown, so reading opponents matters as much as the cards held.",
+    "gameplay": "Every player antes into the pot before the deal. Each receives three cards face down. Players act in turn and may play blind, without looking at their cards, or seen, after looking, with different staking rules for each. A player may continue, raise, fold, or in a two-player situation request a show, at which point hands are compared. Ranking runs from three of a kind at the top, then a straight flush, a straight, a flush, a pair, and finally high card. Because most hands end without a showdown, betting patterns carry significant information.",
+    "skills": "Bet sizing, position, fold discipline and opponent reading shape outcomes. The blind and seen distinction adds a layer absent from most three-card games.",
+    "variants": "Club and VIP room formats in this category typically differ by table stakes and room access rather than by rules. Side variations such as Muflis or AK47 appear in some apps.",
+    "features": [
+      ["Three-card hands", "Each player is dealt three cards face down."],
+      ["Blind and seen play", "Staking differs depending on whether cards have been viewed."],
+      ["Hand ranking", "Three of a kind ranks highest, high card lowest."],
+      ["Table rooms", "Club and VIP rooms typically separate tables by stake level."]
+    ],
+    "faq": [
+      ["What kind of game is this?", "It is a Teen Patti or club-room card app. Teen Patti is a three-card game in which players bet across rounds and compare hands only at showdown."],
+      ["What is the difference between blind and seen play?", "A blind player bets without looking at their cards and stakes differently from a seen player, who has looked. The distinction is central to Teen Patti betting."],
+      ["Which hand ranks highest?", "Three of a kind is the strongest hand, followed by a straight flush, a straight, a flush, a pair, and then high card."]
+    ]
+  },
+  "arcade": {
+    "formatName": "mixed-game arcade hubs",
+    "overview": "Arcade and casual apps in this category bundle several smaller games behind a single lobby rather than specialising in one format. Opening the app presents a selection screen, and each game inside runs its own short, self-contained rounds.",
+    "gameplay": "The common pattern is a lobby listing the available games, with each one designed for short sessions measured in seconds or a couple of minutes. Because the catalogue differs from app to app, the specific games in any one title cannot be assumed. What is consistent is the structure: a hub screen, quick rounds, and a shared account across the games inside.",
+    "skills": "This varies by the individual game inside the hub. Some are reaction-based, others turn-based, and some resolve without player input after the round begins.",
+    "variants": "Catalogue size and composition are the main differences between apps in this category.",
+    "features": [
+      ["Game lobby", "A hub screen listing the games bundled in the app."],
+      ["Short rounds", "Individual games are built for brief sessions."],
+      ["Shared account", "One account carries across the games inside the app."],
+      ["Mixed formats", "Card, reel and casual games can appear in the same hub."]
+    ],
+    "faq": [
+      ["What kind of app is this?", "It is an arcade or casual hub. Rather than one game, it bundles several smaller games behind a single lobby screen."],
+      ["Which games are inside?", "The catalogue differs between apps in this category and is not published in this directory. Check the app listing itself for its current selection."],
+      ["How long does a round take?", "Games in this category are generally built for short sessions, though the exact length depends on the individual game."]
+    ]
+  },
+  "bet": {
+    "formatName": "multi-game platform apps",
+    "overview": "Apps in this category carry a broad catalogue spanning several of the other formats rather than concentrating on one. A single install typically provides access to card games, reel games and casual titles through one account and one lobby.",
+    "gameplay": "The structure is a platform rather than a game. After opening the app a category menu leads into individual games, each of which follows the rules of its own format. Because the catalogue varies between apps and changes over time, the specific games available in any one title are not listed in this directory.",
+    "skills": "This depends entirely on which game inside the platform is being played, since the catalogue spans formats with very different demands.",
+    "variants": "Platforms in this category differ mainly in catalogue breadth and in how the lobby is organised.",
+    "features": [
+      ["Multi-format catalogue", "Card, reel and casual games under one app."],
+      ["Single account", "One login across the games in the platform."],
+      ["Category lobby", "Games grouped by type on the main screen."],
+      ["Android package", "Distributed as an Android application."]
+    ],
+    "faq": [
+      ["What kind of app is this?", "It is a multi-game platform. It carries a catalogue spanning several formats rather than focusing on a single game."],
+      ["Which games does it include?", "The catalogue varies between platforms in this category and changes over time, so it is not listed here. Check the app itself for its current selection."],
+      ["Do I need separate accounts for each game?", "Platforms of this type generally use one account across the games inside the app, though account handling is set by the app itself."]
+    ]
+  },
+  "bingo": {
+    "formatName": "bingo",
+    "overview": "Bingo is a number-matching game played on a card of randomly arranged numbers. Numbers are drawn one at a time and players mark them off as they appear, aiming to complete a defined pattern before anyone else. The rules are simple enough to learn in a single round.",
+    "gameplay": "Each player holds one or more cards showing a grid of numbers. A caller draws numbers at random and players mark matches on their cards. The winning condition is a pattern set before the round begins, most often a full line, though variations use shapes, corners or a full house covering every number. Digital versions frequently mark matches automatically, so the round resolves on the draw sequence rather than on player reaction speed.",
+    "skills": "Once cards are held the result follows the draw. The decisions available are how many cards to play and which rooms to join.",
+    "variants": "Seventy-five ball and ninety ball formats are the most common, differing in grid size and typical winning patterns.",
+    "features": [
+      ["Number cards", "A grid of randomly arranged numbers per card."],
+      ["Pattern completion", "Lines, shapes or a full house end the round."],
+      ["Multiple cards", "Players can often hold several cards in one round."],
+      ["Auto-marking", "Digital bingo commonly marks drawn numbers for you."]
+    ],
+    "faq": [
+      ["What kind of game is this?", "It is a bingo app. Numbers are drawn at random and marked off a card, with the round won by completing a defined pattern."],
+      ["How is a round won?", "By completing the pattern set for that round, most commonly a line, though some rounds use shapes or a full house covering the whole card."],
+      ["Do I have to mark numbers myself?", "Digital bingo typically marks drawn numbers automatically, though this depends on the individual app."]
+    ]
+  },
+  "ludo": {
+    "formatName": "Ludo and board games",
+    "overview": "Ludo is a turn-based board game played on a cross-shaped track. Each player moves a set of tokens from their starting area around the board to a central home column, with movement decided by a die roll. It is a race game with a capture mechanic, so position matters as much as the roll.",
+    "gameplay": "Players take turns rolling a die and moving one token by the number shown. Tokens usually need a six to leave the starting area, and rolling a six commonly grants another turn. Landing on a square occupied by an opponent sends that token back to its start, while marked safe squares protect against capture. The first player to bring all tokens around the track and into the home column wins. The choice of which token to move each turn is where the game's decisions sit.",
+    "skills": "The die is random, but deciding which token to advance, when to accept capture risk and when to block are genuine choices that affect results.",
+    "variants": "Classic four-player Ludo is the base format. Some apps add timed turns, team play or rule variations on captures and safe squares.",
+    "features": [
+      ["Turn-based movement", "Token movement decided by a die roll each turn."],
+      ["Capture mechanic", "Landing on an opponent returns their token to start."],
+      ["Safe squares", "Marked squares protect tokens from capture."],
+      ["Multiplayer boards", "Ludo is conventionally played by two to four players."]
+    ],
+    "faq": [
+      ["What kind of game is this?", "It is a Ludo or board game app. Ludo is a turn-based race game in which tokens travel a cross-shaped track toward a home column."],
+      ["How do tokens leave the starting area?", "In most rule sets a six is required to move a token out of its starting area, and rolling a six commonly grants an extra turn."],
+      ["Can opponents send my token back?", "Yes. Landing on a square your token occupies returns it to the start, unless the token is on a marked safe square."]
+    ]
+  }
+}
