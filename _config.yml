@@ -1,0 +1,10 @@
+# Only consulted if GitHub Pages is ever served by the legacy branch-based
+# builder. The Actions deploy does not run Jekyll and ignores this file.
+# Keeps internal material out of a branch-based publish.
+exclude:
+  - BUILD-PROMPT.md
+  - README.md
+  - seo/
+  - tools/
+  - data/
+  - .github/
