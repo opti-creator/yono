@@ -46,6 +46,10 @@ jobs:
           mkdir -p _site
           cp -r assets games pages _site/
           cp index.html 404.html manifest.json robots.txt sitemap.xml favicon.ico _site/
+          # Search-engine ownership-verification files live at the site root.
+          # Copied by glob so adding another needs no workflow change.
+          cp google*.html _site/ 2>/dev/null || true
+          cp BingSiteAuth.xml _site/ 2>/dev/null || true
           echo "games.newyono-apps.in" > _site/CNAME
           # Source data and tooling are not part of the served site.
           rm -rf _site/assets/img/_unsorted
@@ -60,6 +64,12 @@ jobs:
           done
           test -f _site/index.html
           test -f _site/CNAME
+          # Every verification file present in the repo must reach the publish
+          # directory, or the search console will fail to confirm ownership.
+          for v in google*.html; do
+            [ -e "$v" ] || continue
+            test -f "_site/$v" || { echo "::error::$v missing from publish dir"; exit 1; }
+          done
           echo "publish directory verified"
 
       - uses: actions/upload-pages-artifact@v3
