@@ -594,14 +594,14 @@ ${related.map((x) => gameCard(x)).join('\n')}
 
   // Body copy is gated (section 9). When a blurb exists it renders inside a
   // read-more that only ever collapses via max-height, never display:none.
+  // No blurb yet -> render nothing rather than a placeholder notice. The page
+  // still carries H1, category, platform, specs and related titles, so it reads
+  // as a minimal listing instead of an unfinished one. Pages stay noindex until
+  // real copy exists (COPY_APPROVED), so thin listings are never indexed.
   const body = g.blurb ? `      <div class="readmore" data-readmore>
         <div class="readmore__content prose"><p>${esc(g.blurb)}</p></div>
         <button class="btn btn--ghost btn--sm readmore__btn" type="button" aria-expanded="false" hidden>Read more</button>
-      </div>` : `      <div class="content-pending">
-        <p><strong>Description pending.</strong> Page copy, download guidance and FAQ content for
-        this title are held until the compliance question in the build spec is resolved. The page
-        structure, navigation and schema are complete.</p>
-      </div>`;
+      </div>` : '';
 
   const html = head({
     url, nav: c.key, schema, noindex: !COPY_APPROVED,
@@ -632,8 +632,6 @@ ${breadcrumb(trail)}
 
 ${body}
 ${specTable}
-
-      <div class="ad-slot ad-slot--leaderboard" aria-hidden="true">Reserved</div>
 
 ${relatedBlock}
     </div>
