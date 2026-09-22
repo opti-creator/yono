@@ -1,51 +1,127 @@
-/* Design tokens — green theme */
+/* ==========================================================================
+   Design tokens. Dark is the primary theme; light is a separately designed
+   palette, not an inversion. Both are contrast-audited (see tools/contrast.py).
+   ========================================================================== */
+
 :root {
-  /* Colour */
-  --color-bg:             #0A1A0F;
-  --color-surface:        #102018;
-  --color-surface-2:      #163020;
-  --color-accent:         #00C853;
-  --color-accent-dim:     #009940;
-  --color-text-primary:   #E8F5E9;
-  --color-text-secondary: #A5D6A7;
-  --color-text-muted:     #7FA886;
-  --color-border:         #1E3A28;
-  --color-error:          #FF5252;
-  --color-success:        #00E676;
+  /* ---- Brand accent (shared by both themes) ---- */
+  --accent:            #00E06A;
+  --accent-strong:     #00C853;
+  --accent-deep:       #00381C;
+  --on-accent:         #001B0A;
 
-  /* Typography */
-  --font-display: 'Exo 2', 'Nunito', system-ui, sans-serif;
-  --font-body:    'Inter', 'Roboto', system-ui, sans-serif;
+  /* ---- Dark theme (default) ---- */
+  --bg:                #070F0A;
+  --bg-elevated:       #0C1811;
+  --surface:           #102018;
+  --surface-2:         #16301F;
+  --surface-3:         #1D3E29;
+  --border:            #1E3A28;
+  --border-strong:     #2C5439;
+  --text:              #E9F7EC;
+  --text-2:            #A5D6A7;
+  --text-muted:        #7FA886;
+  --scrim:             rgba(4, 10, 6, 0.72);
+  --header-bg:         rgba(7, 15, 10, 0.82);
+  --skeleton-1:        #12241a;
+  --skeleton-2:        #1b3626;
 
-  --text-xs: 0.75rem;   --text-sm: 0.875rem;  --text-base: 1rem;
-  --text-lg: 1.125rem;  --text-xl: 1.25rem;   --text-2xl: 1.5rem;
-  --text-3xl: 1.875rem; --text-4xl: 2.25rem;  --text-5xl: 3rem;
+  /* ---- Fluid typography (360px -> 1440px) ---- */
+  --text-xs:   clamp(0.72rem, 0.70rem + 0.10vw, 0.78rem);
+  --text-sm:   clamp(0.82rem, 0.79rem + 0.14vw, 0.90rem);
+  --text-base: clamp(0.94rem, 0.90rem + 0.18vw, 1.02rem);
+  --text-lg:   clamp(1.06rem, 1.00rem + 0.28vw, 1.22rem);
+  --text-xl:   clamp(1.20rem, 1.10rem + 0.45vw, 1.45rem);
+  --text-2xl:  clamp(1.40rem, 1.22rem + 0.80vw, 1.95rem);
+  --text-3xl:  clamp(1.70rem, 1.40rem + 1.30vw, 2.60rem);
+  --text-4xl:  clamp(2.05rem, 1.55rem + 2.20vw, 3.40rem);
 
-  --line-height-tight: 1.2; --line-height-normal: 1.5; --line-height-loose: 1.75;
+  --font-display: 'Exo 2', 'Nunito', system-ui, -apple-system, sans-serif;
+  --font-body: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
 
-  /* Spacing — 4px base */
-  --space-1: 0.25rem;  --space-2: 0.5rem;  --space-3: 0.75rem; --space-4: 1rem;
-  --space-5: 1.25rem;  --space-6: 1.5rem;  --space-8: 2rem;    --space-10: 2.5rem;
-  --space-12: 3rem;    --space-16: 4rem;   --space-20: 5rem;
+  --lh-tight: 1.15;
+  --lh-snug:  1.32;
+  --lh-normal:1.55;
 
-  /* Radius */
-  --radius-sm: 4px; --radius-md: 8px; --radius-lg: 16px;
-  --radius-xl: 24px; --radius-full: 9999px;
+  /* ---- Spacing (4px base) ---- */
+  --space-1: 0.25rem; --space-2: 0.5rem;  --space-3: 0.75rem; --space-4: 1rem;
+  --space-5: 1.25rem; --space-6: 1.5rem;  --space-8: 2rem;    --space-10: 2.5rem;
+  --space-12: 3rem;   --space-16: 4rem;   --space-20: 5rem;
 
-  /* Elevation */
-  --shadow-card: 0 2px 12px rgba(0, 0, 0, 0.4);
-  --shadow-glow: 0 0 20px rgba(0, 200, 83, 0.25);
-  --shadow-glow-strong: 0 0 40px rgba(0, 200, 83, 0.4);
+  /* ---- Radius ---- */
+  --radius-sm: 6px;  --radius-md: 10px; --radius-lg: 16px;
+  --radius-xl: 22px; --radius-2xl: 28px; --radius-full: 9999px;
 
-  /* Z-index */
-  --z-base: 0; --z-raised: 10; --z-nav: 100; --z-modal: 200; --z-toast: 300;
+  /* ---- Elevation: one shadow per level, no stacking ---- */
+  --shadow-1: 0 1px 2px rgba(0,0,0,.28);
+  --shadow-2: 0 4px 14px rgba(0,0,0,.34);
+  --shadow-3: 0 12px 34px rgba(0,0,0,.44);
+  --glow:     0 0 0 1px rgba(0,224,106,.34), 0 6px 22px rgba(0,224,106,.18);
 
-  /* Motion */
-  --transition-fast: 150ms ease; --transition-normal: 250ms ease; --transition-slow: 400ms ease;
+  /* ---- Motion ---- */
+  --dur-1: 120ms; --dur-2: 180ms; --dur-3: 260ms;
+  --ease: cubic-bezier(.4, 0, .2, 1);
+  --ease-out: cubic-bezier(.16, 1, .3, 1);
 
-  /* Layout */
-  --container-max: 1200px;
-  --container-pad: var(--space-4);
+  /* ---- Z-index scale ---- */
+  --z-base: 0; --z-raised: 10; --z-sticky: 50; --z-bottomnav: 60;
+  --z-header: 70; --z-drawer: 90; --z-modal: 100; --z-toast: 110;
+
+  /* ---- Layout ---- */
+  --container: 1280px;
+  --gutter: clamp(1rem, 0.6rem + 1.6vw, 2rem);
+  --header-h: 56px;
+  --bottomnav-h: 60px;
+  --tap: 44px;                /* minimum touch target */
 }
 
-@media (min-width: 768px) { :root { --container-pad: var(--space-8); } }
+@media (min-width: 768px) { :root { --header-h: 68px; } }
+
+/* ==========================================================================
+   Light theme. Designed, not inverted: warm-neutral surfaces, darker accent
+   for text use, and borders that carry structure where shadow no longer can.
+   ========================================================================== */
+:root[data-theme="light"] {
+  --accent:        #00783C;
+  --accent-strong: #005E2E;
+  --accent-deep:   #D7F5E4;
+  --on-accent:     #FFFFFF;
+
+  --bg:            #F6F8F5;
+  --bg-elevated:   #FFFFFF;
+  --surface:       #FFFFFF;
+  --surface-2:     #EFF4EF;
+  --surface-3:     #E3EDE5;
+  --border:        #D6E1D8;
+  --border-strong: #B9CCBD;
+  --text:          #0E1A12;
+  --text-2:        #3A4D40;
+  --text-muted:    #5C7263;
+  --scrim:         rgba(14, 26, 18, 0.46);
+  --header-bg:     rgba(246, 248, 245, 0.85);
+  --skeleton-1:    #E8EEE9;
+  --skeleton-2:    #DCE6DE;
+
+  --shadow-1: 0 1px 2px rgba(16,32,24,.07);
+  --shadow-2: 0 4px 14px rgba(16,32,24,.10);
+  --shadow-3: 0 12px 34px rgba(16,32,24,.14);
+  --glow:     0 0 0 1px rgba(0,150,74,.30), 0 6px 22px rgba(0,150,74,.14);
+}
+
+/* Dark is the primary visual direction, so it stays the default regardless of
+   the OS setting. Light is opt-in via the header toggle (persisted in
+   localStorage and applied pre-paint by an inline script in <head>). */
+
+/* ==========================================================================
+   Low-end / reduced-motion mode. Drops the GPU-expensive work: backdrop blur,
+   large shadows and every transition. Applied by prefers-reduced-motion and by
+   .perf-lite, which main.js sets from deviceMemory / hardwareConcurrency.
+   ========================================================================== */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
