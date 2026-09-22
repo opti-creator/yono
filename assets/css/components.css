@@ -587,3 +587,23 @@ svg { stroke: currentColor; fill: none; stroke-width: 2;
 @media (min-width: 768px) {
   .footer__links li a { min-height: 40px; padding-block: var(--space-1); }
 }
+
+/* ==========================================================================
+   Links inside running text carry an underline as well as colour. Colour alone
+   is not a sufficient distinguishing cue (WCAG 1.4.1). Navigation, buttons,
+   chips and cards are excluded: they are distinguishable by shape and position.
+   ========================================================================== */
+.prose a,
+.notice a,
+.footer__brand a,
+.age-gate__legal a,
+.cookie-banner a,
+.content-pending a,
+main p a {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-thickness: 1px;
+}
+.prose a:hover,
+.notice a:hover,
+main p a:hover { text-decoration-thickness: 2px; }
