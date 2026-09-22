@@ -51,6 +51,10 @@ jobs:
           cp google*.html _site/ 2>/dev/null || true
           cp BingSiteAuth.xml _site/ 2>/dev/null || true
           echo "games.newyono-apps.in" > _site/CNAME
+          # Stops GitHub ever running Jekyll over the output. Without it, a
+          # branch-based Pages source silently rewrites the site and drops
+          # files and folders whose names begin with an underscore.
+          touch _site/.nojekyll
           # Source data and tooling are not part of the served site.
           rm -rf _site/assets/img/_unsorted
           echo "--- publishing ---"
