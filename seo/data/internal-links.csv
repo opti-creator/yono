@@ -1,0 +1,629 @@
+source,destination,anchor,relationship
+/,/games/rummy.html,Rummy,home -> category hub
+/,/games/slots-and-777.html,Slots & 777,home -> category hub
+/,/games/teen-patti-and-vip-club.html,Teen Patti & VIP Club,home -> category hub
+/,/games/arcade-and-casual.html,Arcade & Casual,home -> category hub
+/,/games/multi-game-platforms.html,Multi-Game Platforms,home -> category hub
+/,/games/bingo.html,Bingo,home -> category hub
+/,/games/ludo-and-board.html,Ludo & Board,home -> category hub
+/,/games/,Browse all games,home -> directory
+/games/,/games/abc-rummy.html,ABC Rummy,directory -> game
+/games/rummy.html,/games/abc-rummy.html,ABC Rummy,category -> game (same topic)
+/games/abc-rummy.html,/games/rummy.html,All Rummy,game -> parent category
+/games/abc-rummy.html,/games/boss-rummy.html,Boss Rummy,game -> sibling (same category)
+/games/abc-rummy.html,/games/game-rummy.html,Game Rummy,game -> sibling (same category)
+/games/abc-rummy.html,/games/gogo-rummy.html,GoGo Rummy,game -> sibling (same category)
+/games/abc-rummy.html,/games/gold-rummy.html,Gold Rummy,game -> sibling (same category)
+/games/,/games/boss-rummy.html,Boss Rummy,directory -> game
+/games/rummy.html,/games/boss-rummy.html,Boss Rummy,category -> game (same topic)
+/games/boss-rummy.html,/games/rummy.html,All Rummy,game -> parent category
+/games/boss-rummy.html,/games/abc-rummy.html,ABC Rummy,game -> sibling (same category)
+/games/boss-rummy.html,/games/game-rummy.html,Game Rummy,game -> sibling (same category)
+/games/boss-rummy.html,/games/gogo-rummy.html,GoGo Rummy,game -> sibling (same category)
+/games/boss-rummy.html,/games/gold-rummy.html,Gold Rummy,game -> sibling (same category)
+/games/,/games/game-rummy.html,Game Rummy,directory -> game
+/games/rummy.html,/games/game-rummy.html,Game Rummy,category -> game (same topic)
+/games/game-rummy.html,/games/rummy.html,All Rummy,game -> parent category
+/games/game-rummy.html,/games/abc-rummy.html,ABC Rummy,game -> sibling (same category)
+/games/game-rummy.html,/games/boss-rummy.html,Boss Rummy,game -> sibling (same category)
+/games/game-rummy.html,/games/gogo-rummy.html,GoGo Rummy,game -> sibling (same category)
+/games/game-rummy.html,/games/gold-rummy.html,Gold Rummy,game -> sibling (same category)
+/games/,/games/gogo-rummy.html,GoGo Rummy,directory -> game
+/games/rummy.html,/games/gogo-rummy.html,GoGo Rummy,category -> game (same topic)
+/games/gogo-rummy.html,/games/rummy.html,All Rummy,game -> parent category
+/games/gogo-rummy.html,/games/abc-rummy.html,ABC Rummy,game -> sibling (same category)
+/games/gogo-rummy.html,/games/boss-rummy.html,Boss Rummy,game -> sibling (same category)
+/games/gogo-rummy.html,/games/game-rummy.html,Game Rummy,game -> sibling (same category)
+/games/gogo-rummy.html,/games/gold-rummy.html,Gold Rummy,game -> sibling (same category)
+/games/,/games/gold-rummy.html,Gold Rummy,directory -> game
+/games/rummy.html,/games/gold-rummy.html,Gold Rummy,category -> game (same topic)
+/games/gold-rummy.html,/games/rummy.html,All Rummy,game -> parent category
+/games/gold-rummy.html,/games/abc-rummy.html,ABC Rummy,game -> sibling (same category)
+/games/gold-rummy.html,/games/boss-rummy.html,Boss Rummy,game -> sibling (same category)
+/games/gold-rummy.html,/games/game-rummy.html,Game Rummy,game -> sibling (same category)
+/games/gold-rummy.html,/games/gogo-rummy.html,GoGo Rummy,game -> sibling (same category)
+/games/,/games/hi-rummy.html,Hi Rummy,directory -> game
+/games/rummy.html,/games/hi-rummy.html,Hi Rummy,category -> game (same topic)
+/games/hi-rummy.html,/games/rummy.html,All Rummy,game -> parent category
+/games/hi-rummy.html,/games/abc-rummy.html,ABC Rummy,game -> sibling (same category)
+/games/hi-rummy.html,/games/boss-rummy.html,Boss Rummy,game -> sibling (same category)
+/games/hi-rummy.html,/games/game-rummy.html,Game Rummy,game -> sibling (same category)
+/games/hi-rummy.html,/games/gogo-rummy.html,GoGo Rummy,game -> sibling (same category)
+/games/,/games/ind-rummy.html,Ind Rummy,directory -> game
+/games/rummy.html,/games/ind-rummy.html,Ind Rummy,category -> game (same topic)
+/games/ind-rummy.html,/games/rummy.html,All Rummy,game -> parent category
+/games/ind-rummy.html,/games/abc-rummy.html,ABC Rummy,game -> sibling (same category)
+/games/ind-rummy.html,/games/boss-rummy.html,Boss Rummy,game -> sibling (same category)
+/games/ind-rummy.html,/games/game-rummy.html,Game Rummy,game -> sibling (same category)
+/games/ind-rummy.html,/games/gogo-rummy.html,GoGo Rummy,game -> sibling (same category)
+/games/,/games/inr-rummy.html,INR Rummy,directory -> game
+/games/rummy.html,/games/inr-rummy.html,INR Rummy,category -> game (same topic)
+/games/inr-rummy.html,/games/rummy.html,All Rummy,game -> parent category
+/games/inr-rummy.html,/games/abc-rummy.html,ABC Rummy,game -> sibling (same category)
+/games/inr-rummy.html,/games/boss-rummy.html,Boss Rummy,game -> sibling (same category)
+/games/inr-rummy.html,/games/game-rummy.html,Game Rummy,game -> sibling (same category)
+/games/inr-rummy.html,/games/gogo-rummy.html,GoGo Rummy,game -> sibling (same category)
+/games/,/games/jaiho-rummy.html,JaiHo Rummy,directory -> game
+/games/rummy.html,/games/jaiho-rummy.html,JaiHo Rummy,category -> game (same topic)
+/games/jaiho-rummy.html,/games/rummy.html,All Rummy,game -> parent category
+/games/jaiho-rummy.html,/games/abc-rummy.html,ABC Rummy,game -> sibling (same category)
+/games/jaiho-rummy.html,/games/boss-rummy.html,Boss Rummy,game -> sibling (same category)
+/games/jaiho-rummy.html,/games/game-rummy.html,Game Rummy,game -> sibling (same category)
+/games/jaiho-rummy.html,/games/gogo-rummy.html,GoGo Rummy,game -> sibling (same category)
+/games/,/games/joy-rummy.html,Joy Rummy,directory -> game
+/games/rummy.html,/games/joy-rummy.html,Joy Rummy,category -> game (same topic)
+/games/joy-rummy.html,/games/rummy.html,All Rummy,game -> parent category
+/games/joy-rummy.html,/games/abc-rummy.html,ABC Rummy,game -> sibling (same category)
+/games/joy-rummy.html,/games/boss-rummy.html,Boss Rummy,game -> sibling (same category)
+/games/joy-rummy.html,/games/game-rummy.html,Game Rummy,game -> sibling (same category)
+/games/joy-rummy.html,/games/gogo-rummy.html,GoGo Rummy,game -> sibling (same category)
+/games/,/games/love-rummy.html,Love Rummy,directory -> game
+/games/rummy.html,/games/love-rummy.html,Love Rummy,category -> game (same topic)
+/games/love-rummy.html,/games/rummy.html,All Rummy,game -> parent category
+/games/love-rummy.html,/games/abc-rummy.html,ABC Rummy,game -> sibling (same category)
+/games/love-rummy.html,/games/boss-rummy.html,Boss Rummy,game -> sibling (same category)
+/games/love-rummy.html,/games/game-rummy.html,Game Rummy,game -> sibling (same category)
+/games/love-rummy.html,/games/gogo-rummy.html,GoGo Rummy,game -> sibling (same category)
+/games/,/games/max-rummy.html,Max Rummy,directory -> game
+/games/rummy.html,/games/max-rummy.html,Max Rummy,category -> game (same topic)
+/games/max-rummy.html,/games/rummy.html,All Rummy,game -> parent category
+/games/max-rummy.html,/games/abc-rummy.html,ABC Rummy,game -> sibling (same category)
+/games/max-rummy.html,/games/boss-rummy.html,Boss Rummy,game -> sibling (same category)
+/games/max-rummy.html,/games/game-rummy.html,Game Rummy,game -> sibling (same category)
+/games/max-rummy.html,/games/gogo-rummy.html,GoGo Rummy,game -> sibling (same category)
+/games/,/games/money-rummy.html,Money Rummy,directory -> game
+/games/rummy.html,/games/money-rummy.html,Money Rummy,category -> game (same topic)
+/games/money-rummy.html,/games/rummy.html,All Rummy,game -> parent category
+/games/money-rummy.html,/games/abc-rummy.html,ABC Rummy,game -> sibling (same category)
+/games/money-rummy.html,/games/boss-rummy.html,Boss Rummy,game -> sibling (same category)
+/games/money-rummy.html,/games/game-rummy.html,Game Rummy,game -> sibling (same category)
+/games/money-rummy.html,/games/gogo-rummy.html,GoGo Rummy,game -> sibling (same category)
+/games/,/games/ok-rummy.html,OK Rummy,directory -> game
+/games/rummy.html,/games/ok-rummy.html,OK Rummy,category -> game (same topic)
+/games/ok-rummy.html,/games/rummy.html,All Rummy,game -> parent category
+/games/ok-rummy.html,/games/abc-rummy.html,ABC Rummy,game -> sibling (same category)
+/games/ok-rummy.html,/games/boss-rummy.html,Boss Rummy,game -> sibling (same category)
+/games/ok-rummy.html,/games/game-rummy.html,Game Rummy,game -> sibling (same category)
+/games/ok-rummy.html,/games/gogo-rummy.html,GoGo Rummy,game -> sibling (same category)
+/games/,/games/rumble-rummy.html,Rumble Rummy,directory -> game
+/games/rummy.html,/games/rumble-rummy.html,Rumble Rummy,category -> game (same topic)
+/games/rumble-rummy.html,/games/rummy.html,All Rummy,game -> parent category
+/games/rumble-rummy.html,/games/abc-rummy.html,ABC Rummy,game -> sibling (same category)
+/games/rumble-rummy.html,/games/boss-rummy.html,Boss Rummy,game -> sibling (same category)
+/games/rumble-rummy.html,/games/game-rummy.html,Game Rummy,game -> sibling (same category)
+/games/rumble-rummy.html,/games/gogo-rummy.html,GoGo Rummy,game -> sibling (same category)
+/games/,/games/rummy-365.html,Rummy 365,directory -> game
+/games/rummy.html,/games/rummy-365.html,Rummy 365,category -> game (same topic)
+/games/rummy-365.html,/games/rummy.html,All Rummy,game -> parent category
+/games/rummy-365.html,/games/abc-rummy.html,ABC Rummy,game -> sibling (same category)
+/games/rummy-365.html,/games/boss-rummy.html,Boss Rummy,game -> sibling (same category)
+/games/rummy-365.html,/games/game-rummy.html,Game Rummy,game -> sibling (same category)
+/games/rummy-365.html,/games/gogo-rummy.html,GoGo Rummy,game -> sibling (same category)
+/games/,/games/rummy-77.html,Rummy 77,directory -> game
+/games/rummy.html,/games/rummy-77.html,Rummy 77,category -> game (same topic)
+/games/rummy-77.html,/games/rummy.html,All Rummy,game -> parent category
+/games/rummy-77.html,/games/abc-rummy.html,ABC Rummy,game -> sibling (same category)
+/games/rummy-77.html,/games/boss-rummy.html,Boss Rummy,game -> sibling (same category)
+/games/rummy-77.html,/games/game-rummy.html,Game Rummy,game -> sibling (same category)
+/games/rummy-77.html,/games/gogo-rummy.html,GoGo Rummy,game -> sibling (same category)
+/games/,/games/rummy-888.html,Rummy 888,directory -> game
+/games/rummy.html,/games/rummy-888.html,Rummy 888,category -> game (same topic)
+/games/rummy-888.html,/games/rummy.html,All Rummy,game -> parent category
+/games/rummy-888.html,/games/abc-rummy.html,ABC Rummy,game -> sibling (same category)
+/games/rummy-888.html,/games/boss-rummy.html,Boss Rummy,game -> sibling (same category)
+/games/rummy-888.html,/games/game-rummy.html,Game Rummy,game -> sibling (same category)
+/games/rummy-888.html,/games/gogo-rummy.html,GoGo Rummy,game -> sibling (same category)
+/games/,/games/rummy-91.html,Rummy 91,directory -> game
+/games/rummy.html,/games/rummy-91.html,Rummy 91,category -> game (same topic)
+/games/rummy-91.html,/games/rummy.html,All Rummy,game -> parent category
+/games/rummy-91.html,/games/abc-rummy.html,ABC Rummy,game -> sibling (same category)
+/games/rummy-91.html,/games/boss-rummy.html,Boss Rummy,game -> sibling (same category)
+/games/rummy-91.html,/games/game-rummy.html,Game Rummy,game -> sibling (same category)
+/games/rummy-91.html,/games/gogo-rummy.html,GoGo Rummy,game -> sibling (same category)
+/games/,/games/rummy-yono.html,Rummy Yono,directory -> game
+/games/rummy.html,/games/rummy-yono.html,Rummy Yono,category -> game (same topic)
+/games/rummy-yono.html,/games/rummy.html,All Rummy,game -> parent category
+/games/rummy-yono.html,/games/abc-rummy.html,ABC Rummy,game -> sibling (same category)
+/games/rummy-yono.html,/games/boss-rummy.html,Boss Rummy,game -> sibling (same category)
+/games/rummy-yono.html,/games/game-rummy.html,Game Rummy,game -> sibling (same category)
+/games/rummy-yono.html,/games/gogo-rummy.html,GoGo Rummy,game -> sibling (same category)
+/games/,/games/rummy-zip.html,Rummy Zip,directory -> game
+/games/rummy.html,/games/rummy-zip.html,Rummy Zip,category -> game (same topic)
+/games/rummy-zip.html,/games/rummy.html,All Rummy,game -> parent category
+/games/rummy-zip.html,/games/abc-rummy.html,ABC Rummy,game -> sibling (same category)
+/games/rummy-zip.html,/games/boss-rummy.html,Boss Rummy,game -> sibling (same category)
+/games/rummy-zip.html,/games/game-rummy.html,Game Rummy,game -> sibling (same category)
+/games/rummy-zip.html,/games/gogo-rummy.html,GoGo Rummy,game -> sibling (same category)
+/games/,/games/top-rummy.html,Top Rummy,directory -> game
+/games/rummy.html,/games/top-rummy.html,Top Rummy,category -> game (same topic)
+/games/top-rummy.html,/games/rummy.html,All Rummy,game -> parent category
+/games/top-rummy.html,/games/abc-rummy.html,ABC Rummy,game -> sibling (same category)
+/games/top-rummy.html,/games/boss-rummy.html,Boss Rummy,game -> sibling (same category)
+/games/top-rummy.html,/games/game-rummy.html,Game Rummy,game -> sibling (same category)
+/games/top-rummy.html,/games/gogo-rummy.html,GoGo Rummy,game -> sibling (same category)
+/games/,/games/win-rummy.html,Win Rummy,directory -> game
+/games/rummy.html,/games/win-rummy.html,Win Rummy,category -> game (same topic)
+/games/win-rummy.html,/games/rummy.html,All Rummy,game -> parent category
+/games/win-rummy.html,/games/abc-rummy.html,ABC Rummy,game -> sibling (same category)
+/games/win-rummy.html,/games/boss-rummy.html,Boss Rummy,game -> sibling (same category)
+/games/win-rummy.html,/games/game-rummy.html,Game Rummy,game -> sibling (same category)
+/games/win-rummy.html,/games/gogo-rummy.html,GoGo Rummy,game -> sibling (same category)
+/games/,/games/winzo-rummy.html,Winzo Rummy,directory -> game
+/games/rummy.html,/games/winzo-rummy.html,Winzo Rummy,category -> game (same topic)
+/games/winzo-rummy.html,/games/rummy.html,All Rummy,game -> parent category
+/games/winzo-rummy.html,/games/abc-rummy.html,ABC Rummy,game -> sibling (same category)
+/games/winzo-rummy.html,/games/boss-rummy.html,Boss Rummy,game -> sibling (same category)
+/games/winzo-rummy.html,/games/game-rummy.html,Game Rummy,game -> sibling (same category)
+/games/winzo-rummy.html,/games/gogo-rummy.html,GoGo Rummy,game -> sibling (same category)
+/games/,/games/yn-rummy.html,YN Rummy,directory -> game
+/games/rummy.html,/games/yn-rummy.html,YN Rummy,category -> game (same topic)
+/games/yn-rummy.html,/games/rummy.html,All Rummy,game -> parent category
+/games/yn-rummy.html,/games/abc-rummy.html,ABC Rummy,game -> sibling (same category)
+/games/yn-rummy.html,/games/boss-rummy.html,Boss Rummy,game -> sibling (same category)
+/games/yn-rummy.html,/games/game-rummy.html,Game Rummy,game -> sibling (same category)
+/games/yn-rummy.html,/games/gogo-rummy.html,GoGo Rummy,game -> sibling (same category)
+/games/,/games/yono-rummy.html,Yono Rummy,directory -> game
+/games/rummy.html,/games/yono-rummy.html,Yono Rummy,category -> game (same topic)
+/games/yono-rummy.html,/games/rummy.html,All Rummy,game -> parent category
+/games/yono-rummy.html,/games/abc-rummy.html,ABC Rummy,game -> sibling (same category)
+/games/yono-rummy.html,/games/boss-rummy.html,Boss Rummy,game -> sibling (same category)
+/games/yono-rummy.html,/games/game-rummy.html,Game Rummy,game -> sibling (same category)
+/games/yono-rummy.html,/games/gogo-rummy.html,GoGo Rummy,game -> sibling (same category)
+/games/,/games/101z.html,101z,directory -> game
+/games/slots-and-777.html,/games/101z.html,101z,category -> game (same topic)
+/games/101z.html,/games/slots-and-777.html,All Slots & 777,game -> parent category
+/games/101z.html,/games/567-slots.html,567 Slots,game -> sibling (same category)
+/games/101z.html,/games/777-game.html,777 Game,game -> sibling (same category)
+/games/101z.html,/games/789-jackpots.html,789 Jackpots,game -> sibling (same category)
+/games/101z.html,/games/bet-213-slots.html,Bet 213 Slots,game -> sibling (same category)
+/games/,/games/567-slots.html,567 Slots,directory -> game
+/games/slots-and-777.html,/games/567-slots.html,567 Slots,category -> game (same topic)
+/games/567-slots.html,/games/slots-and-777.html,All Slots & 777,game -> parent category
+/games/567-slots.html,/games/101z.html,101z,game -> sibling (same category)
+/games/567-slots.html,/games/777-game.html,777 Game,game -> sibling (same category)
+/games/567-slots.html,/games/789-jackpots.html,789 Jackpots,game -> sibling (same category)
+/games/567-slots.html,/games/bet-213-slots.html,Bet 213 Slots,game -> sibling (same category)
+/games/,/games/777-game.html,777 Game,directory -> game
+/games/slots-and-777.html,/games/777-game.html,777 Game,category -> game (same topic)
+/games/777-game.html,/games/slots-and-777.html,All Slots & 777,game -> parent category
+/games/777-game.html,/games/101z.html,101z,game -> sibling (same category)
+/games/777-game.html,/games/567-slots.html,567 Slots,game -> sibling (same category)
+/games/777-game.html,/games/789-jackpots.html,789 Jackpots,game -> sibling (same category)
+/games/777-game.html,/games/bet-213-slots.html,Bet 213 Slots,game -> sibling (same category)
+/games/,/games/789-jackpots.html,789 Jackpots,directory -> game
+/games/slots-and-777.html,/games/789-jackpots.html,789 Jackpots,category -> game (same topic)
+/games/789-jackpots.html,/games/slots-and-777.html,All Slots & 777,game -> parent category
+/games/789-jackpots.html,/games/101z.html,101z,game -> sibling (same category)
+/games/789-jackpots.html,/games/567-slots.html,567 Slots,game -> sibling (same category)
+/games/789-jackpots.html,/games/777-game.html,777 Game,game -> sibling (same category)
+/games/789-jackpots.html,/games/bet-213-slots.html,Bet 213 Slots,game -> sibling (same category)
+/games/,/games/bet-213-slots.html,Bet 213 Slots,directory -> game
+/games/slots-and-777.html,/games/bet-213-slots.html,Bet 213 Slots,category -> game (same topic)
+/games/bet-213-slots.html,/games/slots-and-777.html,All Slots & 777,game -> parent category
+/games/bet-213-slots.html,/games/101z.html,101z,game -> sibling (same category)
+/games/bet-213-slots.html,/games/567-slots.html,567 Slots,game -> sibling (same category)
+/games/bet-213-slots.html,/games/777-game.html,777 Game,game -> sibling (same category)
+/games/bet-213-slots.html,/games/789-jackpots.html,789 Jackpots,game -> sibling (same category)
+/games/,/games/diwa-777.html,Diwa 777,directory -> game
+/games/slots-and-777.html,/games/diwa-777.html,Diwa 777,category -> game (same topic)
+/games/diwa-777.html,/games/slots-and-777.html,All Slots & 777,game -> parent category
+/games/diwa-777.html,/games/101z.html,101z,game -> sibling (same category)
+/games/diwa-777.html,/games/567-slots.html,567 Slots,game -> sibling (same category)
+/games/diwa-777.html,/games/777-game.html,777 Game,game -> sibling (same category)
+/games/diwa-777.html,/games/789-jackpots.html,789 Jackpots,game -> sibling (same category)
+/games/,/games/diwa-slots.html,Diwa Slots,directory -> game
+/games/slots-and-777.html,/games/diwa-slots.html,Diwa Slots,category -> game (same topic)
+/games/diwa-slots.html,/games/slots-and-777.html,All Slots & 777,game -> parent category
+/games/diwa-slots.html,/games/101z.html,101z,game -> sibling (same category)
+/games/diwa-slots.html,/games/567-slots.html,567 Slots,game -> sibling (same category)
+/games/diwa-slots.html,/games/777-game.html,777 Game,game -> sibling (same category)
+/games/diwa-slots.html,/games/789-jackpots.html,789 Jackpots,game -> sibling (same category)
+/games/,/games/ever-777.html,Ever 777,directory -> game
+/games/slots-and-777.html,/games/ever-777.html,Ever 777,category -> game (same topic)
+/games/ever-777.html,/games/slots-and-777.html,All Slots & 777,game -> parent category
+/games/ever-777.html,/games/101z.html,101z,game -> sibling (same category)
+/games/ever-777.html,/games/567-slots.html,567 Slots,game -> sibling (same category)
+/games/ever-777.html,/games/777-game.html,777 Game,game -> sibling (same category)
+/games/ever-777.html,/games/789-jackpots.html,789 Jackpots,game -> sibling (same category)
+/games/,/games/goa-spin.html,Goa Spin,directory -> game
+/games/slots-and-777.html,/games/goa-spin.html,Goa Spin,category -> game (same topic)
+/games/goa-spin.html,/games/slots-and-777.html,All Slots & 777,game -> parent category
+/games/goa-spin.html,/games/101z.html,101z,game -> sibling (same category)
+/games/goa-spin.html,/games/567-slots.html,567 Slots,game -> sibling (same category)
+/games/goa-spin.html,/games/777-game.html,777 Game,game -> sibling (same category)
+/games/goa-spin.html,/games/789-jackpots.html,789 Jackpots,game -> sibling (same category)
+/games/,/games/good-slots.html,Good Slots,directory -> game
+/games/slots-and-777.html,/games/good-slots.html,Good Slots,category -> game (same topic)
+/games/good-slots.html,/games/slots-and-777.html,All Slots & 777,game -> parent category
+/games/good-slots.html,/games/101z.html,101z,game -> sibling (same category)
+/games/good-slots.html,/games/567-slots.html,567 Slots,game -> sibling (same category)
+/games/good-slots.html,/games/777-game.html,777 Game,game -> sibling (same category)
+/games/good-slots.html,/games/789-jackpots.html,789 Jackpots,game -> sibling (same category)
+/games/,/games/hindi-777.html,Hindi 777,directory -> game
+/games/slots-and-777.html,/games/hindi-777.html,Hindi 777,category -> game (same topic)
+/games/hindi-777.html,/games/slots-and-777.html,All Slots & 777,game -> parent category
+/games/hindi-777.html,/games/101z.html,101z,game -> sibling (same category)
+/games/hindi-777.html,/games/567-slots.html,567 Slots,game -> sibling (same category)
+/games/hindi-777.html,/games/777-game.html,777 Game,game -> sibling (same category)
+/games/hindi-777.html,/games/789-jackpots.html,789 Jackpots,game -> sibling (same category)
+/games/,/games/ind-slots.html,Ind Slots,directory -> game
+/games/slots-and-777.html,/games/ind-slots.html,Ind Slots,category -> game (same topic)
+/games/ind-slots.html,/games/slots-and-777.html,All Slots & 777,game -> parent category
+/games/ind-slots.html,/games/101z.html,101z,game -> sibling (same category)
+/games/ind-slots.html,/games/567-slots.html,567 Slots,game -> sibling (same category)
+/games/ind-slots.html,/games/777-game.html,777 Game,game -> sibling (same category)
+/games/ind-slots.html,/games/789-jackpots.html,789 Jackpots,game -> sibling (same category)
+/games/,/games/inr-slots.html,INR Slots,directory -> game
+/games/slots-and-777.html,/games/inr-slots.html,INR Slots,category -> game (same topic)
+/games/inr-slots.html,/games/slots-and-777.html,All Slots & 777,game -> parent category
+/games/inr-slots.html,/games/101z.html,101z,game -> sibling (same category)
+/games/inr-slots.html,/games/567-slots.html,567 Slots,game -> sibling (same category)
+/games/inr-slots.html,/games/777-game.html,777 Game,game -> sibling (same category)
+/games/inr-slots.html,/games/789-jackpots.html,789 Jackpots,game -> sibling (same category)
+/games/,/games/jaiho-777.html,JaiHo 777,directory -> game
+/games/slots-and-777.html,/games/jaiho-777.html,JaiHo 777,category -> game (same topic)
+/games/jaiho-777.html,/games/slots-and-777.html,All Slots & 777,game -> parent category
+/games/jaiho-777.html,/games/101z.html,101z,game -> sibling (same category)
+/games/jaiho-777.html,/games/567-slots.html,567 Slots,game -> sibling (same category)
+/games/jaiho-777.html,/games/777-game.html,777 Game,game -> sibling (same category)
+/games/jaiho-777.html,/games/789-jackpots.html,789 Jackpots,game -> sibling (same category)
+/games/,/games/jaiho-91.html,JaiHo 91,directory -> game
+/games/slots-and-777.html,/games/jaiho-91.html,JaiHo 91,category -> game (same topic)
+/games/jaiho-91.html,/games/slots-and-777.html,All Slots & 777,game -> parent category
+/games/jaiho-91.html,/games/101z.html,101z,game -> sibling (same category)
+/games/jaiho-91.html,/games/567-slots.html,567 Slots,game -> sibling (same category)
+/games/jaiho-91.html,/games/777-game.html,777 Game,game -> sibling (same category)
+/games/jaiho-91.html,/games/789-jackpots.html,789 Jackpots,game -> sibling (same category)
+/games/,/games/jaiho-slots.html,JaiHo Slots,directory -> game
+/games/slots-and-777.html,/games/jaiho-slots.html,JaiHo Slots,category -> game (same topic)
+/games/jaiho-slots.html,/games/slots-and-777.html,All Slots & 777,game -> parent category
+/games/jaiho-slots.html,/games/101z.html,101z,game -> sibling (same category)
+/games/jaiho-slots.html,/games/567-slots.html,567 Slots,game -> sibling (same category)
+/games/jaiho-slots.html,/games/777-game.html,777 Game,game -> sibling (same category)
+/games/jaiho-slots.html,/games/789-jackpots.html,789 Jackpots,game -> sibling (same category)
+/games/,/games/jaiho-spin.html,JaiHo Spin,directory -> game
+/games/slots-and-777.html,/games/jaiho-spin.html,JaiHo Spin,category -> game (same topic)
+/games/jaiho-spin.html,/games/slots-and-777.html,All Slots & 777,game -> parent category
+/games/jaiho-spin.html,/games/101z.html,101z,game -> sibling (same category)
+/games/jaiho-spin.html,/games/567-slots.html,567 Slots,game -> sibling (same category)
+/games/jaiho-spin.html,/games/777-game.html,777 Game,game -> sibling (same category)
+/games/jaiho-spin.html,/games/789-jackpots.html,789 Jackpots,game -> sibling (same category)
+/games/,/games/my-777.html,My 777,directory -> game
+/games/slots-and-777.html,/games/my-777.html,My 777,category -> game (same topic)
+/games/my-777.html,/games/slots-and-777.html,All Slots & 777,game -> parent category
+/games/my-777.html,/games/101z.html,101z,game -> sibling (same category)
+/games/my-777.html,/games/567-slots.html,567 Slots,game -> sibling (same category)
+/games/my-777.html,/games/777-game.html,777 Game,game -> sibling (same category)
+/games/my-777.html,/games/789-jackpots.html,789 Jackpots,game -> sibling (same category)
+/games/,/games/rani-slots.html,Rani Slots,directory -> game
+/games/slots-and-777.html,/games/rani-slots.html,Rani Slots,category -> game (same topic)
+/games/rani-slots.html,/games/slots-and-777.html,All Slots & 777,game -> parent category
+/games/rani-slots.html,/games/101z.html,101z,game -> sibling (same category)
+/games/rani-slots.html,/games/567-slots.html,567 Slots,game -> sibling (same category)
+/games/rani-slots.html,/games/777-game.html,777 Game,game -> sibling (same category)
+/games/rani-slots.html,/games/789-jackpots.html,789 Jackpots,game -> sibling (same category)
+/games/,/games/saga-slots.html,Saga Slots,directory -> game
+/games/slots-and-777.html,/games/saga-slots.html,Saga Slots,category -> game (same topic)
+/games/saga-slots.html,/games/slots-and-777.html,All Slots & 777,game -> parent category
+/games/saga-slots.html,/games/101z.html,101z,game -> sibling (same category)
+/games/saga-slots.html,/games/567-slots.html,567 Slots,game -> sibling (same category)
+/games/saga-slots.html,/games/777-game.html,777 Game,game -> sibling (same category)
+/games/saga-slots.html,/games/789-jackpots.html,789 Jackpots,game -> sibling (same category)
+/games/,/games/share-slots.html,Share Slots,directory -> game
+/games/slots-and-777.html,/games/share-slots.html,Share Slots,category -> game (same topic)
+/games/share-slots.html,/games/slots-and-777.html,All Slots & 777,game -> parent category
+/games/share-slots.html,/games/101z.html,101z,game -> sibling (same category)
+/games/share-slots.html,/games/567-slots.html,567 Slots,game -> sibling (same category)
+/games/share-slots.html,/games/777-game.html,777 Game,game -> sibling (same category)
+/games/share-slots.html,/games/789-jackpots.html,789 Jackpots,game -> sibling (same category)
+/games/,/games/slots-spin.html,Slots Spin,directory -> game
+/games/slots-and-777.html,/games/slots-spin.html,Slots Spin,category -> game (same topic)
+/games/slots-spin.html,/games/slots-and-777.html,All Slots & 777,game -> parent category
+/games/slots-spin.html,/games/101z.html,101z,game -> sibling (same category)
+/games/slots-spin.html,/games/567-slots.html,567 Slots,game -> sibling (same category)
+/games/slots-spin.html,/games/777-game.html,777 Game,game -> sibling (same category)
+/games/slots-spin.html,/games/789-jackpots.html,789 Jackpots,game -> sibling (same category)
+/games/,/games/slots-winner.html,Slots Winner,directory -> game
+/games/slots-and-777.html,/games/slots-winner.html,Slots Winner,category -> game (same topic)
+/games/slots-winner.html,/games/slots-and-777.html,All Slots & 777,game -> parent category
+/games/slots-winner.html,/games/101z.html,101z,game -> sibling (same category)
+/games/slots-winner.html,/games/567-slots.html,567 Slots,game -> sibling (same category)
+/games/slots-winner.html,/games/777-game.html,777 Game,game -> sibling (same category)
+/games/slots-winner.html,/games/789-jackpots.html,789 Jackpots,game -> sibling (same category)
+/games/,/games/spin-101.html,Spin 101,directory -> game
+/games/slots-and-777.html,/games/spin-101.html,Spin 101,category -> game (same topic)
+/games/spin-101.html,/games/slots-and-777.html,All Slots & 777,game -> parent category
+/games/spin-101.html,/games/101z.html,101z,game -> sibling (same category)
+/games/spin-101.html,/games/567-slots.html,567 Slots,game -> sibling (same category)
+/games/spin-101.html,/games/777-game.html,777 Game,game -> sibling (same category)
+/games/spin-101.html,/games/789-jackpots.html,789 Jackpots,game -> sibling (same category)
+/games/,/games/spin-777.html,Spin 777,directory -> game
+/games/slots-and-777.html,/games/spin-777.html,Spin 777,category -> game (same topic)
+/games/spin-777.html,/games/slots-and-777.html,All Slots & 777,game -> parent category
+/games/spin-777.html,/games/101z.html,101z,game -> sibling (same category)
+/games/spin-777.html,/games/567-slots.html,567 Slots,game -> sibling (same category)
+/games/spin-777.html,/games/777-game.html,777 Game,game -> sibling (same category)
+/games/spin-777.html,/games/789-jackpots.html,789 Jackpots,game -> sibling (same category)
+/games/,/games/spin-crush.html,Spin Crush,directory -> game
+/games/slots-and-777.html,/games/spin-crush.html,Spin Crush,category -> game (same topic)
+/games/spin-crush.html,/games/slots-and-777.html,All Slots & 777,game -> parent category
+/games/spin-crush.html,/games/101z.html,101z,game -> sibling (same category)
+/games/spin-crush.html,/games/567-slots.html,567 Slots,game -> sibling (same category)
+/games/spin-crush.html,/games/777-game.html,777 Game,game -> sibling (same category)
+/games/spin-crush.html,/games/789-jackpots.html,789 Jackpots,game -> sibling (same category)
+/games/,/games/spin-gold.html,Spin Gold,directory -> game
+/games/slots-and-777.html,/games/spin-gold.html,Spin Gold,category -> game (same topic)
+/games/spin-gold.html,/games/slots-and-777.html,All Slots & 777,game -> parent category
+/games/spin-gold.html,/games/101z.html,101z,game -> sibling (same category)
+/games/spin-gold.html,/games/567-slots.html,567 Slots,game -> sibling (same category)
+/games/spin-gold.html,/games/777-game.html,777 Game,game -> sibling (same category)
+/games/spin-gold.html,/games/789-jackpots.html,789 Jackpots,game -> sibling (same category)
+/games/,/games/spin-lucky.html,Spin Lucky,directory -> game
+/games/slots-and-777.html,/games/spin-lucky.html,Spin Lucky,category -> game (same topic)
+/games/spin-lucky.html,/games/slots-and-777.html,All Slots & 777,game -> parent category
+/games/spin-lucky.html,/games/101z.html,101z,game -> sibling (same category)
+/games/spin-lucky.html,/games/567-slots.html,567 Slots,game -> sibling (same category)
+/games/spin-lucky.html,/games/777-game.html,777 Game,game -> sibling (same category)
+/games/spin-lucky.html,/games/789-jackpots.html,789 Jackpots,game -> sibling (same category)
+/games/,/games/spin-winner.html,Spin Winner,directory -> game
+/games/slots-and-777.html,/games/spin-winner.html,Spin Winner,category -> game (same topic)
+/games/spin-winner.html,/games/slots-and-777.html,All Slots & 777,game -> parent category
+/games/spin-winner.html,/games/101z.html,101z,game -> sibling (same category)
+/games/spin-winner.html,/games/567-slots.html,567 Slots,game -> sibling (same category)
+/games/spin-winner.html,/games/777-game.html,777 Game,game -> sibling (same category)
+/games/spin-winner.html,/games/789-jackpots.html,789 Jackpots,game -> sibling (same category)
+/games/,/games/svip-777.html,SVIP 777,directory -> game
+/games/slots-and-777.html,/games/svip-777.html,SVIP 777,category -> game (same topic)
+/games/svip-777.html,/games/slots-and-777.html,All Slots & 777,game -> parent category
+/games/svip-777.html,/games/101z.html,101z,game -> sibling (same category)
+/games/svip-777.html,/games/567-slots.html,567 Slots,game -> sibling (same category)
+/games/svip-777.html,/games/777-game.html,777 Game,game -> sibling (same category)
+/games/svip-777.html,/games/789-jackpots.html,789 Jackpots,game -> sibling (same category)
+/games/,/games/yes-spin.html,Yes Spin,directory -> game
+/games/slots-and-777.html,/games/yes-spin.html,Yes Spin,category -> game (same topic)
+/games/yes-spin.html,/games/slots-and-777.html,All Slots & 777,game -> parent category
+/games/yes-spin.html,/games/101z.html,101z,game -> sibling (same category)
+/games/yes-spin.html,/games/567-slots.html,567 Slots,game -> sibling (same category)
+/games/yes-spin.html,/games/777-game.html,777 Game,game -> sibling (same category)
+/games/yes-spin.html,/games/789-jackpots.html,789 Jackpots,game -> sibling (same category)
+/games/,/games/yn-777.html,YN 777,directory -> game
+/games/slots-and-777.html,/games/yn-777.html,YN 777,category -> game (same topic)
+/games/yn-777.html,/games/slots-and-777.html,All Slots & 777,game -> parent category
+/games/yn-777.html,/games/101z.html,101z,game -> sibling (same category)
+/games/yn-777.html,/games/567-slots.html,567 Slots,game -> sibling (same category)
+/games/yn-777.html,/games/777-game.html,777 Game,game -> sibling (same category)
+/games/yn-777.html,/games/789-jackpots.html,789 Jackpots,game -> sibling (same category)
+/games/,/games/yono-777.html,Yono 777,directory -> game
+/games/slots-and-777.html,/games/yono-777.html,Yono 777,category -> game (same topic)
+/games/yono-777.html,/games/slots-and-777.html,All Slots & 777,game -> parent category
+/games/yono-777.html,/games/101z.html,101z,game -> sibling (same category)
+/games/yono-777.html,/games/567-slots.html,567 Slots,game -> sibling (same category)
+/games/yono-777.html,/games/777-game.html,777 Game,game -> sibling (same category)
+/games/yono-777.html,/games/789-jackpots.html,789 Jackpots,game -> sibling (same category)
+/games/,/games/yono-slots.html,Yono Slots,directory -> game
+/games/slots-and-777.html,/games/yono-slots.html,Yono Slots,category -> game (same topic)
+/games/yono-slots.html,/games/slots-and-777.html,All Slots & 777,game -> parent category
+/games/yono-slots.html,/games/101z.html,101z,game -> sibling (same category)
+/games/yono-slots.html,/games/567-slots.html,567 Slots,game -> sibling (same category)
+/games/yono-slots.html,/games/777-game.html,777 Game,game -> sibling (same category)
+/games/yono-slots.html,/games/789-jackpots.html,789 Jackpots,game -> sibling (same category)
+/games/,/games/yoyo-slots.html,YoYo Slots,directory -> game
+/games/slots-and-777.html,/games/yoyo-slots.html,YoYo Slots,category -> game (same topic)
+/games/yoyo-slots.html,/games/slots-and-777.html,All Slots & 777,game -> parent category
+/games/yoyo-slots.html,/games/101z.html,101z,game -> sibling (same category)
+/games/yoyo-slots.html,/games/567-slots.html,567 Slots,game -> sibling (same category)
+/games/yoyo-slots.html,/games/777-game.html,777 Game,game -> sibling (same category)
+/games/yoyo-slots.html,/games/789-jackpots.html,789 Jackpots,game -> sibling (same category)
+/games/,/games/club-inr.html,Club INR,directory -> game
+/games/teen-patti-and-vip-club.html,/games/club-inr.html,Club INR,category -> game (same topic)
+/games/club-inr.html,/games/teen-patti-and-vip-club.html,All Teen Patti & VIP Club,game -> parent category
+/games/club-inr.html,/games/diwa-vip.html,Diwa VIP,game -> sibling (same category)
+/games/club-inr.html,/games/ind-club.html,Ind Club,game -> sibling (same category)
+/games/club-inr.html,/games/jai-club.html,Jai Club,game -> sibling (same category)
+/games/club-inr.html,/games/neta-vip.html,Neta VIP,game -> sibling (same category)
+/games/,/games/diwa-vip.html,Diwa VIP,directory -> game
+/games/teen-patti-and-vip-club.html,/games/diwa-vip.html,Diwa VIP,category -> game (same topic)
+/games/diwa-vip.html,/games/teen-patti-and-vip-club.html,All Teen Patti & VIP Club,game -> parent category
+/games/diwa-vip.html,/games/club-inr.html,Club INR,game -> sibling (same category)
+/games/diwa-vip.html,/games/ind-club.html,Ind Club,game -> sibling (same category)
+/games/diwa-vip.html,/games/jai-club.html,Jai Club,game -> sibling (same category)
+/games/diwa-vip.html,/games/neta-vip.html,Neta VIP,game -> sibling (same category)
+/games/,/games/ind-club.html,Ind Club,directory -> game
+/games/teen-patti-and-vip-club.html,/games/ind-club.html,Ind Club,category -> game (same topic)
+/games/ind-club.html,/games/teen-patti-and-vip-club.html,All Teen Patti & VIP Club,game -> parent category
+/games/ind-club.html,/games/club-inr.html,Club INR,game -> sibling (same category)
+/games/ind-club.html,/games/diwa-vip.html,Diwa VIP,game -> sibling (same category)
+/games/ind-club.html,/games/jai-club.html,Jai Club,game -> sibling (same category)
+/games/ind-club.html,/games/neta-vip.html,Neta VIP,game -> sibling (same category)
+/games/,/games/jai-club.html,Jai Club,directory -> game
+/games/teen-patti-and-vip-club.html,/games/jai-club.html,Jai Club,category -> game (same topic)
+/games/jai-club.html,/games/teen-patti-and-vip-club.html,All Teen Patti & VIP Club,game -> parent category
+/games/jai-club.html,/games/club-inr.html,Club INR,game -> sibling (same category)
+/games/jai-club.html,/games/diwa-vip.html,Diwa VIP,game -> sibling (same category)
+/games/jai-club.html,/games/ind-club.html,Ind Club,game -> sibling (same category)
+/games/jai-club.html,/games/neta-vip.html,Neta VIP,game -> sibling (same category)
+/games/,/games/neta-vip.html,Neta VIP,directory -> game
+/games/teen-patti-and-vip-club.html,/games/neta-vip.html,Neta VIP,category -> game (same topic)
+/games/neta-vip.html,/games/teen-patti-and-vip-club.html,All Teen Patti & VIP Club,game -> parent category
+/games/neta-vip.html,/games/club-inr.html,Club INR,game -> sibling (same category)
+/games/neta-vip.html,/games/diwa-vip.html,Diwa VIP,game -> sibling (same category)
+/games/neta-vip.html,/games/ind-club.html,Ind Club,game -> sibling (same category)
+/games/neta-vip.html,/games/jai-club.html,Jai Club,game -> sibling (same category)
+/games/,/games/teen-patti-master.html,Teen Patti Master,directory -> game
+/games/teen-patti-and-vip-club.html,/games/teen-patti-master.html,Teen Patti Master,category -> game (same topic)
+/games/teen-patti-master.html,/games/teen-patti-and-vip-club.html,All Teen Patti & VIP Club,game -> parent category
+/games/teen-patti-master.html,/games/club-inr.html,Club INR,game -> sibling (same category)
+/games/teen-patti-master.html,/games/diwa-vip.html,Diwa VIP,game -> sibling (same category)
+/games/teen-patti-master.html,/games/ind-club.html,Ind Club,game -> sibling (same category)
+/games/teen-patti-master.html,/games/jai-club.html,Jai Club,game -> sibling (same category)
+/games/,/games/yono-vip.html,Yono VIP,directory -> game
+/games/teen-patti-and-vip-club.html,/games/yono-vip.html,Yono VIP,category -> game (same topic)
+/games/yono-vip.html,/games/teen-patti-and-vip-club.html,All Teen Patti & VIP Club,game -> parent category
+/games/yono-vip.html,/games/club-inr.html,Club INR,game -> sibling (same category)
+/games/yono-vip.html,/games/diwa-vip.html,Diwa VIP,game -> sibling (same category)
+/games/yono-vip.html,/games/ind-club.html,Ind Club,game -> sibling (same category)
+/games/yono-vip.html,/games/jai-club.html,Jai Club,game -> sibling (same category)
+/games/,/games/dhan-game.html,Dhan Game,directory -> game
+/games/arcade-and-casual.html,/games/dhan-game.html,Dhan Game,category -> game (same topic)
+/games/dhan-game.html,/games/arcade-and-casual.html,All Arcade & Casual,game -> parent category
+/games/dhan-game.html,/games/diwa-game.html,Diwa Game,game -> sibling (same category)
+/games/dhan-game.html,/games/diwa-king.html,Diwa King,game -> sibling (same category)
+/games/dhan-game.html,/games/diwa-lucky.html,Diwa Lucky,game -> sibling (same category)
+/games/dhan-game.html,/games/diwa-play.html,Diwa Play,game -> sibling (same category)
+/games/,/games/diwa-game.html,Diwa Game,directory -> game
+/games/arcade-and-casual.html,/games/diwa-game.html,Diwa Game,category -> game (same topic)
+/games/diwa-game.html,/games/arcade-and-casual.html,All Arcade & Casual,game -> parent category
+/games/diwa-game.html,/games/dhan-game.html,Dhan Game,game -> sibling (same category)
+/games/diwa-game.html,/games/diwa-king.html,Diwa King,game -> sibling (same category)
+/games/diwa-game.html,/games/diwa-lucky.html,Diwa Lucky,game -> sibling (same category)
+/games/diwa-game.html,/games/diwa-play.html,Diwa Play,game -> sibling (same category)
+/games/,/games/diwa-king.html,Diwa King,directory -> game
+/games/arcade-and-casual.html,/games/diwa-king.html,Diwa King,category -> game (same topic)
+/games/diwa-king.html,/games/arcade-and-casual.html,All Arcade & Casual,game -> parent category
+/games/diwa-king.html,/games/dhan-game.html,Dhan Game,game -> sibling (same category)
+/games/diwa-king.html,/games/diwa-game.html,Diwa Game,game -> sibling (same category)
+/games/diwa-king.html,/games/diwa-lucky.html,Diwa Lucky,game -> sibling (same category)
+/games/diwa-king.html,/games/diwa-play.html,Diwa Play,game -> sibling (same category)
+/games/,/games/diwa-lucky.html,Diwa Lucky,directory -> game
+/games/arcade-and-casual.html,/games/diwa-lucky.html,Diwa Lucky,category -> game (same topic)
+/games/diwa-lucky.html,/games/arcade-and-casual.html,All Arcade & Casual,game -> parent category
+/games/diwa-lucky.html,/games/dhan-game.html,Dhan Game,game -> sibling (same category)
+/games/diwa-lucky.html,/games/diwa-game.html,Diwa Game,game -> sibling (same category)
+/games/diwa-lucky.html,/games/diwa-king.html,Diwa King,game -> sibling (same category)
+/games/diwa-lucky.html,/games/diwa-play.html,Diwa Play,game -> sibling (same category)
+/games/,/games/diwa-play.html,Diwa Play,directory -> game
+/games/arcade-and-casual.html,/games/diwa-play.html,Diwa Play,category -> game (same topic)
+/games/diwa-play.html,/games/arcade-and-casual.html,All Arcade & Casual,game -> parent category
+/games/diwa-play.html,/games/dhan-game.html,Dhan Game,game -> sibling (same category)
+/games/diwa-play.html,/games/diwa-game.html,Diwa Game,game -> sibling (same category)
+/games/diwa-play.html,/games/diwa-king.html,Diwa King,game -> sibling (same category)
+/games/diwa-play.html,/games/diwa-lucky.html,Diwa Lucky,game -> sibling (same category)
+/games/,/games/diwa-top.html,Diwa Top,directory -> game
+/games/arcade-and-casual.html,/games/diwa-top.html,Diwa Top,category -> game (same topic)
+/games/diwa-top.html,/games/arcade-and-casual.html,All Arcade & Casual,game -> parent category
+/games/diwa-top.html,/games/dhan-game.html,Dhan Game,game -> sibling (same category)
+/games/diwa-top.html,/games/diwa-game.html,Diwa Game,game -> sibling (same category)
+/games/diwa-top.html,/games/diwa-king.html,Diwa King,game -> sibling (same category)
+/games/diwa-top.html,/games/diwa-lucky.html,Diwa Lucky,game -> sibling (same category)
+/games/,/games/diwa-win.html,Diwa Win,directory -> game
+/games/arcade-and-casual.html,/games/diwa-win.html,Diwa Win,category -> game (same topic)
+/games/diwa-win.html,/games/arcade-and-casual.html,All Arcade & Casual,game -> parent category
+/games/diwa-win.html,/games/dhan-game.html,Dhan Game,game -> sibling (same category)
+/games/diwa-win.html,/games/diwa-game.html,Diwa Game,game -> sibling (same category)
+/games/diwa-win.html,/games/diwa-king.html,Diwa King,game -> sibling (same category)
+/games/diwa-win.html,/games/diwa-lucky.html,Diwa Lucky,game -> sibling (same category)
+/games/,/games/jaiho-arcade.html,JaiHo Arcade,directory -> game
+/games/arcade-and-casual.html,/games/jaiho-arcade.html,JaiHo Arcade,category -> game (same topic)
+/games/jaiho-arcade.html,/games/arcade-and-casual.html,All Arcade & Casual,game -> parent category
+/games/jaiho-arcade.html,/games/dhan-game.html,Dhan Game,game -> sibling (same category)
+/games/jaiho-arcade.html,/games/diwa-game.html,Diwa Game,game -> sibling (same category)
+/games/jaiho-arcade.html,/games/diwa-king.html,Diwa King,game -> sibling (same category)
+/games/jaiho-arcade.html,/games/diwa-lucky.html,Diwa Lucky,game -> sibling (same category)
+/games/,/games/jaiho-win.html,JaiHo Win,directory -> game
+/games/arcade-and-casual.html,/games/jaiho-win.html,JaiHo Win,category -> game (same topic)
+/games/jaiho-win.html,/games/arcade-and-casual.html,All Arcade & Casual,game -> parent category
+/games/jaiho-win.html,/games/dhan-game.html,Dhan Game,game -> sibling (same category)
+/games/jaiho-win.html,/games/diwa-game.html,Diwa Game,game -> sibling (same category)
+/games/jaiho-win.html,/games/diwa-king.html,Diwa King,game -> sibling (same category)
+/games/jaiho-win.html,/games/diwa-lucky.html,Diwa Lucky,game -> sibling (same category)
+/games/,/games/maha-games.html,Maha Games,directory -> game
+/games/arcade-and-casual.html,/games/maha-games.html,Maha Games,category -> game (same topic)
+/games/maha-games.html,/games/arcade-and-casual.html,All Arcade & Casual,game -> parent category
+/games/maha-games.html,/games/dhan-game.html,Dhan Game,game -> sibling (same category)
+/games/maha-games.html,/games/diwa-game.html,Diwa Game,game -> sibling (same category)
+/games/maha-games.html,/games/diwa-king.html,Diwa King,game -> sibling (same category)
+/games/maha-games.html,/games/diwa-lucky.html,Diwa Lucky,game -> sibling (same category)
+/games/,/games/raja-luck.html,Raja Luck,directory -> game
+/games/arcade-and-casual.html,/games/raja-luck.html,Raja Luck,category -> game (same topic)
+/games/raja-luck.html,/games/arcade-and-casual.html,All Arcade & Casual,game -> parent category
+/games/raja-luck.html,/games/dhan-game.html,Dhan Game,game -> sibling (same category)
+/games/raja-luck.html,/games/diwa-game.html,Diwa Game,game -> sibling (same category)
+/games/raja-luck.html,/games/diwa-king.html,Diwa King,game -> sibling (same category)
+/games/raja-luck.html,/games/diwa-lucky.html,Diwa Lucky,game -> sibling (same category)
+/games/,/games/yono-arcade.html,Yono Arcade,directory -> game
+/games/arcade-and-casual.html,/games/yono-arcade.html,Yono Arcade,category -> game (same topic)
+/games/yono-arcade.html,/games/arcade-and-casual.html,All Arcade & Casual,game -> parent category
+/games/yono-arcade.html,/games/dhan-game.html,Dhan Game,game -> sibling (same category)
+/games/yono-arcade.html,/games/diwa-game.html,Diwa Game,game -> sibling (same category)
+/games/yono-arcade.html,/games/diwa-king.html,Diwa King,game -> sibling (same category)
+/games/yono-arcade.html,/games/diwa-lucky.html,Diwa Lucky,game -> sibling (same category)
+/games/,/games/yono-games.html,Yono Games,directory -> game
+/games/arcade-and-casual.html,/games/yono-games.html,Yono Games,category -> game (same topic)
+/games/yono-games.html,/games/arcade-and-casual.html,All Arcade & Casual,game -> parent category
+/games/yono-games.html,/games/dhan-game.html,Dhan Game,game -> sibling (same category)
+/games/yono-games.html,/games/diwa-game.html,Diwa Game,game -> sibling (same category)
+/games/yono-games.html,/games/diwa-king.html,Diwa King,game -> sibling (same category)
+/games/yono-games.html,/games/diwa-lucky.html,Diwa Lucky,game -> sibling (same category)
+/games/,/games/en-365.html,EN 365,directory -> game
+/games/multi-game-platforms.html,/games/en-365.html,EN 365,category -> game (same topic)
+/games/en-365.html,/games/multi-game-platforms.html,All Multi-Game Platforms,game -> parent category
+/games/en-365.html,/games/mbm-bet.html,MBM Bet,game -> sibling (same category)
+/games/en-365.html,/games/mdm-bet.html,MDM Bet,game -> sibling (same category)
+/games/en-365.html,/games/mkm-bet.html,MKM Bet,game -> sibling (same category)
+/games/en-365.html,/games/mqm-bet.html,MQM Bet,game -> sibling (same category)
+/games/,/games/mbm-bet.html,MBM Bet,directory -> game
+/games/multi-game-platforms.html,/games/mbm-bet.html,MBM Bet,category -> game (same topic)
+/games/mbm-bet.html,/games/multi-game-platforms.html,All Multi-Game Platforms,game -> parent category
+/games/mbm-bet.html,/games/en-365.html,EN 365,game -> sibling (same category)
+/games/mbm-bet.html,/games/mdm-bet.html,MDM Bet,game -> sibling (same category)
+/games/mbm-bet.html,/games/mkm-bet.html,MKM Bet,game -> sibling (same category)
+/games/mbm-bet.html,/games/mqm-bet.html,MQM Bet,game -> sibling (same category)
+/games/,/games/mdm-bet.html,MDM Bet,directory -> game
+/games/multi-game-platforms.html,/games/mdm-bet.html,MDM Bet,category -> game (same topic)
+/games/mdm-bet.html,/games/multi-game-platforms.html,All Multi-Game Platforms,game -> parent category
+/games/mdm-bet.html,/games/en-365.html,EN 365,game -> sibling (same category)
+/games/mdm-bet.html,/games/mbm-bet.html,MBM Bet,game -> sibling (same category)
+/games/mdm-bet.html,/games/mkm-bet.html,MKM Bet,game -> sibling (same category)
+/games/mdm-bet.html,/games/mqm-bet.html,MQM Bet,game -> sibling (same category)
+/games/,/games/mkm-bet.html,MKM Bet,directory -> game
+/games/multi-game-platforms.html,/games/mkm-bet.html,MKM Bet,category -> game (same topic)
+/games/mkm-bet.html,/games/multi-game-platforms.html,All Multi-Game Platforms,game -> parent category
+/games/mkm-bet.html,/games/en-365.html,EN 365,game -> sibling (same category)
+/games/mkm-bet.html,/games/mbm-bet.html,MBM Bet,game -> sibling (same category)
+/games/mkm-bet.html,/games/mdm-bet.html,MDM Bet,game -> sibling (same category)
+/games/mkm-bet.html,/games/mqm-bet.html,MQM Bet,game -> sibling (same category)
+/games/,/games/mqm-bet.html,MQM Bet,directory -> game
+/games/multi-game-platforms.html,/games/mqm-bet.html,MQM Bet,category -> game (same topic)
+/games/mqm-bet.html,/games/multi-game-platforms.html,All Multi-Game Platforms,game -> parent category
+/games/mqm-bet.html,/games/en-365.html,EN 365,game -> sibling (same category)
+/games/mqm-bet.html,/games/mbm-bet.html,MBM Bet,game -> sibling (same category)
+/games/mqm-bet.html,/games/mdm-bet.html,MDM Bet,game -> sibling (same category)
+/games/mqm-bet.html,/games/mkm-bet.html,MKM Bet,game -> sibling (same category)
+/games/,/games/mwm-bet.html,MWM Bet,directory -> game
+/games/multi-game-platforms.html,/games/mwm-bet.html,MWM Bet,category -> game (same topic)
+/games/mwm-bet.html,/games/multi-game-platforms.html,All Multi-Game Platforms,game -> parent category
+/games/mwm-bet.html,/games/en-365.html,EN 365,game -> sibling (same category)
+/games/mwm-bet.html,/games/mbm-bet.html,MBM Bet,game -> sibling (same category)
+/games/mwm-bet.html,/games/mdm-bet.html,MDM Bet,game -> sibling (same category)
+/games/mwm-bet.html,/games/mkm-bet.html,MKM Bet,game -> sibling (same category)
+/games/,/games/bingo-101.html,Bingo 101,directory -> game
+/games/bingo.html,/games/bingo-101.html,Bingo 101,category -> game (same topic)
+/games/bingo-101.html,/games/bingo.html,All Bingo,game -> parent category
+/games/bingo-101.html,/games/ind-bingo.html,Ind Bingo,game -> sibling (same category)
+/games/,/games/ind-bingo.html,Ind Bingo,directory -> game
+/games/bingo.html,/games/ind-bingo.html,Ind Bingo,category -> game (same topic)
+/games/ind-bingo.html,/games/bingo.html,All Bingo,game -> parent category
+/games/ind-bingo.html,/games/bingo-101.html,Bingo 101,game -> sibling (same category)
+/games/,/games/rummy-ludo.html,Rummy Ludo,directory -> game
+/games/ludo-and-board.html,/games/rummy-ludo.html,Rummy Ludo,category -> game (same topic)
+/games/rummy-ludo.html,/games/ludo-and-board.html,All Ludo & Board,game -> parent category

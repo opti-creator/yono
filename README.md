@@ -4,7 +4,18 @@ Planning repo for a **Yono games directory site** — green design system, 90 ga
 
 **Domain:** `games.newyono-apps.in`
 
-Nothing is built yet. This repo holds the build spec, the game roster, and the arranged artwork.
+The site is built. 106 static pages, no framework, no build step to serve — just open `index.html`
+or serve the repo root.
+
+```
+node tools/build-pages.js    # regenerates directory, hubs, 90 game pages, sitemap.xml
+python3 -m http.server 8000  # serve locally
+```
+
+**Copy status:** structure is complete; promotional copy, bonus messaging and the compliance block
+are deliberately unwritten pending the legal question in `BUILD-PROMPT.md` §9. Pages awaiting copy
+are marked `noindex` and excluded from `sitemap.xml`, so a thin-content set cannot be indexed by
+accident. Set `COPY_APPROVED = true` in the generator once real copy exists.
 
 **Artwork status: 57 of 90 games have logos.** The 62 files uploaded to `main` were renamed to
 match their roster slug and moved into `assets/img/games/`. See `assets/README.md` for the missing
@@ -18,6 +29,8 @@ list and the one file still needing a decision.
 | `data/games.json` | Canonical roster — 90 games across 7 categories, with slugs the build keys off. |
 | `assets/README.md` | Artwork status: what's in place, the 33 missing logos, and naming rules. |
 | `assets/img/games/` | 57 game logos, slug-named, plus a green `_placeholder.svg`. |
+| `tools/build-pages.js` | Page generator. Single source for URL structure and the copy gate. |
+| `assets/css/`, `assets/js/` | Design system and components (15KB CSS, 5.6KB JS, no libraries). |
 
 ## How to use it
 
@@ -27,6 +40,37 @@ list and the one file still needing a decision.
 2. Drop logo files into `assets/img/games/` following `assets/README.md`. Missing logos are fine —
    the build falls back to a placeholder and reports the gaps.
 3. Paste `BUILD-PROMPT.md` as the prompt.
+
+## Going live
+
+Deployment is wired but **not yet switched on** — two steps need account access I don't have.
+
+`.github/workflows/deploy.yml` rebuilds the pages from `data/games.json`, fails the build if the
+committed HTML has drifted from the generator, assembles a clean publish directory (source data,
+tooling and internal docs excluded) and deploys to GitHub Pages. It runs on every push to `main`,
+or manually via **Actions → Deploy site → Run workflow**.
+
+**1. Enable Pages** — repo *Settings → Pages → Build and deployment → Source:* **GitHub Actions**.
+
+**2. Point the DNS** — at whoever hosts `newyono-apps.in`, add:
+
+```
+Type    Name     Value
+CNAME   games    opti-creator.github.io.
+```
+
+Then merge this branch to `main`. The workflow publishes, and GitHub issues the TLS certificate
+once DNS resolves (usually minutes, occasionally up to an hour). Afterwards tick
+*Settings → Pages → Enforce HTTPS*.
+
+The `CNAME` file is written by the workflow, so it cannot be lost on redeploy.
+
+### Before you flip it
+
+- **90 of the 106 pages are `noindex` and display "Description pending".** That is the copy gate
+  working as designed, but it is what a visitor sees. Only 12 URLs are in the sitemap.
+- The compliance question in `BUILD-PROMPT.md` §9 is still open. Publishing is the step that makes
+  it concrete.
 
 ## Notes on the data
 

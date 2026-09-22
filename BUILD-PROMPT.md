@@ -24,16 +24,17 @@ design system in §4 rather than reproducing the existing layout.
 | Field | Value |
 |---|---|
 | Domain | **`games.newyono-apps.in`** — canonical base `https://games.newyono-apps.in` (confirmed by owner) |
-| Brand name | `«FILL»` |
-| Primary keyword | `«FILL»` (e.g. `yono games`) |
+| Brand name | **New Yono Apps** |
+| Primary keyword | **`yono games`** |
 | Target market | India (`en-IN`) |
 | Support email | `«FILL»` |
 | Telegram / social URLs | `«FILL»` or "none" |
-| Real-money gambling content? | `«FILL»` — **Yes** or **No**. This changes §8 materially. |
+| Real-money gambling content? | **Owner answered Yes.** ⚠ See the blocker at the top of §9 before acting on this. |
 | Launch date for `dateModified` | `«FILL»` |
 
-> If **Real-money gambling = No**, the site is positioned as a free-to-play / skill-game directory
-> and the prohibited-words rule in §8 applies in full.
+> The owner answered **Yes — real-money apps**. That answer is on hold pending §9; do not write
+> promotional copy on that basis until it is resolved. Support email, social URLs and the launch
+> date are still `«FILL»` — ask rather than invent them.
 
 ---
 
@@ -94,8 +95,8 @@ Write this verbatim into `assets/css/tokens.css`:
   --color-accent:         #00C853;
   --color-accent-dim:     #009940;
   --color-text-primary:   #E8F5E9;
-  --color-text-secondary: #81C784;
-  --color-text-muted:     #4A7A50;
+  --color-text-secondary: #A5D6A7;
+  --color-text-muted:     #7FA886;
   --color-border:         #1E3A28;
   --color-error:          #FF5252;
   --color-success:        #00E676;
@@ -143,8 +144,13 @@ var(--color-accent); outline-offset: 3px; }`, and a `prefers-reduced-motion: red
 neutralises animation and transition durations.
 
 **Contrast check:** verify every text/background pair against WCAG AA (4.5:1 body, 3:1 large text).
-`--color-text-muted` on `--color-surface` is the risky pair — if it fails, lighten the token rather
-than shipping it. On `--color-accent` fills, use near-black text, never white.
+On `--color-accent` fills, use near-black text (`#001B0A`), never white.
+
+> **Resolved during the build.** The originally specified `--color-text-muted: #4A7A50` measured
+> **3.37:1** on `--color-surface` — a real AA failure — so it was lightened to `#7FA886` (6.32:1).
+> `--color-text-secondary` was also lightened from `#81C784` to `#A5D6A7` for consistency, though
+> the original already passed at 8.40:1. The token block above carries the corrected values, and
+> all eleven audited pairs now pass.
 
 ---
 
@@ -276,8 +282,9 @@ every game has exactly one file, not a WebP/PNG pair. So:
 
 - Emit a bare `<img>` when `logoFallback` is `null`. Only wrap in `<picture>` with a `<source>`
   when a genuine second format exists. Do not emit a `<source>` pointing at a file that isn't there.
-- When `logo` is `null`, render `assets/img/games/_placeholder.svg`. Never substitute another
-  game's logo, and never leave a broken image.
+- When `logo` is `null`, render `assets/img/games/_placeholder.svg`. **Owner's decision: all 90
+  pages ship now, with the 33 unillustrated games on the placeholder** — do not hold pages back.
+  Never substitute another game's logo, and never leave a broken image.
 - Always set explicit `width="96" height="96"`, `alt="<Game Name> logo"`, and `loading="lazy"`
   below the fold.
 
@@ -343,11 +350,46 @@ Sitemap: https://games.newyono-apps.in/sitemap.xml
 
 ## 9. Compliance (India)
 
+> ### ⚠ Unresolved blocker — read before writing any promotional copy
+>
+> The owner answered **Yes — real-money apps** in §1. That answer conflicts with the compliance
+> approach the rest of this section was written around, and the conflict is not cosmetic.
+>
+> India's **Promotion and Regulation of Online Gaming Act, 2025** bans online money games
+> nationwide — games played for stakes, **regardless of whether they are games of skill or of
+> chance**. The Act also prohibits *advertising and promoting* such games, and bars financial
+> institutions from processing their transactions. A directory site whose purpose is to promote
+> real-money gaming apps to an Indian audience falls squarely in the conduct the Act addresses,
+> even though the site is not itself the operator.
+>
+> Two consequences for this build:
+>
+> 1. **The "skill game, not gambling" defence no longer works.** The older state-by-state analysis
+>    — and the restricted-states notice listing Andhra Pradesh, Telangana, Assam, Odisha, Nagaland
+>    and Sikkim — reflects the pre-Act position. For online money games the ban is national, so a
+>    notice implying the site is fine everywhere *except* six states would be misleading.
+> 2. **Framing cannot fix it.** Relaxing the prohibited-words rule because the answer was "Yes"
+>    would produce exactly the promotional copy the Act targets.
+>
+> **Do not resolve this by picking a framing.** Take it to a qualified Indian gaming lawyer and get
+> the site's position in writing. Viable directions a lawyer may confirm include: restricting the
+> site to genuinely free-to-play titles with no stakes; serving only non-India markets with
+> geo-restriction; or repositioning as e-sports / social games, which the Act explicitly promotes.
+>
+> Until that is resolved, build only the structural work — layout, design system, navigation,
+> search and filtering, schema plumbing — and leave promotional copy, bonus messaging and the
+> compliance block unwritten. Flag this at the top of your build report.
+>
+> *(This is a summary of a legal position, not legal advice, and legislation moves. Verify the
+> current text of the Act and any rules made under it before relying on any of it.)*
+
+
 Required on every page:
 - **Age gate**, 18+, modal on first visit, consent in `localStorage` key `ageVerified`. Must be
   keyboard-operable, focus-trapped, `role="dialog"` + `aria-modal="true"`.
 - **Restricted states notice** in the footer: Andhra Pradesh, Telangana, Assam, Odisha, Nagaland,
-  Sikkim.
+  Sikkim. ⚠ Pre-Act framing — see the blocker above. For online money games the restriction is
+  national, so do not ship this notice as-is without the legal sign-off.
 - **Responsible gaming** section on Home + a dedicated `/pages/responsible-gaming.html`.
 - **Cookie consent banner**, consent in `localStorage` key `cookieConsent`.
 - **Independence disclaimer:** this site is an independent directory; it does not own, operate or

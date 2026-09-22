@@ -1,0 +1,1261 @@
+slug,game,entity,value,relationship,status
+abc-rummy,ABC Rummy,Category,Rummy,isPartOf,known
+abc-rummy,ABC Rummy,Platform,Android,operatingSystem,known
+abc-rummy,ABC Rummy,Distribution,APK / app listing,distribution,known
+abc-rummy,ABC Rummy,Parent brand,Yono app family,brandFamily,known
+abc-rummy,ABC Rummy,Market,India,audience,known
+abc-rummy,ABC Rummy,Genre,,genre,NEEDS SOURCE
+abc-rummy,ABC Rummy,Gameplay mechanics,,describes,NEEDS SOURCE
+abc-rummy,ABC Rummy,Game modes,,hasPart,NEEDS SOURCE
+abc-rummy,ABC Rummy,Developer,,author,NEEDS SOURCE
+abc-rummy,ABC Rummy,Publisher,,publisher,NEEDS SOURCE
+abc-rummy,ABC Rummy,Version,,softwareVersion,NEEDS SOURCE
+abc-rummy,ABC Rummy,File size,,fileSize,NEEDS SOURCE
+abc-rummy,ABC Rummy,Device requirements,,requirements,NEEDS SOURCE
+abc-rummy,ABC Rummy,Update history,,dateModified,NEEDS SOURCE
+boss-rummy,Boss Rummy,Category,Rummy,isPartOf,known
+boss-rummy,Boss Rummy,Platform,Android,operatingSystem,known
+boss-rummy,Boss Rummy,Distribution,APK / app listing,distribution,known
+boss-rummy,Boss Rummy,Parent brand,Yono app family,brandFamily,known
+boss-rummy,Boss Rummy,Market,India,audience,known
+boss-rummy,Boss Rummy,Genre,,genre,NEEDS SOURCE
+boss-rummy,Boss Rummy,Gameplay mechanics,,describes,NEEDS SOURCE
+boss-rummy,Boss Rummy,Game modes,,hasPart,NEEDS SOURCE
+boss-rummy,Boss Rummy,Developer,,author,NEEDS SOURCE
+boss-rummy,Boss Rummy,Publisher,,publisher,NEEDS SOURCE
+boss-rummy,Boss Rummy,Version,,softwareVersion,NEEDS SOURCE
+boss-rummy,Boss Rummy,File size,,fileSize,NEEDS SOURCE
+boss-rummy,Boss Rummy,Device requirements,,requirements,NEEDS SOURCE
+boss-rummy,Boss Rummy,Update history,,dateModified,NEEDS SOURCE
+game-rummy,Game Rummy,Category,Rummy,isPartOf,known
+game-rummy,Game Rummy,Platform,Android,operatingSystem,known
+game-rummy,Game Rummy,Distribution,APK / app listing,distribution,known
+game-rummy,Game Rummy,Parent brand,Yono app family,brandFamily,known
+game-rummy,Game Rummy,Market,India,audience,known
+game-rummy,Game Rummy,Genre,,genre,NEEDS SOURCE
+game-rummy,Game Rummy,Gameplay mechanics,,describes,NEEDS SOURCE
+game-rummy,Game Rummy,Game modes,,hasPart,NEEDS SOURCE
+game-rummy,Game Rummy,Developer,,author,NEEDS SOURCE
+game-rummy,Game Rummy,Publisher,,publisher,NEEDS SOURCE
+game-rummy,Game Rummy,Version,,softwareVersion,NEEDS SOURCE
+game-rummy,Game Rummy,File size,,fileSize,NEEDS SOURCE
+game-rummy,Game Rummy,Device requirements,,requirements,NEEDS SOURCE
+game-rummy,Game Rummy,Update history,,dateModified,NEEDS SOURCE
+gogo-rummy,GoGo Rummy,Category,Rummy,isPartOf,known
+gogo-rummy,GoGo Rummy,Platform,Android,operatingSystem,known
+gogo-rummy,GoGo Rummy,Distribution,APK / app listing,distribution,known
+gogo-rummy,GoGo Rummy,Parent brand,Yono app family,brandFamily,known
+gogo-rummy,GoGo Rummy,Market,India,audience,known
+gogo-rummy,GoGo Rummy,Genre,,genre,NEEDS SOURCE
+gogo-rummy,GoGo Rummy,Gameplay mechanics,,describes,NEEDS SOURCE
+gogo-rummy,GoGo Rummy,Game modes,,hasPart,NEEDS SOURCE
+gogo-rummy,GoGo Rummy,Developer,,author,NEEDS SOURCE
+gogo-rummy,GoGo Rummy,Publisher,,publisher,NEEDS SOURCE
+gogo-rummy,GoGo Rummy,Version,,softwareVersion,NEEDS SOURCE
+gogo-rummy,GoGo Rummy,File size,,fileSize,NEEDS SOURCE
+gogo-rummy,GoGo Rummy,Device requirements,,requirements,NEEDS SOURCE
+gogo-rummy,GoGo Rummy,Update history,,dateModified,NEEDS SOURCE
+gold-rummy,Gold Rummy,Category,Rummy,isPartOf,known
+gold-rummy,Gold Rummy,Platform,Android,operatingSystem,known
+gold-rummy,Gold Rummy,Distribution,APK / app listing,distribution,known
+gold-rummy,Gold Rummy,Parent brand,Yono app family,brandFamily,known
+gold-rummy,Gold Rummy,Market,India,audience,known
+gold-rummy,Gold Rummy,Genre,,genre,NEEDS SOURCE
+gold-rummy,Gold Rummy,Gameplay mechanics,,describes,NEEDS SOURCE
+gold-rummy,Gold Rummy,Game modes,,hasPart,NEEDS SOURCE
+gold-rummy,Gold Rummy,Developer,,author,NEEDS SOURCE
+gold-rummy,Gold Rummy,Publisher,,publisher,NEEDS SOURCE
+gold-rummy,Gold Rummy,Version,,softwareVersion,NEEDS SOURCE
+gold-rummy,Gold Rummy,File size,,fileSize,NEEDS SOURCE
+gold-rummy,Gold Rummy,Device requirements,,requirements,NEEDS SOURCE
+gold-rummy,Gold Rummy,Update history,,dateModified,NEEDS SOURCE
+hi-rummy,Hi Rummy,Category,Rummy,isPartOf,known
+hi-rummy,Hi Rummy,Platform,Android,operatingSystem,known
+hi-rummy,Hi Rummy,Distribution,APK / app listing,distribution,known
+hi-rummy,Hi Rummy,Parent brand,Yono app family,brandFamily,known
+hi-rummy,Hi Rummy,Market,India,audience,known
+hi-rummy,Hi Rummy,Genre,,genre,NEEDS SOURCE
+hi-rummy,Hi Rummy,Gameplay mechanics,,describes,NEEDS SOURCE
+hi-rummy,Hi Rummy,Game modes,,hasPart,NEEDS SOURCE
+hi-rummy,Hi Rummy,Developer,,author,NEEDS SOURCE
+hi-rummy,Hi Rummy,Publisher,,publisher,NEEDS SOURCE
+hi-rummy,Hi Rummy,Version,,softwareVersion,NEEDS SOURCE
+hi-rummy,Hi Rummy,File size,,fileSize,NEEDS SOURCE
+hi-rummy,Hi Rummy,Device requirements,,requirements,NEEDS SOURCE
+hi-rummy,Hi Rummy,Update history,,dateModified,NEEDS SOURCE
+ind-rummy,Ind Rummy,Category,Rummy,isPartOf,known
+ind-rummy,Ind Rummy,Platform,Android,operatingSystem,known
+ind-rummy,Ind Rummy,Distribution,APK / app listing,distribution,known
+ind-rummy,Ind Rummy,Parent brand,Yono app family,brandFamily,known
+ind-rummy,Ind Rummy,Market,India,audience,known
+ind-rummy,Ind Rummy,Genre,,genre,NEEDS SOURCE
+ind-rummy,Ind Rummy,Gameplay mechanics,,describes,NEEDS SOURCE
+ind-rummy,Ind Rummy,Game modes,,hasPart,NEEDS SOURCE
+ind-rummy,Ind Rummy,Developer,,author,NEEDS SOURCE
+ind-rummy,Ind Rummy,Publisher,,publisher,NEEDS SOURCE
+ind-rummy,Ind Rummy,Version,,softwareVersion,NEEDS SOURCE
+ind-rummy,Ind Rummy,File size,,fileSize,NEEDS SOURCE
+ind-rummy,Ind Rummy,Device requirements,,requirements,NEEDS SOURCE
+ind-rummy,Ind Rummy,Update history,,dateModified,NEEDS SOURCE
+inr-rummy,INR Rummy,Category,Rummy,isPartOf,known
+inr-rummy,INR Rummy,Platform,Android,operatingSystem,known
+inr-rummy,INR Rummy,Distribution,APK / app listing,distribution,known
+inr-rummy,INR Rummy,Parent brand,Yono app family,brandFamily,known
+inr-rummy,INR Rummy,Market,India,audience,known
+inr-rummy,INR Rummy,Genre,,genre,NEEDS SOURCE
+inr-rummy,INR Rummy,Gameplay mechanics,,describes,NEEDS SOURCE
+inr-rummy,INR Rummy,Game modes,,hasPart,NEEDS SOURCE
+inr-rummy,INR Rummy,Developer,,author,NEEDS SOURCE
+inr-rummy,INR Rummy,Publisher,,publisher,NEEDS SOURCE
+inr-rummy,INR Rummy,Version,,softwareVersion,NEEDS SOURCE
+inr-rummy,INR Rummy,File size,,fileSize,NEEDS SOURCE
+inr-rummy,INR Rummy,Device requirements,,requirements,NEEDS SOURCE
+inr-rummy,INR Rummy,Update history,,dateModified,NEEDS SOURCE
+jaiho-rummy,JaiHo Rummy,Category,Rummy,isPartOf,known
+jaiho-rummy,JaiHo Rummy,Platform,Android,operatingSystem,known
+jaiho-rummy,JaiHo Rummy,Distribution,APK / app listing,distribution,known
+jaiho-rummy,JaiHo Rummy,Parent brand,Yono app family,brandFamily,known
+jaiho-rummy,JaiHo Rummy,Market,India,audience,known
+jaiho-rummy,JaiHo Rummy,Genre,,genre,NEEDS SOURCE
+jaiho-rummy,JaiHo Rummy,Gameplay mechanics,,describes,NEEDS SOURCE
+jaiho-rummy,JaiHo Rummy,Game modes,,hasPart,NEEDS SOURCE
+jaiho-rummy,JaiHo Rummy,Developer,,author,NEEDS SOURCE
+jaiho-rummy,JaiHo Rummy,Publisher,,publisher,NEEDS SOURCE
+jaiho-rummy,JaiHo Rummy,Version,,softwareVersion,NEEDS SOURCE
+jaiho-rummy,JaiHo Rummy,File size,,fileSize,NEEDS SOURCE
+jaiho-rummy,JaiHo Rummy,Device requirements,,requirements,NEEDS SOURCE
+jaiho-rummy,JaiHo Rummy,Update history,,dateModified,NEEDS SOURCE
+joy-rummy,Joy Rummy,Category,Rummy,isPartOf,known
+joy-rummy,Joy Rummy,Platform,Android,operatingSystem,known
+joy-rummy,Joy Rummy,Distribution,APK / app listing,distribution,known
+joy-rummy,Joy Rummy,Parent brand,Yono app family,brandFamily,known
+joy-rummy,Joy Rummy,Market,India,audience,known
+joy-rummy,Joy Rummy,Genre,,genre,NEEDS SOURCE
+joy-rummy,Joy Rummy,Gameplay mechanics,,describes,NEEDS SOURCE
+joy-rummy,Joy Rummy,Game modes,,hasPart,NEEDS SOURCE
+joy-rummy,Joy Rummy,Developer,,author,NEEDS SOURCE
+joy-rummy,Joy Rummy,Publisher,,publisher,NEEDS SOURCE
+joy-rummy,Joy Rummy,Version,,softwareVersion,NEEDS SOURCE
+joy-rummy,Joy Rummy,File size,,fileSize,NEEDS SOURCE
+joy-rummy,Joy Rummy,Device requirements,,requirements,NEEDS SOURCE
+joy-rummy,Joy Rummy,Update history,,dateModified,NEEDS SOURCE
+love-rummy,Love Rummy,Category,Rummy,isPartOf,known
+love-rummy,Love Rummy,Platform,Android,operatingSystem,known
+love-rummy,Love Rummy,Distribution,APK / app listing,distribution,known
+love-rummy,Love Rummy,Parent brand,Yono app family,brandFamily,known
+love-rummy,Love Rummy,Market,India,audience,known
+love-rummy,Love Rummy,Genre,,genre,NEEDS SOURCE
+love-rummy,Love Rummy,Gameplay mechanics,,describes,NEEDS SOURCE
+love-rummy,Love Rummy,Game modes,,hasPart,NEEDS SOURCE
+love-rummy,Love Rummy,Developer,,author,NEEDS SOURCE
+love-rummy,Love Rummy,Publisher,,publisher,NEEDS SOURCE
+love-rummy,Love Rummy,Version,,softwareVersion,NEEDS SOURCE
+love-rummy,Love Rummy,File size,,fileSize,NEEDS SOURCE
+love-rummy,Love Rummy,Device requirements,,requirements,NEEDS SOURCE
+love-rummy,Love Rummy,Update history,,dateModified,NEEDS SOURCE
+max-rummy,Max Rummy,Category,Rummy,isPartOf,known
+max-rummy,Max Rummy,Platform,Android,operatingSystem,known
+max-rummy,Max Rummy,Distribution,APK / app listing,distribution,known
+max-rummy,Max Rummy,Parent brand,Yono app family,brandFamily,known
+max-rummy,Max Rummy,Market,India,audience,known
+max-rummy,Max Rummy,Genre,,genre,NEEDS SOURCE
+max-rummy,Max Rummy,Gameplay mechanics,,describes,NEEDS SOURCE
+max-rummy,Max Rummy,Game modes,,hasPart,NEEDS SOURCE
+max-rummy,Max Rummy,Developer,,author,NEEDS SOURCE
+max-rummy,Max Rummy,Publisher,,publisher,NEEDS SOURCE
+max-rummy,Max Rummy,Version,,softwareVersion,NEEDS SOURCE
+max-rummy,Max Rummy,File size,,fileSize,NEEDS SOURCE
+max-rummy,Max Rummy,Device requirements,,requirements,NEEDS SOURCE
+max-rummy,Max Rummy,Update history,,dateModified,NEEDS SOURCE
+money-rummy,Money Rummy,Category,Rummy,isPartOf,known
+money-rummy,Money Rummy,Platform,Android,operatingSystem,known
+money-rummy,Money Rummy,Distribution,APK / app listing,distribution,known
+money-rummy,Money Rummy,Parent brand,Yono app family,brandFamily,known
+money-rummy,Money Rummy,Market,India,audience,known
+money-rummy,Money Rummy,Genre,,genre,NEEDS SOURCE
+money-rummy,Money Rummy,Gameplay mechanics,,describes,NEEDS SOURCE
+money-rummy,Money Rummy,Game modes,,hasPart,NEEDS SOURCE
+money-rummy,Money Rummy,Developer,,author,NEEDS SOURCE
+money-rummy,Money Rummy,Publisher,,publisher,NEEDS SOURCE
+money-rummy,Money Rummy,Version,,softwareVersion,NEEDS SOURCE
+money-rummy,Money Rummy,File size,,fileSize,NEEDS SOURCE
+money-rummy,Money Rummy,Device requirements,,requirements,NEEDS SOURCE
+money-rummy,Money Rummy,Update history,,dateModified,NEEDS SOURCE
+ok-rummy,OK Rummy,Category,Rummy,isPartOf,known
+ok-rummy,OK Rummy,Platform,Android,operatingSystem,known
+ok-rummy,OK Rummy,Distribution,APK / app listing,distribution,known
+ok-rummy,OK Rummy,Parent brand,Yono app family,brandFamily,known
+ok-rummy,OK Rummy,Market,India,audience,known
+ok-rummy,OK Rummy,Genre,,genre,NEEDS SOURCE
+ok-rummy,OK Rummy,Gameplay mechanics,,describes,NEEDS SOURCE
+ok-rummy,OK Rummy,Game modes,,hasPart,NEEDS SOURCE
+ok-rummy,OK Rummy,Developer,,author,NEEDS SOURCE
+ok-rummy,OK Rummy,Publisher,,publisher,NEEDS SOURCE
+ok-rummy,OK Rummy,Version,,softwareVersion,NEEDS SOURCE
+ok-rummy,OK Rummy,File size,,fileSize,NEEDS SOURCE
+ok-rummy,OK Rummy,Device requirements,,requirements,NEEDS SOURCE
+ok-rummy,OK Rummy,Update history,,dateModified,NEEDS SOURCE
+rumble-rummy,Rumble Rummy,Category,Rummy,isPartOf,known
+rumble-rummy,Rumble Rummy,Platform,Android,operatingSystem,known
+rumble-rummy,Rumble Rummy,Distribution,APK / app listing,distribution,known
+rumble-rummy,Rumble Rummy,Parent brand,Yono app family,brandFamily,known
+rumble-rummy,Rumble Rummy,Market,India,audience,known
+rumble-rummy,Rumble Rummy,Genre,,genre,NEEDS SOURCE
+rumble-rummy,Rumble Rummy,Gameplay mechanics,,describes,NEEDS SOURCE
+rumble-rummy,Rumble Rummy,Game modes,,hasPart,NEEDS SOURCE
+rumble-rummy,Rumble Rummy,Developer,,author,NEEDS SOURCE
+rumble-rummy,Rumble Rummy,Publisher,,publisher,NEEDS SOURCE
+rumble-rummy,Rumble Rummy,Version,,softwareVersion,NEEDS SOURCE
+rumble-rummy,Rumble Rummy,File size,,fileSize,NEEDS SOURCE
+rumble-rummy,Rumble Rummy,Device requirements,,requirements,NEEDS SOURCE
+rumble-rummy,Rumble Rummy,Update history,,dateModified,NEEDS SOURCE
+rummy-365,Rummy 365,Category,Rummy,isPartOf,known
+rummy-365,Rummy 365,Platform,Android,operatingSystem,known
+rummy-365,Rummy 365,Distribution,APK / app listing,distribution,known
+rummy-365,Rummy 365,Parent brand,Yono app family,brandFamily,known
+rummy-365,Rummy 365,Market,India,audience,known
+rummy-365,Rummy 365,Genre,,genre,NEEDS SOURCE
+rummy-365,Rummy 365,Gameplay mechanics,,describes,NEEDS SOURCE
+rummy-365,Rummy 365,Game modes,,hasPart,NEEDS SOURCE
+rummy-365,Rummy 365,Developer,,author,NEEDS SOURCE
+rummy-365,Rummy 365,Publisher,,publisher,NEEDS SOURCE
+rummy-365,Rummy 365,Version,,softwareVersion,NEEDS SOURCE
+rummy-365,Rummy 365,File size,,fileSize,NEEDS SOURCE
+rummy-365,Rummy 365,Device requirements,,requirements,NEEDS SOURCE
+rummy-365,Rummy 365,Update history,,dateModified,NEEDS SOURCE
+rummy-77,Rummy 77,Category,Rummy,isPartOf,known
+rummy-77,Rummy 77,Platform,Android,operatingSystem,known
+rummy-77,Rummy 77,Distribution,APK / app listing,distribution,known
+rummy-77,Rummy 77,Parent brand,Yono app family,brandFamily,known
+rummy-77,Rummy 77,Market,India,audience,known
+rummy-77,Rummy 77,Genre,,genre,NEEDS SOURCE
+rummy-77,Rummy 77,Gameplay mechanics,,describes,NEEDS SOURCE
+rummy-77,Rummy 77,Game modes,,hasPart,NEEDS SOURCE
+rummy-77,Rummy 77,Developer,,author,NEEDS SOURCE
+rummy-77,Rummy 77,Publisher,,publisher,NEEDS SOURCE
+rummy-77,Rummy 77,Version,,softwareVersion,NEEDS SOURCE
+rummy-77,Rummy 77,File size,,fileSize,NEEDS SOURCE
+rummy-77,Rummy 77,Device requirements,,requirements,NEEDS SOURCE
+rummy-77,Rummy 77,Update history,,dateModified,NEEDS SOURCE
+rummy-888,Rummy 888,Category,Rummy,isPartOf,known
+rummy-888,Rummy 888,Platform,Android,operatingSystem,known
+rummy-888,Rummy 888,Distribution,APK / app listing,distribution,known
+rummy-888,Rummy 888,Parent brand,Yono app family,brandFamily,known
+rummy-888,Rummy 888,Market,India,audience,known
+rummy-888,Rummy 888,Genre,,genre,NEEDS SOURCE
+rummy-888,Rummy 888,Gameplay mechanics,,describes,NEEDS SOURCE
+rummy-888,Rummy 888,Game modes,,hasPart,NEEDS SOURCE
+rummy-888,Rummy 888,Developer,,author,NEEDS SOURCE
+rummy-888,Rummy 888,Publisher,,publisher,NEEDS SOURCE
+rummy-888,Rummy 888,Version,,softwareVersion,NEEDS SOURCE
+rummy-888,Rummy 888,File size,,fileSize,NEEDS SOURCE
+rummy-888,Rummy 888,Device requirements,,requirements,NEEDS SOURCE
+rummy-888,Rummy 888,Update history,,dateModified,NEEDS SOURCE
+rummy-91,Rummy 91,Category,Rummy,isPartOf,known
+rummy-91,Rummy 91,Platform,Android,operatingSystem,known
+rummy-91,Rummy 91,Distribution,APK / app listing,distribution,known
+rummy-91,Rummy 91,Parent brand,Yono app family,brandFamily,known
+rummy-91,Rummy 91,Market,India,audience,known
+rummy-91,Rummy 91,Genre,,genre,NEEDS SOURCE
+rummy-91,Rummy 91,Gameplay mechanics,,describes,NEEDS SOURCE
+rummy-91,Rummy 91,Game modes,,hasPart,NEEDS SOURCE
+rummy-91,Rummy 91,Developer,,author,NEEDS SOURCE
+rummy-91,Rummy 91,Publisher,,publisher,NEEDS SOURCE
+rummy-91,Rummy 91,Version,,softwareVersion,NEEDS SOURCE
+rummy-91,Rummy 91,File size,,fileSize,NEEDS SOURCE
+rummy-91,Rummy 91,Device requirements,,requirements,NEEDS SOURCE
+rummy-91,Rummy 91,Update history,,dateModified,NEEDS SOURCE
+rummy-yono,Rummy Yono,Category,Rummy,isPartOf,known
+rummy-yono,Rummy Yono,Platform,Android,operatingSystem,known
+rummy-yono,Rummy Yono,Distribution,APK / app listing,distribution,known
+rummy-yono,Rummy Yono,Parent brand,Yono app family,brandFamily,known
+rummy-yono,Rummy Yono,Market,India,audience,known
+rummy-yono,Rummy Yono,Genre,,genre,NEEDS SOURCE
+rummy-yono,Rummy Yono,Gameplay mechanics,,describes,NEEDS SOURCE
+rummy-yono,Rummy Yono,Game modes,,hasPart,NEEDS SOURCE
+rummy-yono,Rummy Yono,Developer,,author,NEEDS SOURCE
+rummy-yono,Rummy Yono,Publisher,,publisher,NEEDS SOURCE
+rummy-yono,Rummy Yono,Version,,softwareVersion,NEEDS SOURCE
+rummy-yono,Rummy Yono,File size,,fileSize,NEEDS SOURCE
+rummy-yono,Rummy Yono,Device requirements,,requirements,NEEDS SOURCE
+rummy-yono,Rummy Yono,Update history,,dateModified,NEEDS SOURCE
+rummy-zip,Rummy Zip,Category,Rummy,isPartOf,known
+rummy-zip,Rummy Zip,Platform,Android,operatingSystem,known
+rummy-zip,Rummy Zip,Distribution,APK / app listing,distribution,known
+rummy-zip,Rummy Zip,Parent brand,Yono app family,brandFamily,known
+rummy-zip,Rummy Zip,Market,India,audience,known
+rummy-zip,Rummy Zip,Genre,,genre,NEEDS SOURCE
+rummy-zip,Rummy Zip,Gameplay mechanics,,describes,NEEDS SOURCE
+rummy-zip,Rummy Zip,Game modes,,hasPart,NEEDS SOURCE
+rummy-zip,Rummy Zip,Developer,,author,NEEDS SOURCE
+rummy-zip,Rummy Zip,Publisher,,publisher,NEEDS SOURCE
+rummy-zip,Rummy Zip,Version,,softwareVersion,NEEDS SOURCE
+rummy-zip,Rummy Zip,File size,,fileSize,NEEDS SOURCE
+rummy-zip,Rummy Zip,Device requirements,,requirements,NEEDS SOURCE
+rummy-zip,Rummy Zip,Update history,,dateModified,NEEDS SOURCE
+top-rummy,Top Rummy,Category,Rummy,isPartOf,known
+top-rummy,Top Rummy,Platform,Android,operatingSystem,known
+top-rummy,Top Rummy,Distribution,APK / app listing,distribution,known
+top-rummy,Top Rummy,Parent brand,Yono app family,brandFamily,known
+top-rummy,Top Rummy,Market,India,audience,known
+top-rummy,Top Rummy,Genre,,genre,NEEDS SOURCE
+top-rummy,Top Rummy,Gameplay mechanics,,describes,NEEDS SOURCE
+top-rummy,Top Rummy,Game modes,,hasPart,NEEDS SOURCE
+top-rummy,Top Rummy,Developer,,author,NEEDS SOURCE
+top-rummy,Top Rummy,Publisher,,publisher,NEEDS SOURCE
+top-rummy,Top Rummy,Version,,softwareVersion,NEEDS SOURCE
+top-rummy,Top Rummy,File size,,fileSize,NEEDS SOURCE
+top-rummy,Top Rummy,Device requirements,,requirements,NEEDS SOURCE
+top-rummy,Top Rummy,Update history,,dateModified,NEEDS SOURCE
+win-rummy,Win Rummy,Category,Rummy,isPartOf,known
+win-rummy,Win Rummy,Platform,Android,operatingSystem,known
+win-rummy,Win Rummy,Distribution,APK / app listing,distribution,known
+win-rummy,Win Rummy,Parent brand,Yono app family,brandFamily,known
+win-rummy,Win Rummy,Market,India,audience,known
+win-rummy,Win Rummy,Genre,,genre,NEEDS SOURCE
+win-rummy,Win Rummy,Gameplay mechanics,,describes,NEEDS SOURCE
+win-rummy,Win Rummy,Game modes,,hasPart,NEEDS SOURCE
+win-rummy,Win Rummy,Developer,,author,NEEDS SOURCE
+win-rummy,Win Rummy,Publisher,,publisher,NEEDS SOURCE
+win-rummy,Win Rummy,Version,,softwareVersion,NEEDS SOURCE
+win-rummy,Win Rummy,File size,,fileSize,NEEDS SOURCE
+win-rummy,Win Rummy,Device requirements,,requirements,NEEDS SOURCE
+win-rummy,Win Rummy,Update history,,dateModified,NEEDS SOURCE
+winzo-rummy,Winzo Rummy,Category,Rummy,isPartOf,known
+winzo-rummy,Winzo Rummy,Platform,Android,operatingSystem,known
+winzo-rummy,Winzo Rummy,Distribution,APK / app listing,distribution,known
+winzo-rummy,Winzo Rummy,Parent brand,Yono app family,brandFamily,known
+winzo-rummy,Winzo Rummy,Market,India,audience,known
+winzo-rummy,Winzo Rummy,Genre,,genre,NEEDS SOURCE
+winzo-rummy,Winzo Rummy,Gameplay mechanics,,describes,NEEDS SOURCE
+winzo-rummy,Winzo Rummy,Game modes,,hasPart,NEEDS SOURCE
+winzo-rummy,Winzo Rummy,Developer,,author,NEEDS SOURCE
+winzo-rummy,Winzo Rummy,Publisher,,publisher,NEEDS SOURCE
+winzo-rummy,Winzo Rummy,Version,,softwareVersion,NEEDS SOURCE
+winzo-rummy,Winzo Rummy,File size,,fileSize,NEEDS SOURCE
+winzo-rummy,Winzo Rummy,Device requirements,,requirements,NEEDS SOURCE
+winzo-rummy,Winzo Rummy,Update history,,dateModified,NEEDS SOURCE
+yn-rummy,YN Rummy,Category,Rummy,isPartOf,known
+yn-rummy,YN Rummy,Platform,Android,operatingSystem,known
+yn-rummy,YN Rummy,Distribution,APK / app listing,distribution,known
+yn-rummy,YN Rummy,Parent brand,Yono app family,brandFamily,known
+yn-rummy,YN Rummy,Market,India,audience,known
+yn-rummy,YN Rummy,Genre,,genre,NEEDS SOURCE
+yn-rummy,YN Rummy,Gameplay mechanics,,describes,NEEDS SOURCE
+yn-rummy,YN Rummy,Game modes,,hasPart,NEEDS SOURCE
+yn-rummy,YN Rummy,Developer,,author,NEEDS SOURCE
+yn-rummy,YN Rummy,Publisher,,publisher,NEEDS SOURCE
+yn-rummy,YN Rummy,Version,,softwareVersion,NEEDS SOURCE
+yn-rummy,YN Rummy,File size,,fileSize,NEEDS SOURCE
+yn-rummy,YN Rummy,Device requirements,,requirements,NEEDS SOURCE
+yn-rummy,YN Rummy,Update history,,dateModified,NEEDS SOURCE
+yono-rummy,Yono Rummy,Category,Rummy,isPartOf,known
+yono-rummy,Yono Rummy,Platform,Android,operatingSystem,known
+yono-rummy,Yono Rummy,Distribution,APK / app listing,distribution,known
+yono-rummy,Yono Rummy,Parent brand,Yono app family,brandFamily,known
+yono-rummy,Yono Rummy,Market,India,audience,known
+yono-rummy,Yono Rummy,Genre,,genre,NEEDS SOURCE
+yono-rummy,Yono Rummy,Gameplay mechanics,,describes,NEEDS SOURCE
+yono-rummy,Yono Rummy,Game modes,,hasPart,NEEDS SOURCE
+yono-rummy,Yono Rummy,Developer,,author,NEEDS SOURCE
+yono-rummy,Yono Rummy,Publisher,,publisher,NEEDS SOURCE
+yono-rummy,Yono Rummy,Version,,softwareVersion,NEEDS SOURCE
+yono-rummy,Yono Rummy,File size,,fileSize,NEEDS SOURCE
+yono-rummy,Yono Rummy,Device requirements,,requirements,NEEDS SOURCE
+yono-rummy,Yono Rummy,Update history,,dateModified,NEEDS SOURCE
+101z,101z,Category,Slots & 777,isPartOf,known
+101z,101z,Platform,Android,operatingSystem,known
+101z,101z,Distribution,APK / app listing,distribution,known
+101z,101z,Parent brand,Yono app family,brandFamily,known
+101z,101z,Market,India,audience,known
+101z,101z,Genre,,genre,NEEDS SOURCE
+101z,101z,Gameplay mechanics,,describes,NEEDS SOURCE
+101z,101z,Game modes,,hasPart,NEEDS SOURCE
+101z,101z,Developer,,author,NEEDS SOURCE
+101z,101z,Publisher,,publisher,NEEDS SOURCE
+101z,101z,Version,,softwareVersion,NEEDS SOURCE
+101z,101z,File size,,fileSize,NEEDS SOURCE
+101z,101z,Device requirements,,requirements,NEEDS SOURCE
+101z,101z,Update history,,dateModified,NEEDS SOURCE
+567-slots,567 Slots,Category,Slots & 777,isPartOf,known
+567-slots,567 Slots,Platform,Android,operatingSystem,known
+567-slots,567 Slots,Distribution,APK / app listing,distribution,known
+567-slots,567 Slots,Parent brand,Yono app family,brandFamily,known
+567-slots,567 Slots,Market,India,audience,known
+567-slots,567 Slots,Genre,,genre,NEEDS SOURCE
+567-slots,567 Slots,Gameplay mechanics,,describes,NEEDS SOURCE
+567-slots,567 Slots,Game modes,,hasPart,NEEDS SOURCE
+567-slots,567 Slots,Developer,,author,NEEDS SOURCE
+567-slots,567 Slots,Publisher,,publisher,NEEDS SOURCE
+567-slots,567 Slots,Version,,softwareVersion,NEEDS SOURCE
+567-slots,567 Slots,File size,,fileSize,NEEDS SOURCE
+567-slots,567 Slots,Device requirements,,requirements,NEEDS SOURCE
+567-slots,567 Slots,Update history,,dateModified,NEEDS SOURCE
+777-game,777 Game,Category,Slots & 777,isPartOf,known
+777-game,777 Game,Platform,Android,operatingSystem,known
+777-game,777 Game,Distribution,APK / app listing,distribution,known
+777-game,777 Game,Parent brand,Yono app family,brandFamily,known
+777-game,777 Game,Market,India,audience,known
+777-game,777 Game,Genre,,genre,NEEDS SOURCE
+777-game,777 Game,Gameplay mechanics,,describes,NEEDS SOURCE
+777-game,777 Game,Game modes,,hasPart,NEEDS SOURCE
+777-game,777 Game,Developer,,author,NEEDS SOURCE
+777-game,777 Game,Publisher,,publisher,NEEDS SOURCE
+777-game,777 Game,Version,,softwareVersion,NEEDS SOURCE
+777-game,777 Game,File size,,fileSize,NEEDS SOURCE
+777-game,777 Game,Device requirements,,requirements,NEEDS SOURCE
+777-game,777 Game,Update history,,dateModified,NEEDS SOURCE
+789-jackpots,789 Jackpots,Category,Slots & 777,isPartOf,known
+789-jackpots,789 Jackpots,Platform,Android,operatingSystem,known
+789-jackpots,789 Jackpots,Distribution,APK / app listing,distribution,known
+789-jackpots,789 Jackpots,Parent brand,Yono app family,brandFamily,known
+789-jackpots,789 Jackpots,Market,India,audience,known
+789-jackpots,789 Jackpots,Genre,,genre,NEEDS SOURCE
+789-jackpots,789 Jackpots,Gameplay mechanics,,describes,NEEDS SOURCE
+789-jackpots,789 Jackpots,Game modes,,hasPart,NEEDS SOURCE
+789-jackpots,789 Jackpots,Developer,,author,NEEDS SOURCE
+789-jackpots,789 Jackpots,Publisher,,publisher,NEEDS SOURCE
+789-jackpots,789 Jackpots,Version,,softwareVersion,NEEDS SOURCE
+789-jackpots,789 Jackpots,File size,,fileSize,NEEDS SOURCE
+789-jackpots,789 Jackpots,Device requirements,,requirements,NEEDS SOURCE
+789-jackpots,789 Jackpots,Update history,,dateModified,NEEDS SOURCE
+bet-213-slots,Bet 213 Slots,Category,Slots & 777,isPartOf,known
+bet-213-slots,Bet 213 Slots,Platform,Android,operatingSystem,known
+bet-213-slots,Bet 213 Slots,Distribution,APK / app listing,distribution,known
+bet-213-slots,Bet 213 Slots,Parent brand,Yono app family,brandFamily,known
+bet-213-slots,Bet 213 Slots,Market,India,audience,known
+bet-213-slots,Bet 213 Slots,Genre,,genre,NEEDS SOURCE
+bet-213-slots,Bet 213 Slots,Gameplay mechanics,,describes,NEEDS SOURCE
+bet-213-slots,Bet 213 Slots,Game modes,,hasPart,NEEDS SOURCE
+bet-213-slots,Bet 213 Slots,Developer,,author,NEEDS SOURCE
+bet-213-slots,Bet 213 Slots,Publisher,,publisher,NEEDS SOURCE
+bet-213-slots,Bet 213 Slots,Version,,softwareVersion,NEEDS SOURCE
+bet-213-slots,Bet 213 Slots,File size,,fileSize,NEEDS SOURCE
+bet-213-slots,Bet 213 Slots,Device requirements,,requirements,NEEDS SOURCE
+bet-213-slots,Bet 213 Slots,Update history,,dateModified,NEEDS SOURCE
+diwa-777,Diwa 777,Category,Slots & 777,isPartOf,known
+diwa-777,Diwa 777,Platform,Android,operatingSystem,known
+diwa-777,Diwa 777,Distribution,APK / app listing,distribution,known
+diwa-777,Diwa 777,Parent brand,Yono app family,brandFamily,known
+diwa-777,Diwa 777,Market,India,audience,known
+diwa-777,Diwa 777,Genre,,genre,NEEDS SOURCE
+diwa-777,Diwa 777,Gameplay mechanics,,describes,NEEDS SOURCE
+diwa-777,Diwa 777,Game modes,,hasPart,NEEDS SOURCE
+diwa-777,Diwa 777,Developer,,author,NEEDS SOURCE
+diwa-777,Diwa 777,Publisher,,publisher,NEEDS SOURCE
+diwa-777,Diwa 777,Version,,softwareVersion,NEEDS SOURCE
+diwa-777,Diwa 777,File size,,fileSize,NEEDS SOURCE
+diwa-777,Diwa 777,Device requirements,,requirements,NEEDS SOURCE
+diwa-777,Diwa 777,Update history,,dateModified,NEEDS SOURCE
+diwa-slots,Diwa Slots,Category,Slots & 777,isPartOf,known
+diwa-slots,Diwa Slots,Platform,Android,operatingSystem,known
+diwa-slots,Diwa Slots,Distribution,APK / app listing,distribution,known
+diwa-slots,Diwa Slots,Parent brand,Yono app family,brandFamily,known
+diwa-slots,Diwa Slots,Market,India,audience,known
+diwa-slots,Diwa Slots,Genre,,genre,NEEDS SOURCE
+diwa-slots,Diwa Slots,Gameplay mechanics,,describes,NEEDS SOURCE
+diwa-slots,Diwa Slots,Game modes,,hasPart,NEEDS SOURCE
+diwa-slots,Diwa Slots,Developer,,author,NEEDS SOURCE
+diwa-slots,Diwa Slots,Publisher,,publisher,NEEDS SOURCE
+diwa-slots,Diwa Slots,Version,,softwareVersion,NEEDS SOURCE
+diwa-slots,Diwa Slots,File size,,fileSize,NEEDS SOURCE
+diwa-slots,Diwa Slots,Device requirements,,requirements,NEEDS SOURCE
+diwa-slots,Diwa Slots,Update history,,dateModified,NEEDS SOURCE
+ever-777,Ever 777,Category,Slots & 777,isPartOf,known
+ever-777,Ever 777,Platform,Android,operatingSystem,known
+ever-777,Ever 777,Distribution,APK / app listing,distribution,known
+ever-777,Ever 777,Parent brand,Yono app family,brandFamily,known
+ever-777,Ever 777,Market,India,audience,known
+ever-777,Ever 777,Genre,,genre,NEEDS SOURCE
+ever-777,Ever 777,Gameplay mechanics,,describes,NEEDS SOURCE
+ever-777,Ever 777,Game modes,,hasPart,NEEDS SOURCE
+ever-777,Ever 777,Developer,,author,NEEDS SOURCE
+ever-777,Ever 777,Publisher,,publisher,NEEDS SOURCE
+ever-777,Ever 777,Version,,softwareVersion,NEEDS SOURCE
+ever-777,Ever 777,File size,,fileSize,NEEDS SOURCE
+ever-777,Ever 777,Device requirements,,requirements,NEEDS SOURCE
+ever-777,Ever 777,Update history,,dateModified,NEEDS SOURCE
+goa-spin,Goa Spin,Category,Slots & 777,isPartOf,known
+goa-spin,Goa Spin,Platform,Android,operatingSystem,known
+goa-spin,Goa Spin,Distribution,APK / app listing,distribution,known
+goa-spin,Goa Spin,Parent brand,Yono app family,brandFamily,known
+goa-spin,Goa Spin,Market,India,audience,known
+goa-spin,Goa Spin,Genre,,genre,NEEDS SOURCE
+goa-spin,Goa Spin,Gameplay mechanics,,describes,NEEDS SOURCE
+goa-spin,Goa Spin,Game modes,,hasPart,NEEDS SOURCE
+goa-spin,Goa Spin,Developer,,author,NEEDS SOURCE
+goa-spin,Goa Spin,Publisher,,publisher,NEEDS SOURCE
+goa-spin,Goa Spin,Version,,softwareVersion,NEEDS SOURCE
+goa-spin,Goa Spin,File size,,fileSize,NEEDS SOURCE
+goa-spin,Goa Spin,Device requirements,,requirements,NEEDS SOURCE
+goa-spin,Goa Spin,Update history,,dateModified,NEEDS SOURCE
+good-slots,Good Slots,Category,Slots & 777,isPartOf,known
+good-slots,Good Slots,Platform,Android,operatingSystem,known
+good-slots,Good Slots,Distribution,APK / app listing,distribution,known
+good-slots,Good Slots,Parent brand,Yono app family,brandFamily,known
+good-slots,Good Slots,Market,India,audience,known
+good-slots,Good Slots,Genre,,genre,NEEDS SOURCE
+good-slots,Good Slots,Gameplay mechanics,,describes,NEEDS SOURCE
+good-slots,Good Slots,Game modes,,hasPart,NEEDS SOURCE
+good-slots,Good Slots,Developer,,author,NEEDS SOURCE
+good-slots,Good Slots,Publisher,,publisher,NEEDS SOURCE
+good-slots,Good Slots,Version,,softwareVersion,NEEDS SOURCE
+good-slots,Good Slots,File size,,fileSize,NEEDS SOURCE
+good-slots,Good Slots,Device requirements,,requirements,NEEDS SOURCE
+good-slots,Good Slots,Update history,,dateModified,NEEDS SOURCE
+hindi-777,Hindi 777,Category,Slots & 777,isPartOf,known
+hindi-777,Hindi 777,Platform,Android,operatingSystem,known
+hindi-777,Hindi 777,Distribution,APK / app listing,distribution,known
+hindi-777,Hindi 777,Parent brand,Yono app family,brandFamily,known
+hindi-777,Hindi 777,Market,India,audience,known
+hindi-777,Hindi 777,Genre,,genre,NEEDS SOURCE
+hindi-777,Hindi 777,Gameplay mechanics,,describes,NEEDS SOURCE
+hindi-777,Hindi 777,Game modes,,hasPart,NEEDS SOURCE
+hindi-777,Hindi 777,Developer,,author,NEEDS SOURCE
+hindi-777,Hindi 777,Publisher,,publisher,NEEDS SOURCE
+hindi-777,Hindi 777,Version,,softwareVersion,NEEDS SOURCE
+hindi-777,Hindi 777,File size,,fileSize,NEEDS SOURCE
+hindi-777,Hindi 777,Device requirements,,requirements,NEEDS SOURCE
+hindi-777,Hindi 777,Update history,,dateModified,NEEDS SOURCE
+ind-slots,Ind Slots,Category,Slots & 777,isPartOf,known
+ind-slots,Ind Slots,Platform,Android,operatingSystem,known
+ind-slots,Ind Slots,Distribution,APK / app listing,distribution,known
+ind-slots,Ind Slots,Parent brand,Yono app family,brandFamily,known
+ind-slots,Ind Slots,Market,India,audience,known
+ind-slots,Ind Slots,Genre,,genre,NEEDS SOURCE
+ind-slots,Ind Slots,Gameplay mechanics,,describes,NEEDS SOURCE
+ind-slots,Ind Slots,Game modes,,hasPart,NEEDS SOURCE
+ind-slots,Ind Slots,Developer,,author,NEEDS SOURCE
+ind-slots,Ind Slots,Publisher,,publisher,NEEDS SOURCE
+ind-slots,Ind Slots,Version,,softwareVersion,NEEDS SOURCE
+ind-slots,Ind Slots,File size,,fileSize,NEEDS SOURCE
+ind-slots,Ind Slots,Device requirements,,requirements,NEEDS SOURCE
+ind-slots,Ind Slots,Update history,,dateModified,NEEDS SOURCE
+inr-slots,INR Slots,Category,Slots & 777,isPartOf,known
+inr-slots,INR Slots,Platform,Android,operatingSystem,known
+inr-slots,INR Slots,Distribution,APK / app listing,distribution,known
+inr-slots,INR Slots,Parent brand,Yono app family,brandFamily,known
+inr-slots,INR Slots,Market,India,audience,known
+inr-slots,INR Slots,Genre,,genre,NEEDS SOURCE
+inr-slots,INR Slots,Gameplay mechanics,,describes,NEEDS SOURCE
+inr-slots,INR Slots,Game modes,,hasPart,NEEDS SOURCE
+inr-slots,INR Slots,Developer,,author,NEEDS SOURCE
+inr-slots,INR Slots,Publisher,,publisher,NEEDS SOURCE
+inr-slots,INR Slots,Version,,softwareVersion,NEEDS SOURCE
+inr-slots,INR Slots,File size,,fileSize,NEEDS SOURCE
+inr-slots,INR Slots,Device requirements,,requirements,NEEDS SOURCE
+inr-slots,INR Slots,Update history,,dateModified,NEEDS SOURCE
+jaiho-777,JaiHo 777,Category,Slots & 777,isPartOf,known
+jaiho-777,JaiHo 777,Platform,Android,operatingSystem,known
+jaiho-777,JaiHo 777,Distribution,APK / app listing,distribution,known
+jaiho-777,JaiHo 777,Parent brand,Yono app family,brandFamily,known
+jaiho-777,JaiHo 777,Market,India,audience,known
+jaiho-777,JaiHo 777,Genre,,genre,NEEDS SOURCE
+jaiho-777,JaiHo 777,Gameplay mechanics,,describes,NEEDS SOURCE
+jaiho-777,JaiHo 777,Game modes,,hasPart,NEEDS SOURCE
+jaiho-777,JaiHo 777,Developer,,author,NEEDS SOURCE
+jaiho-777,JaiHo 777,Publisher,,publisher,NEEDS SOURCE
+jaiho-777,JaiHo 777,Version,,softwareVersion,NEEDS SOURCE
+jaiho-777,JaiHo 777,File size,,fileSize,NEEDS SOURCE
+jaiho-777,JaiHo 777,Device requirements,,requirements,NEEDS SOURCE
+jaiho-777,JaiHo 777,Update history,,dateModified,NEEDS SOURCE
+jaiho-91,JaiHo 91,Category,Slots & 777,isPartOf,known
+jaiho-91,JaiHo 91,Platform,Android,operatingSystem,known
+jaiho-91,JaiHo 91,Distribution,APK / app listing,distribution,known
+jaiho-91,JaiHo 91,Parent brand,Yono app family,brandFamily,known
+jaiho-91,JaiHo 91,Market,India,audience,known
+jaiho-91,JaiHo 91,Genre,,genre,NEEDS SOURCE
+jaiho-91,JaiHo 91,Gameplay mechanics,,describes,NEEDS SOURCE
+jaiho-91,JaiHo 91,Game modes,,hasPart,NEEDS SOURCE
+jaiho-91,JaiHo 91,Developer,,author,NEEDS SOURCE
+jaiho-91,JaiHo 91,Publisher,,publisher,NEEDS SOURCE
+jaiho-91,JaiHo 91,Version,,softwareVersion,NEEDS SOURCE
+jaiho-91,JaiHo 91,File size,,fileSize,NEEDS SOURCE
+jaiho-91,JaiHo 91,Device requirements,,requirements,NEEDS SOURCE
+jaiho-91,JaiHo 91,Update history,,dateModified,NEEDS SOURCE
+jaiho-slots,JaiHo Slots,Category,Slots & 777,isPartOf,known
+jaiho-slots,JaiHo Slots,Platform,Android,operatingSystem,known
+jaiho-slots,JaiHo Slots,Distribution,APK / app listing,distribution,known
+jaiho-slots,JaiHo Slots,Parent brand,Yono app family,brandFamily,known
+jaiho-slots,JaiHo Slots,Market,India,audience,known
+jaiho-slots,JaiHo Slots,Genre,,genre,NEEDS SOURCE
+jaiho-slots,JaiHo Slots,Gameplay mechanics,,describes,NEEDS SOURCE
+jaiho-slots,JaiHo Slots,Game modes,,hasPart,NEEDS SOURCE
+jaiho-slots,JaiHo Slots,Developer,,author,NEEDS SOURCE
+jaiho-slots,JaiHo Slots,Publisher,,publisher,NEEDS SOURCE
+jaiho-slots,JaiHo Slots,Version,,softwareVersion,NEEDS SOURCE
+jaiho-slots,JaiHo Slots,File size,,fileSize,NEEDS SOURCE
+jaiho-slots,JaiHo Slots,Device requirements,,requirements,NEEDS SOURCE
+jaiho-slots,JaiHo Slots,Update history,,dateModified,NEEDS SOURCE
+jaiho-spin,JaiHo Spin,Category,Slots & 777,isPartOf,known
+jaiho-spin,JaiHo Spin,Platform,Android,operatingSystem,known
+jaiho-spin,JaiHo Spin,Distribution,APK / app listing,distribution,known
+jaiho-spin,JaiHo Spin,Parent brand,Yono app family,brandFamily,known
+jaiho-spin,JaiHo Spin,Market,India,audience,known
+jaiho-spin,JaiHo Spin,Genre,,genre,NEEDS SOURCE
+jaiho-spin,JaiHo Spin,Gameplay mechanics,,describes,NEEDS SOURCE
+jaiho-spin,JaiHo Spin,Game modes,,hasPart,NEEDS SOURCE
+jaiho-spin,JaiHo Spin,Developer,,author,NEEDS SOURCE
+jaiho-spin,JaiHo Spin,Publisher,,publisher,NEEDS SOURCE
+jaiho-spin,JaiHo Spin,Version,,softwareVersion,NEEDS SOURCE
+jaiho-spin,JaiHo Spin,File size,,fileSize,NEEDS SOURCE
+jaiho-spin,JaiHo Spin,Device requirements,,requirements,NEEDS SOURCE
+jaiho-spin,JaiHo Spin,Update history,,dateModified,NEEDS SOURCE
+my-777,My 777,Category,Slots & 777,isPartOf,known
+my-777,My 777,Platform,Android,operatingSystem,known
+my-777,My 777,Distribution,APK / app listing,distribution,known
+my-777,My 777,Parent brand,Yono app family,brandFamily,known
+my-777,My 777,Market,India,audience,known
+my-777,My 777,Genre,,genre,NEEDS SOURCE
+my-777,My 777,Gameplay mechanics,,describes,NEEDS SOURCE
+my-777,My 777,Game modes,,hasPart,NEEDS SOURCE
+my-777,My 777,Developer,,author,NEEDS SOURCE
+my-777,My 777,Publisher,,publisher,NEEDS SOURCE
+my-777,My 777,Version,,softwareVersion,NEEDS SOURCE
+my-777,My 777,File size,,fileSize,NEEDS SOURCE
+my-777,My 777,Device requirements,,requirements,NEEDS SOURCE
+my-777,My 777,Update history,,dateModified,NEEDS SOURCE
+rani-slots,Rani Slots,Category,Slots & 777,isPartOf,known
+rani-slots,Rani Slots,Platform,Android,operatingSystem,known
+rani-slots,Rani Slots,Distribution,APK / app listing,distribution,known
+rani-slots,Rani Slots,Parent brand,Yono app family,brandFamily,known
+rani-slots,Rani Slots,Market,India,audience,known
+rani-slots,Rani Slots,Genre,,genre,NEEDS SOURCE
+rani-slots,Rani Slots,Gameplay mechanics,,describes,NEEDS SOURCE
+rani-slots,Rani Slots,Game modes,,hasPart,NEEDS SOURCE
+rani-slots,Rani Slots,Developer,,author,NEEDS SOURCE
+rani-slots,Rani Slots,Publisher,,publisher,NEEDS SOURCE
+rani-slots,Rani Slots,Version,,softwareVersion,NEEDS SOURCE
+rani-slots,Rani Slots,File size,,fileSize,NEEDS SOURCE
+rani-slots,Rani Slots,Device requirements,,requirements,NEEDS SOURCE
+rani-slots,Rani Slots,Update history,,dateModified,NEEDS SOURCE
+saga-slots,Saga Slots,Category,Slots & 777,isPartOf,known
+saga-slots,Saga Slots,Platform,Android,operatingSystem,known
+saga-slots,Saga Slots,Distribution,APK / app listing,distribution,known
+saga-slots,Saga Slots,Parent brand,Yono app family,brandFamily,known
+saga-slots,Saga Slots,Market,India,audience,known
+saga-slots,Saga Slots,Genre,,genre,NEEDS SOURCE
+saga-slots,Saga Slots,Gameplay mechanics,,describes,NEEDS SOURCE
+saga-slots,Saga Slots,Game modes,,hasPart,NEEDS SOURCE
+saga-slots,Saga Slots,Developer,,author,NEEDS SOURCE
+saga-slots,Saga Slots,Publisher,,publisher,NEEDS SOURCE
+saga-slots,Saga Slots,Version,,softwareVersion,NEEDS SOURCE
+saga-slots,Saga Slots,File size,,fileSize,NEEDS SOURCE
+saga-slots,Saga Slots,Device requirements,,requirements,NEEDS SOURCE
+saga-slots,Saga Slots,Update history,,dateModified,NEEDS SOURCE
+share-slots,Share Slots,Category,Slots & 777,isPartOf,known
+share-slots,Share Slots,Platform,Android,operatingSystem,known
+share-slots,Share Slots,Distribution,APK / app listing,distribution,known
+share-slots,Share Slots,Parent brand,Yono app family,brandFamily,known
+share-slots,Share Slots,Market,India,audience,known
+share-slots,Share Slots,Genre,,genre,NEEDS SOURCE
+share-slots,Share Slots,Gameplay mechanics,,describes,NEEDS SOURCE
+share-slots,Share Slots,Game modes,,hasPart,NEEDS SOURCE
+share-slots,Share Slots,Developer,,author,NEEDS SOURCE
+share-slots,Share Slots,Publisher,,publisher,NEEDS SOURCE
+share-slots,Share Slots,Version,,softwareVersion,NEEDS SOURCE
+share-slots,Share Slots,File size,,fileSize,NEEDS SOURCE
+share-slots,Share Slots,Device requirements,,requirements,NEEDS SOURCE
+share-slots,Share Slots,Update history,,dateModified,NEEDS SOURCE
+slots-spin,Slots Spin,Category,Slots & 777,isPartOf,known
+slots-spin,Slots Spin,Platform,Android,operatingSystem,known
+slots-spin,Slots Spin,Distribution,APK / app listing,distribution,known
+slots-spin,Slots Spin,Parent brand,Yono app family,brandFamily,known
+slots-spin,Slots Spin,Market,India,audience,known
+slots-spin,Slots Spin,Genre,,genre,NEEDS SOURCE
+slots-spin,Slots Spin,Gameplay mechanics,,describes,NEEDS SOURCE
+slots-spin,Slots Spin,Game modes,,hasPart,NEEDS SOURCE
+slots-spin,Slots Spin,Developer,,author,NEEDS SOURCE
+slots-spin,Slots Spin,Publisher,,publisher,NEEDS SOURCE
+slots-spin,Slots Spin,Version,,softwareVersion,NEEDS SOURCE
+slots-spin,Slots Spin,File size,,fileSize,NEEDS SOURCE
+slots-spin,Slots Spin,Device requirements,,requirements,NEEDS SOURCE
+slots-spin,Slots Spin,Update history,,dateModified,NEEDS SOURCE
+slots-winner,Slots Winner,Category,Slots & 777,isPartOf,known
+slots-winner,Slots Winner,Platform,Android,operatingSystem,known
+slots-winner,Slots Winner,Distribution,APK / app listing,distribution,known
+slots-winner,Slots Winner,Parent brand,Yono app family,brandFamily,known
+slots-winner,Slots Winner,Market,India,audience,known
+slots-winner,Slots Winner,Genre,,genre,NEEDS SOURCE
+slots-winner,Slots Winner,Gameplay mechanics,,describes,NEEDS SOURCE
+slots-winner,Slots Winner,Game modes,,hasPart,NEEDS SOURCE
+slots-winner,Slots Winner,Developer,,author,NEEDS SOURCE
+slots-winner,Slots Winner,Publisher,,publisher,NEEDS SOURCE
+slots-winner,Slots Winner,Version,,softwareVersion,NEEDS SOURCE
+slots-winner,Slots Winner,File size,,fileSize,NEEDS SOURCE
+slots-winner,Slots Winner,Device requirements,,requirements,NEEDS SOURCE
+slots-winner,Slots Winner,Update history,,dateModified,NEEDS SOURCE
+spin-101,Spin 101,Category,Slots & 777,isPartOf,known
+spin-101,Spin 101,Platform,Android,operatingSystem,known
+spin-101,Spin 101,Distribution,APK / app listing,distribution,known
+spin-101,Spin 101,Parent brand,Yono app family,brandFamily,known
+spin-101,Spin 101,Market,India,audience,known
+spin-101,Spin 101,Genre,,genre,NEEDS SOURCE
+spin-101,Spin 101,Gameplay mechanics,,describes,NEEDS SOURCE
+spin-101,Spin 101,Game modes,,hasPart,NEEDS SOURCE
+spin-101,Spin 101,Developer,,author,NEEDS SOURCE
+spin-101,Spin 101,Publisher,,publisher,NEEDS SOURCE
+spin-101,Spin 101,Version,,softwareVersion,NEEDS SOURCE
+spin-101,Spin 101,File size,,fileSize,NEEDS SOURCE
+spin-101,Spin 101,Device requirements,,requirements,NEEDS SOURCE
+spin-101,Spin 101,Update history,,dateModified,NEEDS SOURCE
+spin-777,Spin 777,Category,Slots & 777,isPartOf,known
+spin-777,Spin 777,Platform,Android,operatingSystem,known
+spin-777,Spin 777,Distribution,APK / app listing,distribution,known
+spin-777,Spin 777,Parent brand,Yono app family,brandFamily,known
+spin-777,Spin 777,Market,India,audience,known
+spin-777,Spin 777,Genre,,genre,NEEDS SOURCE
+spin-777,Spin 777,Gameplay mechanics,,describes,NEEDS SOURCE
+spin-777,Spin 777,Game modes,,hasPart,NEEDS SOURCE
+spin-777,Spin 777,Developer,,author,NEEDS SOURCE
+spin-777,Spin 777,Publisher,,publisher,NEEDS SOURCE
+spin-777,Spin 777,Version,,softwareVersion,NEEDS SOURCE
+spin-777,Spin 777,File size,,fileSize,NEEDS SOURCE
+spin-777,Spin 777,Device requirements,,requirements,NEEDS SOURCE
+spin-777,Spin 777,Update history,,dateModified,NEEDS SOURCE
+spin-crush,Spin Crush,Category,Slots & 777,isPartOf,known
+spin-crush,Spin Crush,Platform,Android,operatingSystem,known
+spin-crush,Spin Crush,Distribution,APK / app listing,distribution,known
+spin-crush,Spin Crush,Parent brand,Yono app family,brandFamily,known
+spin-crush,Spin Crush,Market,India,audience,known
+spin-crush,Spin Crush,Genre,,genre,NEEDS SOURCE
+spin-crush,Spin Crush,Gameplay mechanics,,describes,NEEDS SOURCE
+spin-crush,Spin Crush,Game modes,,hasPart,NEEDS SOURCE
+spin-crush,Spin Crush,Developer,,author,NEEDS SOURCE
+spin-crush,Spin Crush,Publisher,,publisher,NEEDS SOURCE
+spin-crush,Spin Crush,Version,,softwareVersion,NEEDS SOURCE
+spin-crush,Spin Crush,File size,,fileSize,NEEDS SOURCE
+spin-crush,Spin Crush,Device requirements,,requirements,NEEDS SOURCE
+spin-crush,Spin Crush,Update history,,dateModified,NEEDS SOURCE
+spin-gold,Spin Gold,Category,Slots & 777,isPartOf,known
+spin-gold,Spin Gold,Platform,Android,operatingSystem,known
+spin-gold,Spin Gold,Distribution,APK / app listing,distribution,known
+spin-gold,Spin Gold,Parent brand,Yono app family,brandFamily,known
+spin-gold,Spin Gold,Market,India,audience,known
+spin-gold,Spin Gold,Genre,,genre,NEEDS SOURCE
+spin-gold,Spin Gold,Gameplay mechanics,,describes,NEEDS SOURCE
+spin-gold,Spin Gold,Game modes,,hasPart,NEEDS SOURCE
+spin-gold,Spin Gold,Developer,,author,NEEDS SOURCE
+spin-gold,Spin Gold,Publisher,,publisher,NEEDS SOURCE
+spin-gold,Spin Gold,Version,,softwareVersion,NEEDS SOURCE
+spin-gold,Spin Gold,File size,,fileSize,NEEDS SOURCE
+spin-gold,Spin Gold,Device requirements,,requirements,NEEDS SOURCE
+spin-gold,Spin Gold,Update history,,dateModified,NEEDS SOURCE
+spin-lucky,Spin Lucky,Category,Slots & 777,isPartOf,known
+spin-lucky,Spin Lucky,Platform,Android,operatingSystem,known
+spin-lucky,Spin Lucky,Distribution,APK / app listing,distribution,known
+spin-lucky,Spin Lucky,Parent brand,Yono app family,brandFamily,known
+spin-lucky,Spin Lucky,Market,India,audience,known
+spin-lucky,Spin Lucky,Genre,,genre,NEEDS SOURCE
+spin-lucky,Spin Lucky,Gameplay mechanics,,describes,NEEDS SOURCE
+spin-lucky,Spin Lucky,Game modes,,hasPart,NEEDS SOURCE
+spin-lucky,Spin Lucky,Developer,,author,NEEDS SOURCE
+spin-lucky,Spin Lucky,Publisher,,publisher,NEEDS SOURCE
+spin-lucky,Spin Lucky,Version,,softwareVersion,NEEDS SOURCE
+spin-lucky,Spin Lucky,File size,,fileSize,NEEDS SOURCE
+spin-lucky,Spin Lucky,Device requirements,,requirements,NEEDS SOURCE
+spin-lucky,Spin Lucky,Update history,,dateModified,NEEDS SOURCE
+spin-winner,Spin Winner,Category,Slots & 777,isPartOf,known
+spin-winner,Spin Winner,Platform,Android,operatingSystem,known
+spin-winner,Spin Winner,Distribution,APK / app listing,distribution,known
+spin-winner,Spin Winner,Parent brand,Yono app family,brandFamily,known
+spin-winner,Spin Winner,Market,India,audience,known
+spin-winner,Spin Winner,Genre,,genre,NEEDS SOURCE
+spin-winner,Spin Winner,Gameplay mechanics,,describes,NEEDS SOURCE
+spin-winner,Spin Winner,Game modes,,hasPart,NEEDS SOURCE
+spin-winner,Spin Winner,Developer,,author,NEEDS SOURCE
+spin-winner,Spin Winner,Publisher,,publisher,NEEDS SOURCE
+spin-winner,Spin Winner,Version,,softwareVersion,NEEDS SOURCE
+spin-winner,Spin Winner,File size,,fileSize,NEEDS SOURCE
+spin-winner,Spin Winner,Device requirements,,requirements,NEEDS SOURCE
+spin-winner,Spin Winner,Update history,,dateModified,NEEDS SOURCE
+svip-777,SVIP 777,Category,Slots & 777,isPartOf,known
+svip-777,SVIP 777,Platform,Android,operatingSystem,known
+svip-777,SVIP 777,Distribution,APK / app listing,distribution,known
+svip-777,SVIP 777,Parent brand,Yono app family,brandFamily,known
+svip-777,SVIP 777,Market,India,audience,known
+svip-777,SVIP 777,Genre,,genre,NEEDS SOURCE
+svip-777,SVIP 777,Gameplay mechanics,,describes,NEEDS SOURCE
+svip-777,SVIP 777,Game modes,,hasPart,NEEDS SOURCE
+svip-777,SVIP 777,Developer,,author,NEEDS SOURCE
+svip-777,SVIP 777,Publisher,,publisher,NEEDS SOURCE
+svip-777,SVIP 777,Version,,softwareVersion,NEEDS SOURCE
+svip-777,SVIP 777,File size,,fileSize,NEEDS SOURCE
+svip-777,SVIP 777,Device requirements,,requirements,NEEDS SOURCE
+svip-777,SVIP 777,Update history,,dateModified,NEEDS SOURCE
+yes-spin,Yes Spin,Category,Slots & 777,isPartOf,known
+yes-spin,Yes Spin,Platform,Android,operatingSystem,known
+yes-spin,Yes Spin,Distribution,APK / app listing,distribution,known
+yes-spin,Yes Spin,Parent brand,Yono app family,brandFamily,known
+yes-spin,Yes Spin,Market,India,audience,known
+yes-spin,Yes Spin,Genre,,genre,NEEDS SOURCE
+yes-spin,Yes Spin,Gameplay mechanics,,describes,NEEDS SOURCE
+yes-spin,Yes Spin,Game modes,,hasPart,NEEDS SOURCE
+yes-spin,Yes Spin,Developer,,author,NEEDS SOURCE
+yes-spin,Yes Spin,Publisher,,publisher,NEEDS SOURCE
+yes-spin,Yes Spin,Version,,softwareVersion,NEEDS SOURCE
+yes-spin,Yes Spin,File size,,fileSize,NEEDS SOURCE
+yes-spin,Yes Spin,Device requirements,,requirements,NEEDS SOURCE
+yes-spin,Yes Spin,Update history,,dateModified,NEEDS SOURCE
+yn-777,YN 777,Category,Slots & 777,isPartOf,known
+yn-777,YN 777,Platform,Android,operatingSystem,known
+yn-777,YN 777,Distribution,APK / app listing,distribution,known
+yn-777,YN 777,Parent brand,Yono app family,brandFamily,known
+yn-777,YN 777,Market,India,audience,known
+yn-777,YN 777,Genre,,genre,NEEDS SOURCE
+yn-777,YN 777,Gameplay mechanics,,describes,NEEDS SOURCE
+yn-777,YN 777,Game modes,,hasPart,NEEDS SOURCE
+yn-777,YN 777,Developer,,author,NEEDS SOURCE
+yn-777,YN 777,Publisher,,publisher,NEEDS SOURCE
+yn-777,YN 777,Version,,softwareVersion,NEEDS SOURCE
+yn-777,YN 777,File size,,fileSize,NEEDS SOURCE
+yn-777,YN 777,Device requirements,,requirements,NEEDS SOURCE
+yn-777,YN 777,Update history,,dateModified,NEEDS SOURCE
+yono-777,Yono 777,Category,Slots & 777,isPartOf,known
+yono-777,Yono 777,Platform,Android,operatingSystem,known
+yono-777,Yono 777,Distribution,APK / app listing,distribution,known
+yono-777,Yono 777,Parent brand,Yono app family,brandFamily,known
+yono-777,Yono 777,Market,India,audience,known
+yono-777,Yono 777,Genre,,genre,NEEDS SOURCE
+yono-777,Yono 777,Gameplay mechanics,,describes,NEEDS SOURCE
+yono-777,Yono 777,Game modes,,hasPart,NEEDS SOURCE
+yono-777,Yono 777,Developer,,author,NEEDS SOURCE
+yono-777,Yono 777,Publisher,,publisher,NEEDS SOURCE
+yono-777,Yono 777,Version,,softwareVersion,NEEDS SOURCE
+yono-777,Yono 777,File size,,fileSize,NEEDS SOURCE
+yono-777,Yono 777,Device requirements,,requirements,NEEDS SOURCE
+yono-777,Yono 777,Update history,,dateModified,NEEDS SOURCE
+yono-slots,Yono Slots,Category,Slots & 777,isPartOf,known
+yono-slots,Yono Slots,Platform,Android,operatingSystem,known
+yono-slots,Yono Slots,Distribution,APK / app listing,distribution,known
+yono-slots,Yono Slots,Parent brand,Yono app family,brandFamily,known
+yono-slots,Yono Slots,Market,India,audience,known
+yono-slots,Yono Slots,Genre,,genre,NEEDS SOURCE
+yono-slots,Yono Slots,Gameplay mechanics,,describes,NEEDS SOURCE
+yono-slots,Yono Slots,Game modes,,hasPart,NEEDS SOURCE
+yono-slots,Yono Slots,Developer,,author,NEEDS SOURCE
+yono-slots,Yono Slots,Publisher,,publisher,NEEDS SOURCE
+yono-slots,Yono Slots,Version,,softwareVersion,NEEDS SOURCE
+yono-slots,Yono Slots,File size,,fileSize,NEEDS SOURCE
+yono-slots,Yono Slots,Device requirements,,requirements,NEEDS SOURCE
+yono-slots,Yono Slots,Update history,,dateModified,NEEDS SOURCE
+yoyo-slots,YoYo Slots,Category,Slots & 777,isPartOf,known
+yoyo-slots,YoYo Slots,Platform,Android,operatingSystem,known
+yoyo-slots,YoYo Slots,Distribution,APK / app listing,distribution,known
+yoyo-slots,YoYo Slots,Parent brand,Yono app family,brandFamily,known
+yoyo-slots,YoYo Slots,Market,India,audience,known
+yoyo-slots,YoYo Slots,Genre,,genre,NEEDS SOURCE
+yoyo-slots,YoYo Slots,Gameplay mechanics,,describes,NEEDS SOURCE
+yoyo-slots,YoYo Slots,Game modes,,hasPart,NEEDS SOURCE
+yoyo-slots,YoYo Slots,Developer,,author,NEEDS SOURCE
+yoyo-slots,YoYo Slots,Publisher,,publisher,NEEDS SOURCE
+yoyo-slots,YoYo Slots,Version,,softwareVersion,NEEDS SOURCE
+yoyo-slots,YoYo Slots,File size,,fileSize,NEEDS SOURCE
+yoyo-slots,YoYo Slots,Device requirements,,requirements,NEEDS SOURCE
+yoyo-slots,YoYo Slots,Update history,,dateModified,NEEDS SOURCE
+club-inr,Club INR,Category,Teen Patti & VIP Club,isPartOf,known
+club-inr,Club INR,Platform,Android,operatingSystem,known
+club-inr,Club INR,Distribution,APK / app listing,distribution,known
+club-inr,Club INR,Parent brand,Yono app family,brandFamily,known
+club-inr,Club INR,Market,India,audience,known
+club-inr,Club INR,Genre,,genre,NEEDS SOURCE
+club-inr,Club INR,Gameplay mechanics,,describes,NEEDS SOURCE
+club-inr,Club INR,Game modes,,hasPart,NEEDS SOURCE
+club-inr,Club INR,Developer,,author,NEEDS SOURCE
+club-inr,Club INR,Publisher,,publisher,NEEDS SOURCE
+club-inr,Club INR,Version,,softwareVersion,NEEDS SOURCE
+club-inr,Club INR,File size,,fileSize,NEEDS SOURCE
+club-inr,Club INR,Device requirements,,requirements,NEEDS SOURCE
+club-inr,Club INR,Update history,,dateModified,NEEDS SOURCE
+diwa-vip,Diwa VIP,Category,Teen Patti & VIP Club,isPartOf,known
+diwa-vip,Diwa VIP,Platform,Android,operatingSystem,known
+diwa-vip,Diwa VIP,Distribution,APK / app listing,distribution,known
+diwa-vip,Diwa VIP,Parent brand,Yono app family,brandFamily,known
+diwa-vip,Diwa VIP,Market,India,audience,known
+diwa-vip,Diwa VIP,Genre,,genre,NEEDS SOURCE
+diwa-vip,Diwa VIP,Gameplay mechanics,,describes,NEEDS SOURCE
+diwa-vip,Diwa VIP,Game modes,,hasPart,NEEDS SOURCE
+diwa-vip,Diwa VIP,Developer,,author,NEEDS SOURCE
+diwa-vip,Diwa VIP,Publisher,,publisher,NEEDS SOURCE
+diwa-vip,Diwa VIP,Version,,softwareVersion,NEEDS SOURCE
+diwa-vip,Diwa VIP,File size,,fileSize,NEEDS SOURCE
+diwa-vip,Diwa VIP,Device requirements,,requirements,NEEDS SOURCE
+diwa-vip,Diwa VIP,Update history,,dateModified,NEEDS SOURCE
+ind-club,Ind Club,Category,Teen Patti & VIP Club,isPartOf,known
+ind-club,Ind Club,Platform,Android,operatingSystem,known
+ind-club,Ind Club,Distribution,APK / app listing,distribution,known
+ind-club,Ind Club,Parent brand,Yono app family,brandFamily,known
+ind-club,Ind Club,Market,India,audience,known
+ind-club,Ind Club,Genre,,genre,NEEDS SOURCE
+ind-club,Ind Club,Gameplay mechanics,,describes,NEEDS SOURCE
+ind-club,Ind Club,Game modes,,hasPart,NEEDS SOURCE
+ind-club,Ind Club,Developer,,author,NEEDS SOURCE
+ind-club,Ind Club,Publisher,,publisher,NEEDS SOURCE
+ind-club,Ind Club,Version,,softwareVersion,NEEDS SOURCE
+ind-club,Ind Club,File size,,fileSize,NEEDS SOURCE
+ind-club,Ind Club,Device requirements,,requirements,NEEDS SOURCE
+ind-club,Ind Club,Update history,,dateModified,NEEDS SOURCE
+jai-club,Jai Club,Category,Teen Patti & VIP Club,isPartOf,known
+jai-club,Jai Club,Platform,Android,operatingSystem,known
+jai-club,Jai Club,Distribution,APK / app listing,distribution,known
+jai-club,Jai Club,Parent brand,Yono app family,brandFamily,known
+jai-club,Jai Club,Market,India,audience,known
+jai-club,Jai Club,Genre,,genre,NEEDS SOURCE
+jai-club,Jai Club,Gameplay mechanics,,describes,NEEDS SOURCE
+jai-club,Jai Club,Game modes,,hasPart,NEEDS SOURCE
+jai-club,Jai Club,Developer,,author,NEEDS SOURCE
+jai-club,Jai Club,Publisher,,publisher,NEEDS SOURCE
+jai-club,Jai Club,Version,,softwareVersion,NEEDS SOURCE
+jai-club,Jai Club,File size,,fileSize,NEEDS SOURCE
+jai-club,Jai Club,Device requirements,,requirements,NEEDS SOURCE
+jai-club,Jai Club,Update history,,dateModified,NEEDS SOURCE
+neta-vip,Neta VIP,Category,Teen Patti & VIP Club,isPartOf,known
+neta-vip,Neta VIP,Platform,Android,operatingSystem,known
+neta-vip,Neta VIP,Distribution,APK / app listing,distribution,known
+neta-vip,Neta VIP,Parent brand,Yono app family,brandFamily,known
+neta-vip,Neta VIP,Market,India,audience,known
+neta-vip,Neta VIP,Genre,,genre,NEEDS SOURCE
+neta-vip,Neta VIP,Gameplay mechanics,,describes,NEEDS SOURCE
+neta-vip,Neta VIP,Game modes,,hasPart,NEEDS SOURCE
+neta-vip,Neta VIP,Developer,,author,NEEDS SOURCE
+neta-vip,Neta VIP,Publisher,,publisher,NEEDS SOURCE
+neta-vip,Neta VIP,Version,,softwareVersion,NEEDS SOURCE
+neta-vip,Neta VIP,File size,,fileSize,NEEDS SOURCE
+neta-vip,Neta VIP,Device requirements,,requirements,NEEDS SOURCE
+neta-vip,Neta VIP,Update history,,dateModified,NEEDS SOURCE
+teen-patti-master,Teen Patti Master,Category,Teen Patti & VIP Club,isPartOf,known
+teen-patti-master,Teen Patti Master,Platform,Android,operatingSystem,known
+teen-patti-master,Teen Patti Master,Distribution,APK / app listing,distribution,known
+teen-patti-master,Teen Patti Master,Parent brand,Yono app family,brandFamily,known
+teen-patti-master,Teen Patti Master,Market,India,audience,known
+teen-patti-master,Teen Patti Master,Genre,,genre,NEEDS SOURCE
+teen-patti-master,Teen Patti Master,Gameplay mechanics,,describes,NEEDS SOURCE
+teen-patti-master,Teen Patti Master,Game modes,,hasPart,NEEDS SOURCE
+teen-patti-master,Teen Patti Master,Developer,,author,NEEDS SOURCE
+teen-patti-master,Teen Patti Master,Publisher,,publisher,NEEDS SOURCE
+teen-patti-master,Teen Patti Master,Version,,softwareVersion,NEEDS SOURCE
+teen-patti-master,Teen Patti Master,File size,,fileSize,NEEDS SOURCE
+teen-patti-master,Teen Patti Master,Device requirements,,requirements,NEEDS SOURCE
+teen-patti-master,Teen Patti Master,Update history,,dateModified,NEEDS SOURCE
+yono-vip,Yono VIP,Category,Teen Patti & VIP Club,isPartOf,known
+yono-vip,Yono VIP,Platform,Android,operatingSystem,known
+yono-vip,Yono VIP,Distribution,APK / app listing,distribution,known
+yono-vip,Yono VIP,Parent brand,Yono app family,brandFamily,known
+yono-vip,Yono VIP,Market,India,audience,known
+yono-vip,Yono VIP,Genre,,genre,NEEDS SOURCE
+yono-vip,Yono VIP,Gameplay mechanics,,describes,NEEDS SOURCE
+yono-vip,Yono VIP,Game modes,,hasPart,NEEDS SOURCE
+yono-vip,Yono VIP,Developer,,author,NEEDS SOURCE
+yono-vip,Yono VIP,Publisher,,publisher,NEEDS SOURCE
+yono-vip,Yono VIP,Version,,softwareVersion,NEEDS SOURCE
+yono-vip,Yono VIP,File size,,fileSize,NEEDS SOURCE
+yono-vip,Yono VIP,Device requirements,,requirements,NEEDS SOURCE
+yono-vip,Yono VIP,Update history,,dateModified,NEEDS SOURCE
+dhan-game,Dhan Game,Category,Arcade & Casual,isPartOf,known
+dhan-game,Dhan Game,Platform,Android,operatingSystem,known
+dhan-game,Dhan Game,Distribution,APK / app listing,distribution,known
+dhan-game,Dhan Game,Parent brand,Yono app family,brandFamily,known
+dhan-game,Dhan Game,Market,India,audience,known
+dhan-game,Dhan Game,Genre,,genre,NEEDS SOURCE
+dhan-game,Dhan Game,Gameplay mechanics,,describes,NEEDS SOURCE
+dhan-game,Dhan Game,Game modes,,hasPart,NEEDS SOURCE
+dhan-game,Dhan Game,Developer,,author,NEEDS SOURCE
+dhan-game,Dhan Game,Publisher,,publisher,NEEDS SOURCE
+dhan-game,Dhan Game,Version,,softwareVersion,NEEDS SOURCE
+dhan-game,Dhan Game,File size,,fileSize,NEEDS SOURCE
+dhan-game,Dhan Game,Device requirements,,requirements,NEEDS SOURCE
+dhan-game,Dhan Game,Update history,,dateModified,NEEDS SOURCE
+diwa-game,Diwa Game,Category,Arcade & Casual,isPartOf,known
+diwa-game,Diwa Game,Platform,Android,operatingSystem,known
+diwa-game,Diwa Game,Distribution,APK / app listing,distribution,known
+diwa-game,Diwa Game,Parent brand,Yono app family,brandFamily,known
+diwa-game,Diwa Game,Market,India,audience,known
+diwa-game,Diwa Game,Genre,,genre,NEEDS SOURCE
+diwa-game,Diwa Game,Gameplay mechanics,,describes,NEEDS SOURCE
+diwa-game,Diwa Game,Game modes,,hasPart,NEEDS SOURCE
+diwa-game,Diwa Game,Developer,,author,NEEDS SOURCE
+diwa-game,Diwa Game,Publisher,,publisher,NEEDS SOURCE
+diwa-game,Diwa Game,Version,,softwareVersion,NEEDS SOURCE
+diwa-game,Diwa Game,File size,,fileSize,NEEDS SOURCE
+diwa-game,Diwa Game,Device requirements,,requirements,NEEDS SOURCE
+diwa-game,Diwa Game,Update history,,dateModified,NEEDS SOURCE
+diwa-king,Diwa King,Category,Arcade & Casual,isPartOf,known
+diwa-king,Diwa King,Platform,Android,operatingSystem,known
+diwa-king,Diwa King,Distribution,APK / app listing,distribution,known
+diwa-king,Diwa King,Parent brand,Yono app family,brandFamily,known
+diwa-king,Diwa King,Market,India,audience,known
+diwa-king,Diwa King,Genre,,genre,NEEDS SOURCE
+diwa-king,Diwa King,Gameplay mechanics,,describes,NEEDS SOURCE
+diwa-king,Diwa King,Game modes,,hasPart,NEEDS SOURCE
+diwa-king,Diwa King,Developer,,author,NEEDS SOURCE
+diwa-king,Diwa King,Publisher,,publisher,NEEDS SOURCE
+diwa-king,Diwa King,Version,,softwareVersion,NEEDS SOURCE
+diwa-king,Diwa King,File size,,fileSize,NEEDS SOURCE
+diwa-king,Diwa King,Device requirements,,requirements,NEEDS SOURCE
+diwa-king,Diwa King,Update history,,dateModified,NEEDS SOURCE
+diwa-lucky,Diwa Lucky,Category,Arcade & Casual,isPartOf,known
+diwa-lucky,Diwa Lucky,Platform,Android,operatingSystem,known
+diwa-lucky,Diwa Lucky,Distribution,APK / app listing,distribution,known
+diwa-lucky,Diwa Lucky,Parent brand,Yono app family,brandFamily,known
+diwa-lucky,Diwa Lucky,Market,India,audience,known
+diwa-lucky,Diwa Lucky,Genre,,genre,NEEDS SOURCE
+diwa-lucky,Diwa Lucky,Gameplay mechanics,,describes,NEEDS SOURCE
+diwa-lucky,Diwa Lucky,Game modes,,hasPart,NEEDS SOURCE
+diwa-lucky,Diwa Lucky,Developer,,author,NEEDS SOURCE
+diwa-lucky,Diwa Lucky,Publisher,,publisher,NEEDS SOURCE
+diwa-lucky,Diwa Lucky,Version,,softwareVersion,NEEDS SOURCE
+diwa-lucky,Diwa Lucky,File size,,fileSize,NEEDS SOURCE
+diwa-lucky,Diwa Lucky,Device requirements,,requirements,NEEDS SOURCE
+diwa-lucky,Diwa Lucky,Update history,,dateModified,NEEDS SOURCE
+diwa-play,Diwa Play,Category,Arcade & Casual,isPartOf,known
+diwa-play,Diwa Play,Platform,Android,operatingSystem,known
+diwa-play,Diwa Play,Distribution,APK / app listing,distribution,known
+diwa-play,Diwa Play,Parent brand,Yono app family,brandFamily,known
+diwa-play,Diwa Play,Market,India,audience,known
+diwa-play,Diwa Play,Genre,,genre,NEEDS SOURCE
+diwa-play,Diwa Play,Gameplay mechanics,,describes,NEEDS SOURCE
+diwa-play,Diwa Play,Game modes,,hasPart,NEEDS SOURCE
+diwa-play,Diwa Play,Developer,,author,NEEDS SOURCE
+diwa-play,Diwa Play,Publisher,,publisher,NEEDS SOURCE
+diwa-play,Diwa Play,Version,,softwareVersion,NEEDS SOURCE
+diwa-play,Diwa Play,File size,,fileSize,NEEDS SOURCE
+diwa-play,Diwa Play,Device requirements,,requirements,NEEDS SOURCE
+diwa-play,Diwa Play,Update history,,dateModified,NEEDS SOURCE
+diwa-top,Diwa Top,Category,Arcade & Casual,isPartOf,known
+diwa-top,Diwa Top,Platform,Android,operatingSystem,known
+diwa-top,Diwa Top,Distribution,APK / app listing,distribution,known
+diwa-top,Diwa Top,Parent brand,Yono app family,brandFamily,known
+diwa-top,Diwa Top,Market,India,audience,known
+diwa-top,Diwa Top,Genre,,genre,NEEDS SOURCE
+diwa-top,Diwa Top,Gameplay mechanics,,describes,NEEDS SOURCE
+diwa-top,Diwa Top,Game modes,,hasPart,NEEDS SOURCE
+diwa-top,Diwa Top,Developer,,author,NEEDS SOURCE
+diwa-top,Diwa Top,Publisher,,publisher,NEEDS SOURCE
+diwa-top,Diwa Top,Version,,softwareVersion,NEEDS SOURCE
+diwa-top,Diwa Top,File size,,fileSize,NEEDS SOURCE
+diwa-top,Diwa Top,Device requirements,,requirements,NEEDS SOURCE
+diwa-top,Diwa Top,Update history,,dateModified,NEEDS SOURCE
+diwa-win,Diwa Win,Category,Arcade & Casual,isPartOf,known
+diwa-win,Diwa Win,Platform,Android,operatingSystem,known
+diwa-win,Diwa Win,Distribution,APK / app listing,distribution,known
+diwa-win,Diwa Win,Parent brand,Yono app family,brandFamily,known
+diwa-win,Diwa Win,Market,India,audience,known
+diwa-win,Diwa Win,Genre,,genre,NEEDS SOURCE
+diwa-win,Diwa Win,Gameplay mechanics,,describes,NEEDS SOURCE
+diwa-win,Diwa Win,Game modes,,hasPart,NEEDS SOURCE
+diwa-win,Diwa Win,Developer,,author,NEEDS SOURCE
+diwa-win,Diwa Win,Publisher,,publisher,NEEDS SOURCE
+diwa-win,Diwa Win,Version,,softwareVersion,NEEDS SOURCE
+diwa-win,Diwa Win,File size,,fileSize,NEEDS SOURCE
+diwa-win,Diwa Win,Device requirements,,requirements,NEEDS SOURCE
+diwa-win,Diwa Win,Update history,,dateModified,NEEDS SOURCE
+jaiho-arcade,JaiHo Arcade,Category,Arcade & Casual,isPartOf,known
+jaiho-arcade,JaiHo Arcade,Platform,Android,operatingSystem,known
+jaiho-arcade,JaiHo Arcade,Distribution,APK / app listing,distribution,known
+jaiho-arcade,JaiHo Arcade,Parent brand,Yono app family,brandFamily,known
+jaiho-arcade,JaiHo Arcade,Market,India,audience,known
+jaiho-arcade,JaiHo Arcade,Genre,,genre,NEEDS SOURCE
+jaiho-arcade,JaiHo Arcade,Gameplay mechanics,,describes,NEEDS SOURCE
+jaiho-arcade,JaiHo Arcade,Game modes,,hasPart,NEEDS SOURCE
+jaiho-arcade,JaiHo Arcade,Developer,,author,NEEDS SOURCE
+jaiho-arcade,JaiHo Arcade,Publisher,,publisher,NEEDS SOURCE
+jaiho-arcade,JaiHo Arcade,Version,,softwareVersion,NEEDS SOURCE
+jaiho-arcade,JaiHo Arcade,File size,,fileSize,NEEDS SOURCE
+jaiho-arcade,JaiHo Arcade,Device requirements,,requirements,NEEDS SOURCE
+jaiho-arcade,JaiHo Arcade,Update history,,dateModified,NEEDS SOURCE
+jaiho-win,JaiHo Win,Category,Arcade & Casual,isPartOf,known
+jaiho-win,JaiHo Win,Platform,Android,operatingSystem,known
+jaiho-win,JaiHo Win,Distribution,APK / app listing,distribution,known
+jaiho-win,JaiHo Win,Parent brand,Yono app family,brandFamily,known
+jaiho-win,JaiHo Win,Market,India,audience,known
+jaiho-win,JaiHo Win,Genre,,genre,NEEDS SOURCE
+jaiho-win,JaiHo Win,Gameplay mechanics,,describes,NEEDS SOURCE
+jaiho-win,JaiHo Win,Game modes,,hasPart,NEEDS SOURCE
+jaiho-win,JaiHo Win,Developer,,author,NEEDS SOURCE
+jaiho-win,JaiHo Win,Publisher,,publisher,NEEDS SOURCE
+jaiho-win,JaiHo Win,Version,,softwareVersion,NEEDS SOURCE
+jaiho-win,JaiHo Win,File size,,fileSize,NEEDS SOURCE
+jaiho-win,JaiHo Win,Device requirements,,requirements,NEEDS SOURCE
+jaiho-win,JaiHo Win,Update history,,dateModified,NEEDS SOURCE
+maha-games,Maha Games,Category,Arcade & Casual,isPartOf,known
+maha-games,Maha Games,Platform,Android,operatingSystem,known
+maha-games,Maha Games,Distribution,APK / app listing,distribution,known
+maha-games,Maha Games,Parent brand,Yono app family,brandFamily,known
+maha-games,Maha Games,Market,India,audience,known
+maha-games,Maha Games,Genre,,genre,NEEDS SOURCE
+maha-games,Maha Games,Gameplay mechanics,,describes,NEEDS SOURCE
+maha-games,Maha Games,Game modes,,hasPart,NEEDS SOURCE
+maha-games,Maha Games,Developer,,author,NEEDS SOURCE
+maha-games,Maha Games,Publisher,,publisher,NEEDS SOURCE
+maha-games,Maha Games,Version,,softwareVersion,NEEDS SOURCE
+maha-games,Maha Games,File size,,fileSize,NEEDS SOURCE
+maha-games,Maha Games,Device requirements,,requirements,NEEDS SOURCE
+maha-games,Maha Games,Update history,,dateModified,NEEDS SOURCE
+raja-luck,Raja Luck,Category,Arcade & Casual,isPartOf,known
+raja-luck,Raja Luck,Platform,Android,operatingSystem,known
+raja-luck,Raja Luck,Distribution,APK / app listing,distribution,known
+raja-luck,Raja Luck,Parent brand,Yono app family,brandFamily,known
+raja-luck,Raja Luck,Market,India,audience,known
+raja-luck,Raja Luck,Genre,,genre,NEEDS SOURCE
+raja-luck,Raja Luck,Gameplay mechanics,,describes,NEEDS SOURCE
+raja-luck,Raja Luck,Game modes,,hasPart,NEEDS SOURCE
+raja-luck,Raja Luck,Developer,,author,NEEDS SOURCE
+raja-luck,Raja Luck,Publisher,,publisher,NEEDS SOURCE
+raja-luck,Raja Luck,Version,,softwareVersion,NEEDS SOURCE
+raja-luck,Raja Luck,File size,,fileSize,NEEDS SOURCE
+raja-luck,Raja Luck,Device requirements,,requirements,NEEDS SOURCE
+raja-luck,Raja Luck,Update history,,dateModified,NEEDS SOURCE
+yono-arcade,Yono Arcade,Category,Arcade & Casual,isPartOf,known
+yono-arcade,Yono Arcade,Platform,Android,operatingSystem,known
+yono-arcade,Yono Arcade,Distribution,APK / app listing,distribution,known
+yono-arcade,Yono Arcade,Parent brand,Yono app family,brandFamily,known
+yono-arcade,Yono Arcade,Market,India,audience,known
+yono-arcade,Yono Arcade,Genre,,genre,NEEDS SOURCE
+yono-arcade,Yono Arcade,Gameplay mechanics,,describes,NEEDS SOURCE
+yono-arcade,Yono Arcade,Game modes,,hasPart,NEEDS SOURCE
+yono-arcade,Yono Arcade,Developer,,author,NEEDS SOURCE
+yono-arcade,Yono Arcade,Publisher,,publisher,NEEDS SOURCE
+yono-arcade,Yono Arcade,Version,,softwareVersion,NEEDS SOURCE
+yono-arcade,Yono Arcade,File size,,fileSize,NEEDS SOURCE
+yono-arcade,Yono Arcade,Device requirements,,requirements,NEEDS SOURCE
+yono-arcade,Yono Arcade,Update history,,dateModified,NEEDS SOURCE
+yono-games,Yono Games,Category,Arcade & Casual,isPartOf,known
+yono-games,Yono Games,Platform,Android,operatingSystem,known
+yono-games,Yono Games,Distribution,APK / app listing,distribution,known
+yono-games,Yono Games,Parent brand,Yono app family,brandFamily,known
+yono-games,Yono Games,Market,India,audience,known
+yono-games,Yono Games,Genre,,genre,NEEDS SOURCE
+yono-games,Yono Games,Gameplay mechanics,,describes,NEEDS SOURCE
+yono-games,Yono Games,Game modes,,hasPart,NEEDS SOURCE
+yono-games,Yono Games,Developer,,author,NEEDS SOURCE
+yono-games,Yono Games,Publisher,,publisher,NEEDS SOURCE
+yono-games,Yono Games,Version,,softwareVersion,NEEDS SOURCE
+yono-games,Yono Games,File size,,fileSize,NEEDS SOURCE
+yono-games,Yono Games,Device requirements,,requirements,NEEDS SOURCE
+yono-games,Yono Games,Update history,,dateModified,NEEDS SOURCE
+en-365,EN 365,Category,Multi-Game Platforms,isPartOf,known
+en-365,EN 365,Platform,Android,operatingSystem,known
+en-365,EN 365,Distribution,APK / app listing,distribution,known
+en-365,EN 365,Parent brand,Yono app family,brandFamily,known
+en-365,EN 365,Market,India,audience,known
+en-365,EN 365,Genre,,genre,NEEDS SOURCE
+en-365,EN 365,Gameplay mechanics,,describes,NEEDS SOURCE
+en-365,EN 365,Game modes,,hasPart,NEEDS SOURCE
+en-365,EN 365,Developer,,author,NEEDS SOURCE
+en-365,EN 365,Publisher,,publisher,NEEDS SOURCE
+en-365,EN 365,Version,,softwareVersion,NEEDS SOURCE
+en-365,EN 365,File size,,fileSize,NEEDS SOURCE
+en-365,EN 365,Device requirements,,requirements,NEEDS SOURCE
+en-365,EN 365,Update history,,dateModified,NEEDS SOURCE
+mbm-bet,MBM Bet,Category,Multi-Game Platforms,isPartOf,known
+mbm-bet,MBM Bet,Platform,Android,operatingSystem,known
+mbm-bet,MBM Bet,Distribution,APK / app listing,distribution,known
+mbm-bet,MBM Bet,Parent brand,Yono app family,brandFamily,known
+mbm-bet,MBM Bet,Market,India,audience,known
+mbm-bet,MBM Bet,Genre,,genre,NEEDS SOURCE
+mbm-bet,MBM Bet,Gameplay mechanics,,describes,NEEDS SOURCE
+mbm-bet,MBM Bet,Game modes,,hasPart,NEEDS SOURCE
+mbm-bet,MBM Bet,Developer,,author,NEEDS SOURCE
+mbm-bet,MBM Bet,Publisher,,publisher,NEEDS SOURCE
+mbm-bet,MBM Bet,Version,,softwareVersion,NEEDS SOURCE
+mbm-bet,MBM Bet,File size,,fileSize,NEEDS SOURCE
+mbm-bet,MBM Bet,Device requirements,,requirements,NEEDS SOURCE
+mbm-bet,MBM Bet,Update history,,dateModified,NEEDS SOURCE
+mdm-bet,MDM Bet,Category,Multi-Game Platforms,isPartOf,known
+mdm-bet,MDM Bet,Platform,Android,operatingSystem,known
+mdm-bet,MDM Bet,Distribution,APK / app listing,distribution,known
+mdm-bet,MDM Bet,Parent brand,Yono app family,brandFamily,known
+mdm-bet,MDM Bet,Market,India,audience,known
+mdm-bet,MDM Bet,Genre,,genre,NEEDS SOURCE
+mdm-bet,MDM Bet,Gameplay mechanics,,describes,NEEDS SOURCE
+mdm-bet,MDM Bet,Game modes,,hasPart,NEEDS SOURCE
+mdm-bet,MDM Bet,Developer,,author,NEEDS SOURCE
+mdm-bet,MDM Bet,Publisher,,publisher,NEEDS SOURCE
+mdm-bet,MDM Bet,Version,,softwareVersion,NEEDS SOURCE
+mdm-bet,MDM Bet,File size,,fileSize,NEEDS SOURCE
+mdm-bet,MDM Bet,Device requirements,,requirements,NEEDS SOURCE
+mdm-bet,MDM Bet,Update history,,dateModified,NEEDS SOURCE
+mkm-bet,MKM Bet,Category,Multi-Game Platforms,isPartOf,known
+mkm-bet,MKM Bet,Platform,Android,operatingSystem,known
+mkm-bet,MKM Bet,Distribution,APK / app listing,distribution,known
+mkm-bet,MKM Bet,Parent brand,Yono app family,brandFamily,known
+mkm-bet,MKM Bet,Market,India,audience,known
+mkm-bet,MKM Bet,Genre,,genre,NEEDS SOURCE
+mkm-bet,MKM Bet,Gameplay mechanics,,describes,NEEDS SOURCE
+mkm-bet,MKM Bet,Game modes,,hasPart,NEEDS SOURCE
+mkm-bet,MKM Bet,Developer,,author,NEEDS SOURCE
+mkm-bet,MKM Bet,Publisher,,publisher,NEEDS SOURCE
+mkm-bet,MKM Bet,Version,,softwareVersion,NEEDS SOURCE
+mkm-bet,MKM Bet,File size,,fileSize,NEEDS SOURCE
+mkm-bet,MKM Bet,Device requirements,,requirements,NEEDS SOURCE
+mkm-bet,MKM Bet,Update history,,dateModified,NEEDS SOURCE
+mqm-bet,MQM Bet,Category,Multi-Game Platforms,isPartOf,known
+mqm-bet,MQM Bet,Platform,Android,operatingSystem,known
+mqm-bet,MQM Bet,Distribution,APK / app listing,distribution,known
+mqm-bet,MQM Bet,Parent brand,Yono app family,brandFamily,known
+mqm-bet,MQM Bet,Market,India,audience,known
+mqm-bet,MQM Bet,Genre,,genre,NEEDS SOURCE
+mqm-bet,MQM Bet,Gameplay mechanics,,describes,NEEDS SOURCE
+mqm-bet,MQM Bet,Game modes,,hasPart,NEEDS SOURCE
+mqm-bet,MQM Bet,Developer,,author,NEEDS SOURCE
+mqm-bet,MQM Bet,Publisher,,publisher,NEEDS SOURCE
+mqm-bet,MQM Bet,Version,,softwareVersion,NEEDS SOURCE
+mqm-bet,MQM Bet,File size,,fileSize,NEEDS SOURCE
+mqm-bet,MQM Bet,Device requirements,,requirements,NEEDS SOURCE
+mqm-bet,MQM Bet,Update history,,dateModified,NEEDS SOURCE
+mwm-bet,MWM Bet,Category,Multi-Game Platforms,isPartOf,known
+mwm-bet,MWM Bet,Platform,Android,operatingSystem,known
+mwm-bet,MWM Bet,Distribution,APK / app listing,distribution,known
+mwm-bet,MWM Bet,Parent brand,Yono app family,brandFamily,known
+mwm-bet,MWM Bet,Market,India,audience,known
+mwm-bet,MWM Bet,Genre,,genre,NEEDS SOURCE
+mwm-bet,MWM Bet,Gameplay mechanics,,describes,NEEDS SOURCE
+mwm-bet,MWM Bet,Game modes,,hasPart,NEEDS SOURCE
+mwm-bet,MWM Bet,Developer,,author,NEEDS SOURCE
+mwm-bet,MWM Bet,Publisher,,publisher,NEEDS SOURCE
+mwm-bet,MWM Bet,Version,,softwareVersion,NEEDS SOURCE
+mwm-bet,MWM Bet,File size,,fileSize,NEEDS SOURCE
+mwm-bet,MWM Bet,Device requirements,,requirements,NEEDS SOURCE
+mwm-bet,MWM Bet,Update history,,dateModified,NEEDS SOURCE
+bingo-101,Bingo 101,Category,Bingo,isPartOf,known
+bingo-101,Bingo 101,Platform,Android,operatingSystem,known
+bingo-101,Bingo 101,Distribution,APK / app listing,distribution,known
+bingo-101,Bingo 101,Parent brand,Yono app family,brandFamily,known
+bingo-101,Bingo 101,Market,India,audience,known
+bingo-101,Bingo 101,Genre,,genre,NEEDS SOURCE
+bingo-101,Bingo 101,Gameplay mechanics,,describes,NEEDS SOURCE
+bingo-101,Bingo 101,Game modes,,hasPart,NEEDS SOURCE
+bingo-101,Bingo 101,Developer,,author,NEEDS SOURCE
+bingo-101,Bingo 101,Publisher,,publisher,NEEDS SOURCE
+bingo-101,Bingo 101,Version,,softwareVersion,NEEDS SOURCE
+bingo-101,Bingo 101,File size,,fileSize,NEEDS SOURCE
+bingo-101,Bingo 101,Device requirements,,requirements,NEEDS SOURCE
+bingo-101,Bingo 101,Update history,,dateModified,NEEDS SOURCE
+ind-bingo,Ind Bingo,Category,Bingo,isPartOf,known
+ind-bingo,Ind Bingo,Platform,Android,operatingSystem,known
+ind-bingo,Ind Bingo,Distribution,APK / app listing,distribution,known
+ind-bingo,Ind Bingo,Parent brand,Yono app family,brandFamily,known
+ind-bingo,Ind Bingo,Market,India,audience,known
+ind-bingo,Ind Bingo,Genre,,genre,NEEDS SOURCE
+ind-bingo,Ind Bingo,Gameplay mechanics,,describes,NEEDS SOURCE
+ind-bingo,Ind Bingo,Game modes,,hasPart,NEEDS SOURCE
+ind-bingo,Ind Bingo,Developer,,author,NEEDS SOURCE
+ind-bingo,Ind Bingo,Publisher,,publisher,NEEDS SOURCE
+ind-bingo,Ind Bingo,Version,,softwareVersion,NEEDS SOURCE
+ind-bingo,Ind Bingo,File size,,fileSize,NEEDS SOURCE
+ind-bingo,Ind Bingo,Device requirements,,requirements,NEEDS SOURCE
+ind-bingo,Ind Bingo,Update history,,dateModified,NEEDS SOURCE
+rummy-ludo,Rummy Ludo,Category,Ludo & Board,isPartOf,known
+rummy-ludo,Rummy Ludo,Platform,Android,operatingSystem,known
+rummy-ludo,Rummy Ludo,Distribution,APK / app listing,distribution,known
+rummy-ludo,Rummy Ludo,Parent brand,Yono app family,brandFamily,known
+rummy-ludo,Rummy Ludo,Market,India,audience,known
+rummy-ludo,Rummy Ludo,Genre,,genre,NEEDS SOURCE
+rummy-ludo,Rummy Ludo,Gameplay mechanics,,describes,NEEDS SOURCE
+rummy-ludo,Rummy Ludo,Game modes,,hasPart,NEEDS SOURCE
+rummy-ludo,Rummy Ludo,Developer,,author,NEEDS SOURCE
+rummy-ludo,Rummy Ludo,Publisher,,publisher,NEEDS SOURCE
+rummy-ludo,Rummy Ludo,Version,,softwareVersion,NEEDS SOURCE
+rummy-ludo,Rummy Ludo,File size,,fileSize,NEEDS SOURCE
+rummy-ludo,Rummy Ludo,Device requirements,,requirements,NEEDS SOURCE
+rummy-ludo,Rummy Ludo,Update history,,dateModified,NEEDS SOURCE
