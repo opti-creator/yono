@@ -28,7 +28,16 @@ const SITE = {
   brand: 'New Yono Apps',
   lang: 'en-IN',
   gamesDir: 'games',   // set to '' to flatten every hub and game page to the root
+  // Shared download destination used when a game has no URL of its own.
+  // It is a shortener carrying a referral code and resolves to a landing page,
+  // not to a .apk file, so links to it are marked rel="sponsored nofollow".
+  downloadUrl: 'https://urlr.to/yonoapk',
 };
+
+// A game's own URL takes precedence; the site-wide link is the fallback.
+const dlUrl = (g) => g.downloadUrl || SITE.downloadUrl || '';
+// True only when the link is specific to this app, which affects schema.
+const dlIsAppSpecific = (g) => Boolean(g.downloadUrl);
 
 const COPY_APPROVED = false;
 
@@ -57,15 +66,22 @@ function write(rel, html) {
 
 function fit(text, tails, lo = 145, hi = 155) {
   const base = String(text).replace(/\s+/g, ' ').trim();
-  for (const extra of [''].concat(tails || [])) {
-    const cand = extra ? (base + ' ' + extra).trim() : base;
-    if (cand.length >= lo && cand.length <= hi) return cand;
-  }
-  let cand = base;
-  if (tails && tails.length && base.length < lo) cand = (base + ' ' + tails[tails.length - 1]).trim();
-  if (cand.length <= hi) return cand;
+  const cands = [''].concat(tails || [])
+    .map((t) => (t ? (base + ' ' + t).trim() : base))
+    .filter((c) => c.length <= hi);
+
+  // Prefer a candidate inside the window.
+  const inWindow = cands.filter((c) => c.length >= lo);
+  if (inWindow.length) return inWindow[0];
+
+  // Otherwise take the longest complete candidate. Falling a little short of the
+  // window is better than cutting a sentence mid-phrase, which reads as broken
+  // in a search result.
+  if (cands.length) return cands.reduce((a, b) => (b.length > a.length ? b : a));
+
+  // Last resort: the base alone exceeds the limit, so trim on a word boundary.
   const out = [];
-  for (const w of cand.split(' ')) {
+  for (const w of base.split(' ')) {
     if ([...out, w].join(' ').length > hi - 1) break;
     out.push(w);
   }
@@ -359,30 +375,31 @@ const INSTALL_STEPS = [
 
 function downloadSection(g, c) {
   const icon = logoImg(g, 96, 96, '96px', false);
-  // A download action is rendered only when a real URL exists in the roster.
-  // No URL is ever fabricated; the markup falls back to an information state.
-  if (g.downloadUrl) {
+  const href = dlUrl(g);
+  if (href) {
+    // rel="sponsored nofollow" because the destination carries a referral code.
+    // noopener/noreferrer because it opens in a new tab.
     return `      <section class="download-card" aria-labelledby="dl-h">
         <div class="download-card__icon">${icon}</div>
         <div class="download-card__body">
-          <h2 id="dl-h">Download ${esc(g.name)}</h2>
-          <p class="download-card__meta">Android${g.version ? ` &middot; Version ${esc(g.version)}` : ''}${g.apkSize ? ` &middot; ${esc(g.apkSize)}` : ''}</p>
-          <a class="btn btn--primary btn--lg" href="${esc(g.downloadUrl)}" rel="nofollow noopener">Download ${esc(g.name)}</a>
-          <p class="download-card__note"><a href="#install">How to install on Android</a></p>
+          <h2 id="dl-h">Download APK</h2>
+          <p class="download-card__meta">${esc(g.name)} &middot; Android${g.version ? ` &middot; Version ${esc(g.version)}` : ''}${g.apkSize ? ` &middot; ${esc(g.apkSize)}` : ''}</p>
+          <a class="btn btn--primary btn--lg" href="${esc(href)}"
+             rel="sponsored nofollow noopener noreferrer" target="_blank">Download APK</a>
+          <p class="download-card__note">Opens the download page in a new tab.${dlIsAppSpecific(g) ? '' : ` This is the shared ${esc(SITE.brand)} download page rather than a link to the ${esc(g.name)} package on its own.`} See <a href="#install">how to install on Android</a> before you start.</p>
         </div>
       </section>`;
   }
   return `      <section class="download-card download-card--pending" aria-labelledby="dl-h">
         <div class="download-card__icon">${icon}</div>
         <div class="download-card__body">
-          <h2 id="dl-h">Download information for ${esc(g.name)}</h2>
-          <p class="download-card__meta">Android${g.version ? ` &middot; Version ${esc(g.version)}` : ''}</p>
+          <h2 id="dl-h">Download APK</h2>
+          <p class="download-card__meta">${esc(g.name)} &middot; Android</p>
           <p><strong>No verified download link is listed for this app yet.</strong> This directory
           publishes a download button only once a source has been checked, so no link is shown here
           rather than pointing you at an unverified one.</p>
-          <p class="download-card__note">In the meantime, the
-          <a href="#install">Android installation guidance</a> below covers what to check before
-          installing any Android package.</p>
+          <p class="download-card__note">The <a href="#install">Android installation guidance</a>
+          below covers what to check before installing any Android package.</p>
         </div>
       </section>`;
 }
@@ -511,8 +528,8 @@ function faqFor(g, c) {
     [`Is ${g.name} available for Android?`,
      `${g.name} is catalogued here as an Android application. This directory does not host or distribute the package, and the app's own listing is the authority on current availability.`],
     [`How do I download ${g.name}?`,
-     g.downloadUrl
-       ? `A download link is listed on this page. Check the source and the permissions it requests before installing, as you would with any Android package from outside the Play Store.`
+     dlUrl(g)
+       ? `Use the Download APK button on this page. ${dlIsAppSpecific(g) ? 'It links to the package for this app.' : `It opens the shared ${SITE.brand} download page rather than a link to the ${g.name} package on its own.`} Check the source and the permissions requested before installing, as with any Android package from outside the Play Store.`
        : `No verified download link is listed here yet. This directory publishes one only once a source has been checked, so none is shown rather than pointing you at an unverified link.`],
     [`What category does ${g.name} belong to?`,
      `It is grouped under ${c.label}, which covers ${cc.formatName || c.label.toLowerCase()}. You can browse the other ${countIn(c.key) - 1} titles in that category from this page.`],
@@ -813,7 +830,10 @@ function buildGame(g) {
   if (g.apkSize) app.fileSize = g.apkSize;
   if (g.developer) app.author = { '@type': 'Organization', name: g.developer };
   if (g.publisher) app.publisher = { '@type': 'Organization', name: g.publisher };
-  if (g.downloadUrl) app.downloadUrl = g.downloadUrl;
+  // downloadUrl is claimed only for an app-specific link. The shared fallback is
+  // a referral landing page, not this app's package, so asserting it here would
+  // make the structured data say something the page cannot support.
+  if (dlIsAppSpecific(g)) app.downloadUrl = g.downloadUrl;
 
   const graph = [app, breadcrumbSchema(trail)];
   // FAQPage only where the Q&A is genuinely rendered on the page.
@@ -838,9 +858,15 @@ function buildGame(g) {
     title: gameTitle(g, c),
     description: fit(
       `${g.name} on Android: category, app details, ${cc.formatName || 'game'} gameplay, installation guidance and FAQs.`,
-      ['Download information included.',
-       'Download information and related apps included.',
-       'Plus download information and related apps from the same category.']),
+      // Ladder is deliberately fine-grained: fit() picks the first tail that lands
+      // in 145-155, so gaps between lengths would force a mid-phrase trim.
+      ['APK download included.',
+       'Includes the APK download.',
+       'Plus the APK download link.',
+       'Includes the APK download and related apps.',
+       'Includes the APK download plus related app listings.',
+       'Includes the APK download link and related app listings.',
+       'Includes the APK download link plus related apps in this category.']),
   }) + `
 ${breadcrumb(trail)}
 
@@ -857,7 +883,7 @@ ${breadcrumb(trail)}
           </div>
           <p class="game-hero__intro">${esc(intro)}</p>
           <div class="game-hero__actions">
-            <a class="btn btn--primary" href="#dl-h">${g.downloadUrl ? 'Download' : 'Download information'}</a>
+            <a class="btn btn--primary" href="#dl-h">Download APK</a>
             <a class="btn btn--ghost" href="#install">How to install</a>
           </div>
         </div>
